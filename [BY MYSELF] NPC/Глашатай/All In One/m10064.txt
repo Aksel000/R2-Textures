@@ -1,0 +1,184 @@
+<ModelScript version="1.5.0">
+
+<Information>
+	<Name>m10064</Name>
+	<Type>TYPE2</Type>
+	<Part>BODY</Part>
+	<PickingBox>
+		<Min>-90, 34, -106</Min>
+		<Max>91,450, 80</Max>
+	</PickingBox>
+	<CollisionBox>
+		<Min>-140, -300, -156</Min>
+		<Max>141, 750, 130</Max>
+	</CollisionBox>
+	<Foot>2</Foot>
+	<LodCount>2</LodCount>
+	<FloatingDepth>0</FloatingDepth>
+	<Scale>1</Scale>
+	<BodyPart Type="HEAD" Bone="b_main">0, 0, 0</BodyPart>
+	<BodyPart Type="CHEST" Bone="b_main">0, 0, 0</BodyPart>
+	<BodyPart Type="PELVIS" Bone="b_main">0, 0, 0</BodyPart>
+	<BodyPart Type="L_HAND" Bone="b_main">0, 0, 0</BodyPart>
+	<BodyPart Type="R_HAND" Bone="b_main">0, 0, 0</BodyPart>
+	<BodyPart Type="L_FOOT" Bone="b_main">0, 0, 0</BodyPart>
+	<BodyPart Type="R_FOOT" Bone="b_main">0, 0, 0</BodyPart>
+	<AttachEffect>1380.txt</AttachEffect>
+
+</Information>
+
+<Mesh>
+	<FileName>m10064.rmb</FileName>
+</Mesh>
+
+<Animation Group="G_DEFAULT">
+	<Action Name ="A_IDLE" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE1" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE2" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE3" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_BATTLE_STAND" Loop="TRUE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_WALK" Loop="TRUE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ITEM_PICKUP" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DEAD" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_USE_STICK" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SPELL" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL1" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL2" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL3" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL4" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL5" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL6" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL7" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL8" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL9" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL10" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_RUN" Loop="TRUE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ATTACK1" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ATTACK2" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+
+	<Action Name ="A_DAMAGE_UP" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DAMAGE_DOWN" Loop="FALSE">
+
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DAMAGE_LEFT" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DAMAGE_RIGHT" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+  	<Action Name ="A_WALK_BACK" Loop="TRUE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_JUMP" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_FALL" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_LAND" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_REGEN" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SAY" Loop="FALSE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ON_THE_WATER" Loop="TRUE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SWIM" Loop="TRUE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SWIM_BACK" Loop="TRUE">
+		<FileName>m10064_00.rab</FileName>
+	</Action>
+	
+	
+</Animation>
+
+</ModelScript>

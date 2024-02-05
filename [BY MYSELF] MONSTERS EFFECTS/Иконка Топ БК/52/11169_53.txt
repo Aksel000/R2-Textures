@@ -1,0 +1,18 @@
+<EffectScript>
+<Information>
+	<Name>pk_mode</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	
+	<Attach>
+    		<BodyPart>HEAD</BodyPart>
+  		<Pos>50,0,3</Pos>
+   		<Scale>FALSE</Scale>
+		<Rot>true</Rot>
+	
+   	</Attach>
+
+</Information>
+	<EffectFile>11169_53.reb</EffectFile>
+
+</EffectScript>

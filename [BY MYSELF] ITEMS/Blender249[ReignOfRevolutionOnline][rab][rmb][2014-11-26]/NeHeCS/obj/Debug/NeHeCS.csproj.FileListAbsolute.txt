@@ -1,0 +1,10 @@
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\NeHeCS\bin\Debug\NeHeCS.exe
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\NeHeCS\bin\Debug\NeHeCS.pdb
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\NeHeCS\obj\Debug\NeHeCS.csprojAssemblyReference.cache
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\NeHeCS\obj\Debug\OpenGL.BaseGLControl.resources
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\NeHeCS\obj\Debug\MyFormProject.MainForm.resources
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\NeHeCS\obj\Debug\MyFormProject.TestGL.resources
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\NeHeCS\obj\Debug\NeHeCS.csproj.GenerateResource.cache
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\NeHeCS\obj\Debug\NeHeCS.csproj.CoreCompileInputs.cache
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\NeHeCS\obj\Debug\NeHeCS.exe
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\NeHeCS\obj\Debug\NeHeCS.pdb

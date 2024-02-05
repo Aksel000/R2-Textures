@@ -1,0 +1,14 @@
+<ModelScript version="1.1.0">
+
+<Information>
+	<Name>i011500</Name>
+	<Type>TYPE3</Type>
+	<Part>body</Part>
+	<AttachEffect>1466.txt</AttachEffect>
+</Information>
+
+<Mesh>
+	<FileName>i011500.rmb</FileName>
+</Mesh>
+
+</ModelScript>

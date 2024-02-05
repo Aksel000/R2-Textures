@@ -1,0 +1,6 @@
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\R2Online\R2Online\obj\Debug\R2Online.csprojAssemblyReference.cache
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\R2Online\R2Online\obj\Debug\R2Online.Form1.resources
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\R2Online\R2Online\obj\Debug\R2Online.Properties.Resources.resources
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\R2Online\R2Online\obj\Debug\R2Online.csproj.GenerateResource.cache
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\R2Online\R2Online\obj\Debug\R2Online.csproj.CoreCompileInputs.cache
+C:\Users\sours\Desktop\Текстуры\Items\Blender249[ReignOfRevolutionOnline][rab][rmb][2014-11-26]\R2Online\R2Online\bin\Debug\R2Online.exe

@@ -1,0 +1,14 @@
+<ModelScript version="1.1.0">
+
+<Information>
+	<Name>i010009</Name>
+	<Type>TYPE3</Type>
+	<Part>body</Part>
+		
+</Information>
+
+<Mesh>
+	<FileName>i010009.rmb</FileName>
+</Mesh>
+
+</ModelScript>

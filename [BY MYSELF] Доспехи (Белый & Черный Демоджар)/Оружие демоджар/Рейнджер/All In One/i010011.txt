@@ -1,0 +1,22 @@
+<ModelScript version="1.1.0">
+
+<Information>
+	<Name>i010011</Name>
+	<Type>TYPE3</Type>
+	<Part>body</Part>
+	<BodyPart Type="HEAD" Bone="b_weapon">0, 0, 0</BodyPart>
+	<BodyPart Type="CHEST" Bone="b_weapon">0, 0, 0</BodyPart>
+	<BodyPart Type="PELVIS" Bone="b_weapon">0, 0, 0</BodyPart>
+	<BodyPart Type="L_HAND" Bone="b_weapon">0, 0, 0</BodyPart>
+	<BodyPart Type="R_HAND" Bone="b_weapon">0, 0, 0</BodyPart>
+	<BodyPart Type="L_FOOT" Bone="b_weapon">0, 0, 0</BodyPart>
+	<BodyPart Type="R_FOOT" Bone="b_weapon">0, 0, 0</BodyPart>	
+	<LodCount> 1 </LodCount>	
+	<AttachEffect>4028.txt</AttachEffect>	
+</Information>
+
+<Mesh>
+	<FileName>i010011.rmb</FileName>
+</Mesh>
+
+</ModelScript>

@@ -1,0 +1,22 @@
+<EffectScript>
+<Information>
+	<Name>grade</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Attach>
+    		<BodyPart>CHEST</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>False</Rot>
+		<Size>TRUE</Size>
+	</Attach>
+
+</Information>
+<EffectFile>15500.reb</EffectFile>
+
+</EffectScript>
+
+
+
+
+

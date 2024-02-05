@@ -1,0 +1,53 @@
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.exe
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll.config
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.deps.json
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.runtimeconfig.json
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.pdb
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.vbproj.AssemblyReference.cache
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form1.resources
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Resources.resources
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.vbproj.GenerateResource.cache
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfo.vb
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.vbproj.CoreCompileInputs.cache
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.vbproj.CopyComplete
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.dll
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\refint\WinFormsApp1.dll
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
+E:\新建文件夹 (2)\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.exe
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll.config
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.deps.json
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.vbproj.AssemblyReference.cache
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form1.resources
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Resources.resources
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.vbproj.GenerateResource.cache
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfo.vb
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.vbproj.CoreCompileInputs.cache
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.sourcelink.json
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.vbproj.CopyComplete
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\refint\WinFormsApp1.dll
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\sours\Desktop\GITHUB\R2-1602\[SOFTWARE] SOFT BY OTHER GUYS\Софт китов\imageTool\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll

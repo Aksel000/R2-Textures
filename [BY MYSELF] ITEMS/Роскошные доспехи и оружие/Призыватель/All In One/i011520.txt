@@ -1,0 +1,25 @@
+<ModelScript version="1.1.0">
+
+<Information>
+	<Name>i003017</Name>
+	<Type>TYPE2</Type>
+	<Part>body</Part>
+//	<Trail>0, 1</Trail>
+	<BodyPart Type="HEAD" Bone="b_weapon">0, 0, 0</BodyPart>
+	<BodyPart Type="CHEST" Bone="b_weapon">0, 0, 0</BodyPart>
+	<BodyPart Type="PELVIS" Bone="b_weapon">0, 0, 0</BodyPart>
+	<BodyPart Type="L_HAND" Bone="b_weapon">0, 0, 0</BodyPart>
+	<BodyPart Type="R_HAND" Bone="b_weapon">0, 0, 0</BodyPart>
+	<BodyPart Type="L_FOOT" Bone="b_weapon">0, 0, 0</BodyPart>
+	<BodyPart Type="R_FOOT" Bone="b_weapon">0, 0, 0</BodyPart>
+	<AttachEffect>1816.txt</AttachEffect>
+	<LodCount> 1 </LodCount>
+</Information>
+
+<Mesh>
+	<FileName>i011520.rmb</FileName>
+</Mesh>
+
+
+
+</ModelScript>

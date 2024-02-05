@@ -1,0 +1,24 @@
+<EffectScript>
+<Information>
+	<Name> mana </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>p162005.txt</Particle>
+
+	<Attach>
+    		<BodyPart>BV_BOTTOM</BodyPart>
+		<Pos>0,-220,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>TRUE</Rot>
+		<CharScale>TRUE</CharScale>
+		
+	</Attach>
+
+</Information>
+<EffectFile>162005.reb</EffectFile>
+<Event> <FrameEvent Type="SOUND" Frame="39">sphere.wav</FrameEvent>  <FrameEvent Type="SOUND" Frame="39">red_sphere.wav</FrameEvent> </Event> </EffectScript>
+
+
+
+
+

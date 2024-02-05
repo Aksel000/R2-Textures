@@ -1,0 +1,78 @@
+<ParticleScript>
+<InfoData Name="lightning_1">
+	<PosLink>true</PosLink>
+	<Loop>true</Loop>
+	<Power>1</Power>
+	<PowerVari>1</PowerVari>
+	<PullDist>0</PullDist>
+	<PullPower>0</PullPower>
+	<Life>10000.0</Life>
+	<Cone>0.0</Cone>
+	<LocalPos>0,1000,0</LocalPos>
+	<Gravity>0,0,0</Gravity>
+	<SelfRotate>0,0,0</SelfRotate>
+	<SelfRotateVari>0,0,0</SelfRotateVari>
+	<Rotate>0,0,90</Rotate>
+	<Scale>1,1,1</Scale>
+	<ScaleVari>0,0,0</ScaleVari>
+	<Direction>0,0,0</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType> 
+	<BillboardType>none</BillboardType>
+	<PlayType>none</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>10000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>1000</MakeTime>
+	<Texture>ring_glow02.dds</Texture>
+	<StartShape Size="1" Size2="25", Size3="1">cube</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>	
+	<Ani Frame="10000" Type="Scale">750,750,750</Ani>	
+
+	<Ani Frame="0" Type="Diffuse">0,0,0,0</Ani>
+	<Ani Frame="50" Type="Diffuse">50,255,255,255</Ani>
+	<Ani Frame="9000" Type="Diffuse">50,255,255,255</Ani>
+	<Ani Frame="10000" Type="Diffuse">0,0,0,0</Ani>
+
+	
+</InfoData>
+<InfoData Name="lightning_1">
+	<PosLink>true</PosLink>
+	<Loop>true</Loop>
+	<Power>1</Power>
+	<PowerVari>1</PowerVari>
+	<PullDist>0</PullDist>
+	<PullPower>0</PullPower>
+	<Life>10000.0</Life>
+	<Cone>0.0</Cone>
+	<LocalPos>0,140,0</LocalPos>
+	<Gravity>0,0,0</Gravity>
+	<SelfRotate>0,0,0.4</SelfRotate>
+	<SelfRotateVari>0,0,0.5</SelfRotateVari>
+	<Rotate>0,0,90</Rotate>
+	<Scale>1,1,1</Scale>
+	<ScaleVari>0,0,0</ScaleVari>
+	<Direction>0,0,0</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType> 
+	<BillboardType>none</BillboardType>
+	<PlayType>none</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>10000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>1250</MakeTime>
+	<Texture>Ring_Blur05.dds</Texture>
+	<StartShape Size="1" Size2="25", Size3="1">cube</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>	
+	<Ani Frame="10000" Type="Scale">750,750,750</Ani>	
+
+	<Ani Frame="0" Type="Diffuse">0,0,0,0</Ani>
+	<Ani Frame="50" Type="Diffuse">100,102,51,153</Ani>
+	<Ani Frame="9000" Type="Diffuse">100,102,51,153</Ani>
+	<Ani Frame="10000" Type="Diffuse">0,0,0,0</Ani>
+
+	
+</InfoData>
+</ParticleScript>

@@ -1,0 +1,214 @@
+<ModelScript version="1.5.0">
+
+<Information>
+	<Name>m00745</Name>
+	<Type>TYPE2</Type>
+	<Part>BODY</Part>
+	<PickingBox>
+		<Min>-160.5, 0, -149.5</Min>
+		<Max>160.5, 777, 134.5</Max>
+	</PickingBox>
+	<CollisionBox>
+		<Min>-160.5, 0, -149.5</Min>
+		<Max>160.5, 777, 134.5</Max>
+	</CollisionBox>
+	<Foot>2</Foot>
+	<Culling>FALSE</Culling>
+	<DamageAct>FALSE</DamageAct>	
+        <LodCount>1</LodCount>
+	<Size>1</Size>
+	<BodyPart Type="HEAD" Bone="Bip001 Head">0, 0, 0</BodyPart>
+	<BodyPart Type="CHEST" Bone="Bip001 Spine2">0, 0, 0</BodyPart>
+	<BodyPart Type="PELVIS" Bone="b_Sword">0, 0, 0</BodyPart>
+	<BodyPart Type="L_HAND" Bone="B_weapon_01(mirrored)">0, 0, 0</BodyPart>
+	<BodyPart Type="R_HAND" Bone="B_weapon_01">0, 0, 0</BodyPart>
+	<BodyPart Type="L_FOOT" Bone="B_weapon_002">0, 0, 0</BodyPart>
+	<BodyPart Type="R_FOOT" Bone="B_weapon_002(mirrored)">0, 0, 0</BodyPart>
+	<AttachEffect>4679.txt</AttachEffect>
+	<AttachEffect>4048.txt</AttachEffect>
+	<AttachEffect>4677.txt</AttachEffect>
+	<AttachEffect>4678.txt</AttachEffect>
+</Information>
+
+<Mesh>
+	<FileName>m30346.rmb</FileName>
+</Mesh>
+
+<Animation Group="G_DEFAULT">
+	<Action Name ="A_IDLE" Loop="FALSE">
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE1" Loop="FALSE">
+		<FileName>m00745_01.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE2" Loop="FALSE">
+		<FileName>m00745_01.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE3" Loop="FALSE">
+		<FileName>m00745_01.rab</FileName>
+	</Action>
+
+	<Action Name ="A_BATTLE_STAND" Loop="TRUE">
+		<FileName>m00745_03.rab</FileName>
+	</Action>
+
+	<Action Name ="A_WALK" Loop="TRUE">
+		<FileName>m00745_02.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ITEM_PICKUP" Loop="FALSE">
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DEAD" Loop="FALSE">
+		<FileName>m00745_13.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="1" Volume="100">m00745-die-1.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="2" Volume="100">DROP_14.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="92" Volume="100">DROP_02.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="93" Volume="100">m00745-die-2.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_USE_STICK" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00745_06.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SPELL" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="60" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00745_19.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="10" Volume="100">m00745-Atk-1.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="58" Volume="100">m00745-Atk-2.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_SKILL1" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL2" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL3" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL4" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL5" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL6" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL7" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL8" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL9" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL10" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_RUN" Loop="TRUE">
+		<FileName>m00745_04.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ATTACK1" Loop="FALSE">
+		<FileName>m00745_05.rab</FileName>
+		<FrameEvent Type="DELAY" Frame="16" DamageType="R" ID="0" Delay="0.15"></FrameEvent>
+		<FrameEvent Type="DELAY" Frame="17" DamageType="R" ID="0" Delay="0.15"></FrameEvent>
+		<FrameEvent Type="SOUND" Frame="13" Volume="50">SWORD_01.wav</FrameEvent>
+		<FrameEvent Type="EFFECT" Frame="13">4690.txt</FrameEvent>
+	</Action>
+
+	<Action Name ="A_ATTACK2" Loop="FALSE">
+		<FileName>m00745_06.rab</FileName>
+                <FrameEvent Type="DELAY" Frame="22" DamageType="D" ID="0" Delay="0.2"></FrameEvent>
+		<FrameEvent Type="SOUND" Frame="18" Volume="100">m00745-Atk-3.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="20" Volume="100">Stone_00.wav</FrameEvent>
+		<FrameEvent Type="EFFECT" Frame="18">4691.txt</FrameEvent>
+	</Action>
+
+	<Action Name ="A_DAMAGE_UP" Loop="FALSE">
+		<FileName>m00745_03.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DAMAGE_DOWN" Loop="FALSE">
+		<FileName>m00745_03.rab</FileName>
+
+	</Action>
+
+	<Action Name ="A_DAMAGE_LEFT" Loop="FALSE">
+		<FileName>m00745_03.rab</FileName>
+
+	</Action>
+
+	<Action Name ="A_DAMAGE_RIGHT" Loop="FALSE">
+		<FileName>m00745_03.rab</FileName>
+
+	</Action>
+
+  	<Action Name ="A_WALK_BACK" Loop="TRUE">
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_JUMP" Loop="FALSE">
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_FALL" Loop="FALSE">
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_LAND" Loop="FALSE">
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_REGEN" Loop="FALSE">
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SAY" Loop="FALSE">
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ON_THE_WATER" Loop="TRUE">
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SWIM" Loop="TRUE">
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SWIM_BACK" Loop="TRUE">
+		<FileName>m00745_00.rab</FileName>
+	</Action>
+	
+	
+</Animation>
+
+</ModelScript>

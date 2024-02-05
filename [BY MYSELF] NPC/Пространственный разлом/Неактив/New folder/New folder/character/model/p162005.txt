@@ -1,0 +1,156 @@
+<ParticleScript>
+<InfoData Name="lightning_1">
+	<PosLink>true</PosLink>
+	<Loop>true</Loop>
+	<Power>150</Power>
+	<PowerVari>50</PowerVari>
+	<PullDist>0</PullDist>
+	<PullPower>0</PullPower>
+	<Life>1000.0</Life>
+	<Cone>0.0</Cone>
+	<LocalPos>0,1000,0</LocalPos>
+	<Gravity>0,0,0</Gravity>
+	<SelfRotate>0,0,2</SelfRotate>
+	<SelfRotateVari>0,0,2</SelfRotateVari>
+	<Rotate>0,0,0</Rotate>
+	<Scale>12,12,12</Scale>
+	<ScaleVari>5,5,5</ScaleVari>
+	<Direction>0,90,90</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType> 
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>none</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>1000</EndTime>
+	<MakeCount>20</MakeCount>
+	<MakeTime>50</MakeTime>
+	<Texture>smog_cloud05.dds</Texture>
+	<StartShape Size="1000">circle_line</StartShape>
+
+	<Ani Frame="0" Type="Scale">5,5,5</Ani>	
+	<Ani Frame="50" Type="Scale">10,10,10</Ani>
+	<Ani Frame="1000" Type="Scale">5,5,5</Ani>	
+
+	<Ani Frame="0" Type="Diffuse">0,0,0,0</Ani>
+	<Ani Frame="100" Type="Diffuse">255,102,51,153</Ani>
+	<Ani Frame="500" Type="Diffuse">155,102,51,153</Ani>
+	<Ani Frame="1000" Type="Diffuse">0,0,0,0</Ani>
+
+	
+</InfoData>
+
+<InfoData Name="lightning_1">
+	<PosLink>true</PosLink>
+	<Loop>true</Loop>
+	<Power>1</Power>
+	<PowerVari>1</PowerVari>
+	<PullDist>0</PullDist>
+	<PullPower>0</PullPower>
+	<Life>1000.0</Life>
+	<Cone>0.0</Cone>
+	<LocalPos>0,1000,0</LocalPos>
+	<Gravity>0,0,0</Gravity>
+	<SelfRotate>0,0,0</SelfRotate>
+	<SelfRotateVari>0,0,8</SelfRotateVari>
+	<Rotate>0,0,90</Rotate>
+	<Scale>2750,2750,2750</Scale>
+	<ScaleVari>10,10,10</ScaleVari>
+	<Direction>0,0,0</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType> 
+	<BillboardType>none</BillboardType>
+	<PlayType>none</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>500</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>5</MakeTime>
+	<Texture>Ring_Blur07.dds</Texture>
+	<StartShape Size="1" Size2="50", Size3="1">cube</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>	
+	<Ani Frame="50" Type="Scale">1.1,1.1,1.1</Ani>	
+
+	<Ani Frame="0" Type="Diffuse">0,0,0,0</Ani>
+	<Ani Frame="50" Type="Diffuse">25,102,51,153</Ani>
+	<Ani Frame="1000" Type="Diffuse">0,0,0,0</Ani>
+
+	
+</InfoData>
+
+<InfoData Name="lightning_1">
+	<PosLink>true</PosLink>
+	<Loop>true</Loop>
+	<Power>1</Power>
+	<PowerVari>1</PowerVari>
+	<PullDist>0</PullDist>
+	<PullPower>0</PullPower>
+	<Life>10000.0</Life>
+	<Cone>0.0</Cone>
+	<LocalPos>0,1000,0</LocalPos>
+	<Gravity>0,0,0</Gravity>
+	<SelfRotate>0,0,0</SelfRotate>
+	<SelfRotateVari>0,0,0</SelfRotateVari>
+	<Rotate>0,0,90</Rotate>
+	<Scale>1,1,1</Scale>
+	<ScaleVari>0,0,0</ScaleVari>
+	<Direction>0,0,0</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType> 
+	<BillboardType>none</BillboardType>
+	<PlayType>none</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>10000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>1000</MakeTime>
+	<Texture>ring_glow02.dds</Texture>
+	<StartShape Size="1" Size2="25", Size3="1">cube</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>	
+	<Ani Frame="10000" Type="Scale">3250,3250,3250</Ani>	
+
+	<Ani Frame="0" Type="Diffuse">0,0,0,0</Ani>
+	<Ani Frame="50" Type="Diffuse">50,255,255,255</Ani>
+	<Ani Frame="9000" Type="Diffuse">50,255,255,255</Ani>
+	<Ani Frame="10000" Type="Diffuse">0,0,0,0</Ani>
+
+	
+</InfoData>
+<InfoData Name="lightning_1">
+	<PosLink>true</PosLink>
+	<Loop>true</Loop>
+	<Power>1</Power>
+	<PowerVari>1</PowerVari>
+	<PullDist>0</PullDist>
+	<PullPower>0</PullPower>
+	<Life>10000.0</Life>
+	<Cone>0.0</Cone>
+	<LocalPos>0,1000,0</LocalPos>
+	<Gravity>0,0,0</Gravity>
+	<SelfRotate>0,0,0.4</SelfRotate>
+	<SelfRotateVari>0,0,0.5</SelfRotateVari>
+	<Rotate>0,0,90</Rotate>
+	<Scale>1,1,1</Scale>
+	<ScaleVari>0,0,0</ScaleVari>
+	<Direction>0,0,0</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType> 
+	<BillboardType>none</BillboardType>
+	<PlayType>none</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>10000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>1250</MakeTime>
+	<Texture>Ring_Blur05.dds</Texture>
+	<StartShape Size="1" Size2="25", Size3="1">cube</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>	
+	<Ani Frame="10000" Type="Scale">3250,3250,3250</Ani>	
+
+	<Ani Frame="0" Type="Diffuse">0,0,0,0</Ani>
+	<Ani Frame="50" Type="Diffuse">150,102,51,153</Ani>
+	<Ani Frame="9000" Type="Diffuse">150,102,51,153</Ani>
+	<Ani Frame="10000" Type="Diffuse">0,0,0,0</Ani>
+
+	
+</InfoData>
+</ParticleScript>

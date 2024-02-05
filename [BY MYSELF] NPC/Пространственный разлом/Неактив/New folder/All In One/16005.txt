@@ -1,0 +1,26 @@
+<EffectScript>
+<Information>
+	<Name> mana </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>p16005.txt</Particle>
+
+	<Attach>
+    		<BodyPart>BV_BOTTOM</BodyPart>
+		<Pos>0,-111,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>false</Rot>	
+		
+	</Attach>
+
+</Information>
+<EffectFile>16005.reb</EffectFile>
+<Event> 
+<FrameEvent Type="SOUND" Frame="39">sphere.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+
