@@ -1,0 +1,21 @@
+<EffectScript>
+<Information>
+	<Name> firecracker03 </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>false</Loop>
+	<Particle>P0032.txt</Particle>
+	<Attach>
+    		<BodyPart>bvbottom</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Once>true</Once>
+	</Attach>
+
+</Information>
+<EffectFile>1097_03.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

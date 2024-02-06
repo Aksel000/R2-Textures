@@ -1,0 +1,11 @@
+<EffectScript>
+<Information>
+	<Name>Lev_up</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0016.txt</Particle>
+</Information>
+<EffectFile>1045.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">exp_cure.wav</FrameEvent>
+</Event>
+</EffectScript>

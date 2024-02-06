@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>RED_DRUG</Name>
+	<Dynamic>false</Dynamic>
+	
+</Information>
+<EffectFile>3002.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>Battlestone</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>0015.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>touch_blue</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>0023.reb</EffectFile>
+</EffectScript>

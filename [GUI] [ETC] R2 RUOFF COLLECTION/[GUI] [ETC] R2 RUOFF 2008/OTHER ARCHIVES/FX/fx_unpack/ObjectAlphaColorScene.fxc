@@ -1,0 +1,155 @@
+
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float3 vecViewPosition;
+float3 vecSunDirection;
+float3 vecSunColor;		
+float3 vecSkyColor;
+float fMultiplySunColor;
+float fMultiplyHorizonColor;
+float3 vecHorizonColor;
+float fHorizonExp;
+float fSunExp;
+float fFogStart;
+float fFogEnd;
+float fScatterEnd;
+float3 vecScatterStartColor;
+float3 vecScatterEndColor;
+float fMultiplyObjectScatter;
+float3 vecFogColor;
+float3 vecLowFogColor;
+
+float4x4 matSunLightDirection;
+float3 vecLightEnable;
+float4 vecCloudShadow;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;    
+    float3 Normal	  : TEXCOORD1;    
+    float4 Fex		  : TEXCOORD2;
+    float3 Lin		  : TEXCOORD3;
+    float3 Color	  : TEXCOORD4;
+    float2 CloudTex   : TEXCOORD5;
+};
+
+sampler ColorTextureSampler : register(s0);
+sampler NormalTextureSampler : register(s1);
+sampler CloudShadowTextureSampler : register( s4 );
+
+samplerCUBE LightSampler : register( s2 );
+
+void HoffmanScattering( in float4 vecPosition, out float3 vecLin, out float3 vecFex )
+{
+	float4 vecTransformPosition = mul( vecPosition, matWorld );
+	float3 vecViewDirection = vecTransformPosition - vecViewPosition;
+	float fLens = length( vecViewDirection );
+		
+	vecViewDirection = normalize( vecViewDirection );
+	
+	float fTheta = saturate( dot( vecSunDirection, vecViewDirection ) );
+	float fSunTheta = pow( fTheta, fSunExp );
+	
+	float3 vecXYDirection = vecViewDirection;	
+	vecXYDirection.y = 0.0f;	
+	vecXYDirection = normalize( vecXYDirection );		
+		
+	float3 vecHorizon = pow( saturate( dot( vecXYDirection, vecViewDirection ) ), fHorizonExp ) * vecHorizonColor * fMultiplyHorizonColor;
+	
+	vecSunColor = float3( 0.0f, 0.0f, 0.0f );
+	
+	float3 vecInscatter = vecSunColor * fSunTheta * fMultiplySunColor + vecFogColor;// + vecHorizon;		
+	
+	float fPhase1 = 1.0f + fTheta * fTheta;		
+	
+	float fFogRate = saturate( ( fLens - fFogStart ) / ( fFogEnd - fFogStart ) );
+	fFogRate *= fPhase1;	
+		
+	vecInscatter = lerp( float3( 0.0f, 0.0f, 0.0f ), vecInscatter * fPhase1, fFogRate );		
+	
+	
+	vecLin = vecInscatter;	
+		
+	float fScatterRate = saturate( fLens / fScatterEnd );
+	vecFex = lerp( vecScatterStartColor, vecScatterEndColor, fScatterRate ) * fMultiplyObjectScatter;		
+}
+
+float2 CloudShadow( in float4 vPos )
+{
+	float4 vecPosition = mul( vPos, matWorld );		
+	vecPosition.x = vecPosition.x * vecCloudShadow.x;
+	vecPosition.y = vecPosition.z * vecCloudShadow.y;
+	vecPosition.xy += float2( vecCloudShadow.zw );
+	
+	return vecPosition;
+}
+
+VS_OUTPUT StandardAlphaColor_MeshShader_vs( float4 vPos : POSITION, 
+								  float3 vNormal : NORMAL,		
+								  float4 vColor : COLOR,						  
+								  float2 vTexCoord0 : TEXCOORD0 )
+{    
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );
+    Output.Texture = vTexCoord0;
+    //Output.Normal =  mul( matSunLightDirection, mul( vNormal, (float3x3)matWorld ) );
+    Output.Normal =  mul( vNormal * 2.0f - 1.0f, (float3x3)matWorld );
+    
+    ///////////////////////////////////////////
+    
+    	
+	float3 vecFex, vecLin;
+	
+	HoffmanScattering( vPos, vecLin, vecFex );        
+	
+	Output.Fex.xyz = vecFex;	
+
+	float4 vecPos = mul( vPos, matWorld );	
+    float fLens = length( vecPos - vecViewPosition );    
+    Output.Fex.w = saturate( ( fLens - fFogStart ) / ( fFogEnd - fFogStart ) );    
+	
+	Output.Lin = vecLin * 0.4f;
+	
+	Output.Color = max( float3( 0.3f, 0.3f, 0.3f ), float3( vColor.x, vColor.y, vColor.z ) );
+	Output.CloudTex = CloudShadow( vPos );
+            
+    return Output;
+}
+
+struct PS_OUTPUT
+{
+    float4 Color[2] : COLOR0;    
+};
+
+
+
+PS_OUTPUT StandardAlphaColor_MeshShader_ps( float3 Tex : TEXCOORD0,							   
+							   float3 Normal : TEXCOORD1,
+							   float4 Fex : TEXCOORD2,
+							   float3 Lin : TEXCOORD3,
+							   float3 Color : TEXCOORD4,
+							   float2 CloudShadowTex : TEXCOORD5 ) : COLOR
+{	
+	PS_OUTPUT Output;
+	float4 vecLight = texCUBE( LightSampler, Normal ) * 1.8f;			
+	float4 vecColorTex = tex2D( ColorTextureSampler, Tex );// * vecLight * 1.4f;
+	
+	/*
+	if( vecLightEnable.x > 0.5f )	
+		vecColorTex.xyz = vecColorTex.xyz * Color.xyz * 1.4f * vecLight.xyz;	
+	else	
+		vecColorTex.xyz = vecColorTex.xyz * Color.xyz * 1.0f;	
+		*/
+	
+		
+	vecColorTex.xyz = vecColorTex.xyz * vecLight.xyz;	
+	vecColorTex.xyz = vecColorTex * Fex + Lin;
+	vecColorTex.xyz = lerp( vecColorTex.xyz, vecLowFogColor.xyz, Fex.w );
+	//vecColorTex.xyz *= max( ( 1.0f - tex2D( CloudShadowTextureSampler, CloudShadowTex ).a ), 0.4f );		
+	//vecColorTex.xyz = vecLight.xyz;	
+		
+	Output.Color[ 0 ] = vecColorTex;
+	Output.Color[ 1 ] = float4( 0.0f, 0.0f, 0.0f, vecColorTex.a );
+	return Output;
+}

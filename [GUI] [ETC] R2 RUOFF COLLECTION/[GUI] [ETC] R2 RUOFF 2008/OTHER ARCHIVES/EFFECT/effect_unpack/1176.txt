@@ -1,0 +1,16 @@
+<EffectScript>
+<Information>
+	<Name>Giant_king</Name>
+	<Dynamic>false</Dynamic>
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		<Once>true</Once>
+	</Attach>
+
+</Information>
+<EffectFile>1176.reb</EffectFile>
+</EffectScript>

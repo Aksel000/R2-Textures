@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>portal_new</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<PickingBox>
+		<Min>-400,-400,-400</Min>
+		<Max>400,400,400</Max>
+	</PickingBox>
+	<CullingRadius>800</CullingRadius>
+</Information>
+<EffectFile>0115.reb</EffectFile>
+</EffectScript>

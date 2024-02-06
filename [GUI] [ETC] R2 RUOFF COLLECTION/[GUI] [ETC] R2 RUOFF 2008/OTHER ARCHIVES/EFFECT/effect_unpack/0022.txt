@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>Water_Bubble</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>0022.reb</EffectFile>
+</EffectScript>

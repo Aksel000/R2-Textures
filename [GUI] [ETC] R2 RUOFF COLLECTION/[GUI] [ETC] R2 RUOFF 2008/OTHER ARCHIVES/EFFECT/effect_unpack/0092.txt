@@ -1,0 +1,20 @@
+<EffectScript>
+<Information>
+	<Name>skill_DV_UP</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<PickingBox>
+		<Min>-400,-400,-400</Min>
+		<Max>400,400,400</Max>
+	</PickingBox>
+	<CullingRadius>800</CullingRadius>
+
+
+</Information>
+<EffectFile>0092.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

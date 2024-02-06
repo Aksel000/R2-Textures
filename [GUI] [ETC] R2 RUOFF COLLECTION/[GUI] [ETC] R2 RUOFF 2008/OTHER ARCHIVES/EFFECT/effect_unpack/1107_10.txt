@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>effect_fireboltcast</Name>
+	<Dynamic>false</Dynamic>
+
+</Information>
+<EffectFile>1107_10.reb</EffectFile>
+</EffectScript>

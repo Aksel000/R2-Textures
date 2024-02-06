@@ -1,0 +1,217 @@
+<ParticleScript>
+
+
+
+
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>100</Power>
+	<PowerVari>1.0</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>100</PullPower>
+	<Life>2000.0</Life>
+	<Cone>1</Cone>
+	<LocalPos>0,0,0</LocalPos>
+	<Gravity>0000,-700,000</Gravity>
+	<SelfRotate>0,0,.5</SelfRotate>
+	<SelfRotateVari>0,0,.5</SelfRotateVari>
+	<Rotate>90,90,90</Rotate>
+	<Scale>80,80,80</Scale>
+	<ScaleVari>30,30,30</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>resub_SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>pull</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>100</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>30</MakeTime>
+	<Texture>smog_cloud10.dds</Texture>
+	<StartShape Size="10">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">0,0,0</Ani>
+	
+	<Ani Frame="600" Type="Scale">1,1,1</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="100" Type="Diffuse">255, 255,255,255</Ani>
+	<Ani Frame="400" Type="Diffuse">255, 255,255,255</Ani>
+	<Ani Frame="600" Type="Diffuse">0,0,0,0</Ani>
+	
+</InfoData>
+
+
+
+
+
+
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>30</Power>
+	<PowerVari>35.0</PowerVari>
+	<PullDist>100 </PullDist>
+	<PullPower>100</PullPower>
+	<Life>2000.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,-.5,0</LocalPos>
+	<Gravity>0000,80,000</Gravity>
+	<SelfRotate>0,0,5</SelfRotate>
+	<SelfRotateVari>0,0,0</SelfRotateVari>
+	<Rotate>90,90,90</Rotate>
+	<Scale>6,6,6</Scale>
+	<ScaleVari>10,10,10</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>1300</EndTime>
+	<MakeCount>2</MakeCount>
+	<MakeTime>3</MakeTime>
+	<Texture>Glow_noncenter.dds</Texture>
+	<StartShape Size="20">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">0,0,0</Ani>
+	<Ani Frame="300" Type="Scale">1.3,1.3,1.3</Ani>
+	<Ani Frame="800" Type="Scale">0,0,0</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="300" Type="Diffuse">255, 255,100,30</Ani>
+	<Ani Frame="800" Type="Diffuse">0, 255,50,50</Ani>
+	
+</InfoData>
+
+
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>3</Power>
+	<PowerVari>1.0</PowerVari>
+	<PullDist>100 </PullDist>
+	<PullPower>100</PullPower>
+	<Life>2000.0</Life>
+	<Cone>1</Cone>
+	<LocalPos>0,0,0</LocalPos>
+	<Gravity>0000,230,000</Gravity>
+	<SelfRotate>0,0,1</SelfRotate>
+	<SelfRotateVari>0,0,1</SelfRotateVari>
+	<Rotate>90,90,90</Rotate>
+	<Scale>40,40,40</Scale>
+	<ScaleVari>100,100,100</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>none</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>1300</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>3</MakeTime>
+	<Texture>Ring_Blur07.DDS</Texture>
+	<StartShape Size="8">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">0,0,0</Ani>
+	
+	<Ani Frame="600" Type="Scale">1,1.5,1</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0,255,0,0</Ani>
+	<Ani Frame="300" Type="Diffuse">255, 255,100,100</Ani>
+	<Ani Frame="600" Type="Diffuse">0,255,10,10</Ani>
+	
+</InfoData>
+
+
+
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>3</Power>
+	<PowerVari>1.0</PowerVari>
+	<PullDist>100 </PullDist>
+	<PullPower>100</PullPower>
+	<Life>2000.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,0,0</LocalPos>
+	<Gravity>0000,120,000</Gravity>
+	<SelfRotate>0,0,0</SelfRotate>
+	<SelfRotateVari>0,0,0</SelfRotateVari>
+	<Rotate>0,0,0</Rotate>
+	<Scale>40,40,40</Scale>
+	<ScaleVari>100,100,100</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>none</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>1300</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>3</MakeTime>
+	<Texture>Ring_Blur07.dds</Texture>
+	<StartShape Size="8">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">0,0,0</Ani>
+	
+	<Ani Frame="500" Type="Scale">.5,1,.5</Ani>
+	<Ani Frame="1000" Type="Scale">1.5,3,1.5</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0,255,0,0</Ani>
+	<Ani Frame="300" Type="Diffuse">255, 255,100,100</Ani>
+	<Ani Frame="600" Type="Diffuse">0,255,110,110</Ani>
+	
+</InfoData>
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>2</Power>
+	<PowerVari>5.0</PowerVari>
+	<PullDist>100 </PullDist>
+	<PullPower>100</PullPower>
+	<Life>2000.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,-0.5,0</LocalPos>
+	<Gravity>0000,10,000</Gravity>
+	<SelfRotate>0,0,10</SelfRotate>
+	<SelfRotateVari>0,0,0</SelfRotateVari>
+	<Rotate>90,90,90</Rotate>
+	<Scale>60,60,60</Scale>
+	<ScaleVari>40,40,40</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>1300</EndTime>
+	<MakeCount>2</MakeCount>
+	<MakeTime>3</MakeTime>
+	<Texture>shape_glow_leaf.DDS</Texture>
+	<StartShape Size="8">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">0,0,0</Ani>
+	<Ani Frame="300" Type="Scale">.6,.6,.6</Ani>
+	<Ani Frame="800" Type="Scale">0,0,0</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="300" Type="Diffuse">150, 255,120,120</Ani>
+	<Ani Frame="800" Type="Diffuse">0, 255,120,120</Ani>
+	
+</InfoData>
+
+
+
+</ParticleScript>

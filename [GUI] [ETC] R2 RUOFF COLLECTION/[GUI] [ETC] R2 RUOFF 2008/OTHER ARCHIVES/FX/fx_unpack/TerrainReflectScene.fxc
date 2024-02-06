@@ -1,0 +1,79 @@
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float3 vecViewPosition;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;
+    float2 DetailTexture : TEXCOORD1;
+    float4 Lin : TEXCOORD3 ;
+    float3 Pos : TEXCOORD6;
+};
+
+sampler ColorTextureSampler : register(s0);
+sampler BlendTextureSampler : register(s1);
+sampler ShadingTextureSampler : register(s2);
+sampler CloudShadowSampler : register(s3);
+sampler BlendTexture2Sampler : register(s4);
+
+sampler NormalTextureSampler : register(s5);
+sampler TangentUSampler : register(s6);
+sampler TangentVSampler : register(s7);
+
+sampler Detail1 : register(s8);
+sampler Detail2 : register(s9);
+sampler Detail3 : register(s10);
+sampler Detail4 : register(s11);
+
+sampler DetailBump1 : register(s12);
+sampler DetailBump2 : register(s13);
+sampler DetailBump3 : register(s14);
+sampler DetailBump4 : register(s15);
+	
+VS_OUTPUT TerrainReflect_Shader_vs( float4 vPos : POSITION,							  
+								  float2 vTexCoord0 : TEXCOORD0 )
+{	
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );
+    Output.Texture = vTexCoord0;
+    Output.DetailTexture = vTexCoord0 * float2( 80.0f, 80.0f );            
+    
+    Output.Lin.xyz = float3( 1,1,1 );
+    Output.Lin.w = 0;
+	Output.Pos = mul( vPos, matWorld );
+    return Output;
+}
+half4 TerrainReflect_Shader_ps( float2 Tex : TEXCOORD0,
+						 float2 DetailTex : TEXCOORD1,
+						 float4 Lin : TEXCOORD3,
+						 float3 Pos : TEXCOORD6 ) : COLOR
+{	
+	half4 vecDetailMask = tex2D( BlendTextureSampler, Tex );				
+	half4 vecDetailLayer1 = tex2D( DetailBump1, DetailTex );
+	half4 vecDetailLayer2 = tex2D( DetailBump2, DetailTex );
+	half4 vecDetailLayer3 = tex2D( DetailBump3, DetailTex );
+	half4 vecDetailLayer4 = tex2D( DetailBump4, DetailTex );
+	
+	half4 vecDetailNormalTex;
+	vecDetailNormalTex = lerp( vecDetailLayer1, vecDetailLayer2, vecDetailMask.x );
+	vecDetailNormalTex = lerp( vecDetailNormalTex, vecDetailLayer3, vecDetailMask.y );
+	vecDetailNormalTex = lerp( vecDetailNormalTex, vecDetailLayer4, vecDetailMask.z );		
+	vecDetailNormalTex = ( vecDetailNormalTex - 0.5f ) * 2.0f;
+	
+	vecDetailLayer1 = tex2D( Detail1, DetailTex );
+	vecDetailLayer2 = tex2D( Detail2, DetailTex );
+	vecDetailLayer3 = tex2D( Detail3, DetailTex );
+	vecDetailLayer4 = tex2D( Detail4, DetailTex );
+	
+	half3 vecDetailTex;		
+	vecDetailTex = lerp( vecDetailLayer1, vecDetailLayer2, vecDetailMask.x );
+	vecDetailTex = lerp( vecDetailTex, vecDetailLayer3, vecDetailMask.y );
+	vecDetailTex = lerp( vecDetailTex, vecDetailLayer4, vecDetailMask.z );			
+	vecDetailTex = vecDetailTex * tex2D( ColorTextureSampler, Tex );	
+		
+	float4 vecColorTex;
+	vecColorTex.xyz = vecDetailTex;
+	vecColorTex.a = vecDetailMask.a;
+	return vecColorTex;	
+}

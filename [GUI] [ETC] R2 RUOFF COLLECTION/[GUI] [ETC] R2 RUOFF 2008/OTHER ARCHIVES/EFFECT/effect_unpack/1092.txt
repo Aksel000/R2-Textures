@@ -1,0 +1,18 @@
+<EffectScript>
+<Information>
+	<Name>air</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	
+
+
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+	</Attach>
+	
+</Information>
+<EffectFile>1092.reb</EffectFile>
+</EffectScript>

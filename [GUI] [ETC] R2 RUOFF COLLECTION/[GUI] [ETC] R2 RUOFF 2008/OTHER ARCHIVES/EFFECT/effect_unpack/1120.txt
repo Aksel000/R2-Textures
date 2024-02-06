@@ -1,0 +1,22 @@
+<EffectScript>
+<Information>
+	<Name>NECRO</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>P0037.txt</Particle>
+
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+	</Attach>
+
+</Information>
+<EffectFile>1120.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,93 @@
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float3 vecViewPosition;
+float3 vecSunDirection;
+
+float3 vecSunColor;		
+float3 vecSkyColor;
+float fMultiplySunColor;
+float fMultiplyHorizonColor;
+float3 vecHorizonColor;
+float fHorizonExp;
+float fSunExp;
+
+struct VS_INPUT
+{
+	float4 Position : POSITION;
+	float2 Texture  : TEXCOORD0;
+	float4 Diffuse  : COLOR0;
+};
+
+struct VS_OUTPUT
+{
+    float4 Position     : POSITION;
+    float2 Texture      : TEXCOORD0;    
+    float4 Diffuse      : COLOR0;
+};
+
+void HoffmanScattering( in float4 vecPosition, out float3 vecLin, out float3 vecFex )
+{
+	float4 vecTransformPosition = mul( vecPosition, matWorld );
+	float3 vecViewDirection = vecTransformPosition - vecViewPosition;
+		
+	vecViewDirection = normalize( vecViewDirection );
+	
+	float fTheta = saturate( dot( vecSunDirection, vecViewDirection ) );
+	fTheta = pow( fTheta, fSunExp );
+	
+	float3 vecXYDirection = vecViewDirection;	
+	vecXYDirection.y = 0.0f;	
+	vecXYDirection = normalize( vecXYDirection );		
+		
+	float3 vecHorizon = pow( saturate( dot( vecXYDirection, vecViewDirection ) ), fHorizonExp ) * vecHorizonColor * fMultiplyHorizonColor;
+	
+	float3 vecInscatter = vecSunColor * fTheta * fMultiplySunColor + vecSkyColor + vecHorizon;
+	
+	//vecInscatter = vecHorizon + vecSkyColor;
+	
+	vecLin = vecInscatter;
+	
+	vecFex = float3( 0.0f, 0.0f, 0.0f );			
+	/*
+	
+	float fTheta = dot( vecSunDirection, vecViewDirection );		
+	
+	float3 vecViewDirection = vecTransformPosition - vecViewPosition;
+	float fDistance = length( vecViewDirection ) * 0.32658227f;
+	
+	vecViewDirection = normalize( vecViewDirection );
+	
+	float fTheta = dot( vecSunDirection, vecViewDirection );	
+	
+	float fPhase1 = 1.0f + fTheta * fTheta;	
+	float fPhase2 = pow( rsqrt( vecHGg.y - vecHGg.z * fTheta ), 3 ) * vecHGg.x;	
+	
+	float3 vecExtinction = exp( -vecBetaRPlusBetaM * fDistance );
+	
+	float3 vecTotalExtinction = vecExtinction * vecMultipliers.yzw;
+	float3 vecBetaRay = vecBetaDashR * fPhase1;
+	float3 vecBetaMie = vecBetaDashM * fPhase2;
+	float3 vecInscatter = ( vecBetaRay + vecBetaMie ) * vecOneOverBetaRPlusBetaM * ( 1.0f - vecExtinction );
+	
+	vecInscatter *= vecMultipliers.x;
+	vecInscatter *= vecSunColorAndIntensity.xyz * vecSunColorAndIntensity.w;
+	vecTotalExtinction *= vecSunColorAndIntensity.xyz * vecSunColorAndIntensity.w;	
+	*/
+	
+	//vecLin = vecInscatter;
+	//vecFex = vecTotalExtinction;	
+}
+
+VS_OUTPUT ImpostorCloud_Shader_vs( VS_INPUT In )
+{
+	VS_OUTPUT Output;
+	Output.Position = mul( In.Position, matWorldViewProj );
+    float3 vecLin, vecFex;
+    HoffmanScattering( In.Position, vecLin, vecFex );
+
+	Output.Texture = In.Texture;
+	float3 vecColor;
+	vecColor = In.Diffuse.xyz;
+	Output.Diffuse = float4( vecColor, In.Diffuse.w );
+	return Output;	
+}

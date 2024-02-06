@@ -1,0 +1,9 @@
+<EffectScript>
+<Information>
+	<Name>Loading_KR</Name>
+	<Dynamic>false</Dynamic>
+
+
+</Information>
+<EffectFile>Loading_KR.reb</EffectFile>
+</EffectScript>

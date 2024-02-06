@@ -1,0 +1,90 @@
+
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+
+float3 vecViewPosition;
+float3 vecSunDirection;
+
+float4x4 matSunLightDirection;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;
+    float3 Tangent	  : TEXCOORD1;
+    float3 Binormal   : TEXCOORD2;
+    float3 Normal	  : TEXCOORD3;            
+    float3 Half		  : TEXCOORD4;        
+};
+
+sampler ColorTextureSampler : register(s0);
+sampler NormalTextureSampler : register(s1);
+sampler SpecularTextureSampler : register(s2);
+samplerCUBE LightSampler : register( s3 );
+
+VS_OUTPUT Character_Normal_Shader_vs( float4 vPos : POSITION, 
+								  float3 vNormal : NORMAL,
+								  float3 vTangent : TANGENT,
+								  float3 vBinormal : BINORMAL,
+								  float2 vTexCoord0 : TEXCOORD0 )
+{    
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );
+    Output.Texture = vTexCoord0;
+    
+    float3x3 vecTransTangentSpace;
+    vecTransTangentSpace[ 0 ] = mul( vTangent, matWorld );
+    vecTransTangentSpace[ 1 ] = mul( vBinormal, matWorld );
+    vecTransTangentSpace[ 2 ] = mul( vNormal, matWorld);   
+    
+    Output.Tangent = float3( vecTransTangentSpace[ 0 ].x, vecTransTangentSpace[ 1 ].x, vecTransTangentSpace[ 2 ].x );
+    Output.Binormal = float3( vecTransTangentSpace[ 0 ].y, vecTransTangentSpace[ 1 ].y, vecTransTangentSpace[ 2 ].y );
+    Output.Normal = float3( vecTransTangentSpace[ 0 ].z, vecTransTangentSpace[ 1 ].z, vecTransTangentSpace[ 2 ].z );        
+    
+    
+    ///////////////////////////////////////    
+    
+    float4 vecTransformPosition = mul( vPos, matWorld );
+	float3 vecViewDirection = normalize( vecViewPosition - vecTransformPosition );
+	Output.Half = mul( vecTransTangentSpace, ( vecViewDirection + vecSunDirection ) );				
+            
+    return Output;
+}
+
+struct PS_OUTPUT
+{
+    float4 Color[2] : COLOR0;    
+};
+
+PS_OUTPUT Character_Normal_Shader_ps( float3 Tex : TEXCOORD0,
+							   float3 Tangent : TEXCOORD1,
+							   float3 Binormal : TEXCOORD2,
+							   float3 Normal : TEXCOORD3, 							   							   
+							   float3 Half : TEXCOORD4 )
+{
+	PS_OUTPUT OutputColor;	
+		
+	float3 NormalTex = ( tex2D( NormalTextureSampler, Tex ).xyz - 0.5f ) * 2.0f;			
+	NormalTex = normalize( NormalTex );
+	
+	float3x3 matRotate = float3x3( Tangent, Binormal, Normal );	
+	half3 vecTransNormal = mul( matRotate, NormalTex );	
+	
+	vecTransNormal = mul( matSunLightDirection , vecTransNormal );				
+	
+	float3 vecLight = texCUBE( LightSampler, vecTransNormal );		
+	
+	float3 vecSpecularMaskTexture = tex2D( SpecularTextureSampler, Tex );	    
+	
+	float3 vecSpecular = pow( max( dot( normalize( Half ), NormalTex ), 0.0f ), 8.0f ) * vecSpecularMaskTexture.x * 2.0f;
+	
+	vecLight = max( vecLight, 0.4f );	
+	float4 vecColorTex = tex2D( ColorTextureSampler, Tex ) * float4( vecLight, 1.0f ) * 1.5f;	
+	vecColorTex.xyz += vecSpecular.xyz;			
+	
+	OutputColor.Color[ 0 ] = vecColorTex;	
+	//OutputColor.Color[ 0 ] = float4( vecLight, 1.0f );
+	OutputColor.Color[ 1 ] = float4( 0.0f, 0.0f, 0.0f, 0.0f );
+	
+	return OutputColor;	
+}

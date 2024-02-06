@@ -1,0 +1,20 @@
+<EffectScript>
+<Information>
+	<Name>head</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	
+	<Attach>
+    		<BodyPart>CHEST</BodyPart>
+		<Pos>0,0,0</Pos>
+		<Scale>false</Scale>
+		<Rot>true</Rot>
+		
+	</Attach>
+	
+
+
+</Information>
+<EffectFile>1261.reb</EffectFile>
+	
+</EffectScript>

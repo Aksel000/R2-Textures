@@ -1,0 +1,37 @@
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float4 vecPickTerrainPoint;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float3 vecPosition    : TEXCOORD0;    
+};
+
+VS_OUTPUT TerrainRangeEdit_Shader_vs( float4 vPos : POSITION,							  
+								  float2 vTexCoord0 : TEXCOORD0 )
+{	
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );
+	Output.vecPosition = mul( vPos, matWorld );		
+	    
+    return Output;
+}
+half4 TerrainRangeEdit_Shader_ps( float3 vecPosition : TEXCOORD0 ) : COLOR
+{	
+	float3 vecCenterLens = vecPickTerrainPoint - vecPosition;		
+	vecCenterLens.y = 0.0f;
+		
+	float fLens = length( vecCenterLens ) / vecPickTerrainPoint.w;
+	fLens = 1.0f - fLens; 
+	
+	float fAlpha = 0.5f;		
+		
+	if( fLens > 0.1f )
+		fAlpha = 0.1f;
+	if( fLens < 0.0f )
+		fAlpha = 0.0f;
+	   
+	
+	return float4( 1.0f, 1.0f, 0.0f, fAlpha );
+}	

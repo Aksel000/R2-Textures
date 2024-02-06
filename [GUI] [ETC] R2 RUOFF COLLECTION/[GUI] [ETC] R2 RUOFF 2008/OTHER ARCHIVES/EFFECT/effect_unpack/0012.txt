@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>Calton</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<PickingBox>
+		<Min>-1000,-1000,-1000</Min>
+		<Max>1000,1000,1000</Max>
+	</PickingBox>
+	<CullingRadius>4100</CullingRadius>
+</Information>
+<EffectFile>0012.reb</EffectFile>
+</EffectScript>

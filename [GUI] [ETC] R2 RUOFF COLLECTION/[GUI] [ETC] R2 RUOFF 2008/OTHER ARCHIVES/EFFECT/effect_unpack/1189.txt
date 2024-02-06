@@ -1,0 +1,22 @@
+<EffectScript>
+<Information>
+	<Name>elfking_ice</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<Particle>P0064.txt</Particle>
+	
+	
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos> 0,180,0</Pos>
+    		<Scale>TRUE</Scale>
+	
+	
+	</Attach>
+
+
+
+</Information>
+<EffectFile>1189.reb</EffectFile>
+</EffectScript>

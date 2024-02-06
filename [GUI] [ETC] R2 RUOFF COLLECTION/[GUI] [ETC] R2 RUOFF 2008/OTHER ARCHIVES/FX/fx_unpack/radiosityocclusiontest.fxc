@@ -1,0 +1,31 @@
+float4x4 matWorldView;
+
+struct VS_OUTPUT
+{
+    float4 Pos			: POSITION;
+    float2 Tex			: TEXCOORD0;    
+};
+
+sampler ColorTexture1Sampler : register(s0);
+sampler ColorTexture2Sampler : register(s1);
+sampler ColorTexture3Sampler : register(s2);
+
+VS_OUTPUT RadiosityOcclusionTest_Shader_vs( float4 vPos : POSITION, 								  
+											 float2 vTexCoord0 : TEXCOORD0,
+											 float2 vTexCoord1 : TEXCOORD1 )
+{    
+	VS_OUTPUT Output;	
+	
+	float4 vecPos = mul( vPos, matWorldView );	
+	Output.Pos = vecPos;		
+	Output.Tex = vTexCoord1;
+    return Output;
+}
+
+
+float4 RadiosityOcclusionTest_Shader_ps( float4 Tex : TEXCOORD0 ) : COLOR
+{			
+	float4 Color = tex2D( ColorTexture1Sampler, Tex ) + tex2D( ColorTexture2Sampler, Tex ) + tex2D( ColorTexture3Sampler, Tex );
+	Color.w = 1.0f;
+	return Color;
+}

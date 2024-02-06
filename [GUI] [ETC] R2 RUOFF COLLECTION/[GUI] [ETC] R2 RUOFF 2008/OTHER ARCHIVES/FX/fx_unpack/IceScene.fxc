@@ -1,0 +1,104 @@
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float4x4 matTexProj;
+float3 vecViewPosition;
+float4 vecIceColor;
+float4 vecSunLightDirection;
+float4 vecSunLightColor;
+float4 vecLowFogColor;
+float fFogStart;
+float fFogEnd;
+float fScale;
+float fStrength;
+
+struct VS_INPUT
+{
+	float4 Position : POSITION;
+	float2 Texture  : TEXCOORD0;
+	float3 Tangent  : TANGENT;
+	float3 Binormal : BINORMAL;
+	float3 Normal   : NORMAL;
+};
+
+struct VS_OUTPUT
+{
+    float4 Position		: POSITION;   // vertex position     
+    float2 Texture		: TEXCOORD0;
+    float3 Normal		: TEXCOORD1;
+    float3 ViewPos		: TEXCOORD2;
+    float4 ProjTexCoord : TEXCOORD3;
+    float2 BumpCoord    : TEXCOORD4;
+    float3 Tangent		: COLOR0;
+    float3 Binormal		: Color1;
+    float Fog           : TEXCOORD5;
+}; 
+
+struct PS_OUTPUT
+{
+    float4 Color[2] : COLOR0;    
+};
+
+sampler DiffuseTextureSampler  : register( s0 );
+sampler NormalTextureSampler   : register( s1 );
+sampler SpecularTextureSampler : register( s2 );
+sampler RefractTextureSampler  : register( s3 );
+samplerCUBE EnvTextureSampler      : register( s4 );
+sampler1D FresnelTextureSampler  : register( s5 );
+
+VS_OUTPUT ICE_Shader_vs( VS_INPUT In )
+{	
+	VS_OUTPUT Out;	
+	Out.Position = mul( In.Position, matWorldViewProj );
+	float4 vecPos = mul( In.Position, matWorld );
+	Out.ViewPos = normalize( vecPos - vecViewPosition );
+	Out.ProjTexCoord = mul( In.Position, matTexProj );
+	
+ 	float3x3 vecTransTangentSpace;
+	vecTransTangentSpace[ 0 ] = normalize( mul( In.Tangent * 2.0f - 1.0f, matWorld ) );
+	vecTransTangentSpace[ 1 ] = normalize( mul( In.Binormal * 2.0f - 1.0f, matWorld ) );
+	vecTransTangentSpace[ 2 ] = normalize( mul( In.Normal * 2.0f - 1.0f, matWorld ) );
+
+	Out.Tangent = float3( ( vecTransTangentSpace[ 0 ].x + 1.0f ) * 0.5f, ( vecTransTangentSpace[ 1 ].x + 1.0f ) * 0.5f, ( vecTransTangentSpace[ 2 ].x  + 1.0f ) * 0.5f);
+    Out.Binormal = float3( ( vecTransTangentSpace[ 0 ].y + 1.0f ) * 0.5f, ( vecTransTangentSpace[ 1 ].y + 1.0f ) * 0.5f, ( vecTransTangentSpace[ 2 ].y  + 1.0f ) * 0.5f);
+    Out.Normal = float3( vecTransTangentSpace[ 0 ].z, vecTransTangentSpace[ 1 ].z, vecTransTangentSpace[ 2 ].z );
+    Out.BumpCoord = In.Texture;
+    Out.Texture = In.Texture;
+    
+    float fLens = length( vecPos - vecViewPosition );    
+    Out.Fog = saturate( ( fLens - fFogStart ) / ( fFogEnd - fFogStart ) );    
+    
+    return Out;
+}
+
+PS_OUTPUT ICE_Shader_ps( VS_OUTPUT In ) : COLOR
+{
+	PS_OUTPUT Out;
+	float3 NormalTex = ( 2 * tex2D( NormalTextureSampler, In.BumpCoord ) - 1 );
+	NormalTex = NormalTex * fStrength;
+	
+	float4 ReflCoord, RefrCoord;
+	RefrCoord.xyz = NormalTex * fScale + In.ProjTexCoord.xyz;
+	RefrCoord.w = In.ProjTexCoord.w;
+	float4 refr = tex2Dproj( RefractTextureSampler, RefrCoord );
+
+	float3x3 matRotate = float3x3( In.Tangent * 2.0 - 1.0, In.Binormal * 2.0 - 1.0, In.Normal );
+	float3 vecTransNormal = mul( matRotate, NormalTex );
+		
+	float3 N = normalize( vecTransNormal );
+	float3 V = In.ViewPos;
+	float3 R = normalize( reflect( V, N ) );
+
+	float fFresnel = tex1D( FresnelTextureSampler, dot( R, N ) );
+	float4 SunLight = 200 * pow( saturate( dot( R, vecSunLightDirection ) ), 150 ) * vecSunLightColor;
+
+	float4 Env = texCUBE( EnvTextureSampler, normalize( reflect( V, float3( 0, 1, 0 ) ) ) );
+	refr.rgb = lerp( refr.rgb, Env.rgb, 0.1 );
+	refr.rgb *= vecIceColor + SunLight;
+
+	float4 DiffuseTex = tex2D( DiffuseTextureSampler, In.Texture );	
+	refr.rgb = lerp( DiffuseTex.rgb, refr.rgb, DiffuseTex.a );
+	refr.rgb = lerp( refr.rgb, vecLowFogColor.rgb, In.Fog );
+	Out.Color[ 0 ] = lerp( refr, vecIceColor, fFresnel );
+	Out.Color[ 1 ] = SunLight * 0.02;
+	return Out;
+}

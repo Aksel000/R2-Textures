@@ -1,0 +1,60 @@
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float4 vecViewPosition;
+float4 vecWaterColor;
+float fElapesTime;
+float fScale;
+float fSpeed;
+
+sampler WaterEnvTextureSampler : register( s0 );
+sampler WaterBumpTextureSampler0 : register( s1 );
+sampler WaterBumpTextureSampler1 : register( s2 );
+sampler WaterBumpTextureSampler2 : register( s3 );
+
+struct VS_INPUT
+{
+	float4 Position : POSITION;
+	float2 TextureCoord  : TEXCOORD0;
+};
+
+struct VS_OUTPUT
+{
+	float4 Position: POSITION;
+	float2 BumpTexCoord0 : TEXCOORD0;
+	float2 BumpTexCoord1 : TEXCOORD1;
+	float2 BumpTexCoord2 : TEXCOORD2;
+	float4 ViewPos : TEXCOORD3;	
+};
+
+VS_OUTPUT StandardWater_MeshShader_1_1_vs( VS_INPUT In )
+{
+	VS_OUTPUT Out;
+
+	Out.Position = mul( In.Position, matWorldViewProj );
+	float4 vecPos = mul( In.Position, matWorld );
+	Out.ViewPos = normalize( vecPos - vecViewPosition );
+	float fSpeedCoord = fSpeed * 0.01;
+	float fScaleCoord0 = fScale * 0.34;
+	float fScaleCoord1 = fScale * 0.5;
+    Out.BumpTexCoord0 = In.TextureCoord * float2( fScaleCoord0, fScaleCoord0 ) + fElapesTime * float2( -fSpeedCoord, 0 );
+	Out.BumpTexCoord1 = In.TextureCoord * float2( fScaleCoord1, fScaleCoord1 ) + fElapesTime * float2( fSpeedCoord, 0 );
+	Out.BumpTexCoord2 = In.TextureCoord * float2( 2, 2 );
+	return Out;
+}
+
+float4 StandardWater_MeshShader_1_1_ps( VS_OUTPUT In ) : COLOR
+{
+	//float3 BumpMap0 = tex2D( WaterBumpTextureSampler0, In.BumpTexCoord0 );
+	//float3 BumpMap1 = tex2D( WaterBumpTextureSampler1, In.BumpTexCoord1 );
+	//float3 BumpMap2 = tex2D( WaterBumpTextureSampler2, In.BumpTexCoord2 );
+	//float3 BumpMap = BumpMap0 * float3( 0.2, 0.2, 1 );
+	//BumpMap = BumpMap1 * float3( 0.2, 0.2, 1 ) + BumpMap;
+	//BumpMap = BumpMap2 * float3( 0.05, 0.05, 1 ) + BumpMap;
+	//float3 N = BumpMap.xzy;
+	//float3 V = In.ViewPos;
+	//float3 R = normalize( reflect( V, N ) );
+	//float4 Env = texCUBE( WaterEnvTextureSampler, R );
+	//Env.rgb *= vecWaterColor;
+	//Env.a = 0.3;
+	return float4( 0,0,0,0 );
+}

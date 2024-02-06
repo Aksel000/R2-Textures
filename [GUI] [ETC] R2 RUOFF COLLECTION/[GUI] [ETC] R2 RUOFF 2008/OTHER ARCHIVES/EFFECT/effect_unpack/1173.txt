@@ -1,0 +1,18 @@
+<EffectScript>
+<Information>
+	<Name>RED_DRUG</Name>
+	<Dynamic>false</Dynamic>
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		<Once>true</Once>
+
+
+	</Attach>
+
+</Information>
+<EffectFile>1173.reb</EffectFile>
+</EffectScript>

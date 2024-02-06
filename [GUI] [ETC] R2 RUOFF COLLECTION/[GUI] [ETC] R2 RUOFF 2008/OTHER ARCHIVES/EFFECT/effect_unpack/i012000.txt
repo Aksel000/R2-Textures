@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>WoodenArrow</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>i012000.reb</EffectFile>
+</EffectScript>

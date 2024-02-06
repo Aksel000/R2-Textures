@@ -1,0 +1,9 @@
+<EffectScript>
+<Information>
+	<Name>Loading_TW</Name>
+	<Dynamic>false</Dynamic>
+
+
+</Information>
+<EffectFile>Loading_TW.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,20 @@
+<EffectScript>
+<Information>
+	<Name>skill_reflection_down</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>
+    		<BodyPart>BVCENTER</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+	</Attach>
+
+
+</Information>
+<EffectFile>1126.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

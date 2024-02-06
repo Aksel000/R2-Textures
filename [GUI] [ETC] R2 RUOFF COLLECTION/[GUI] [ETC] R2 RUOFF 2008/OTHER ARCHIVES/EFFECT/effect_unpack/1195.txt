@@ -1,0 +1,18 @@
+
+<EffectScript>
+<Information>
+	<Name>elfking_ice</Name>
+	<Dynamic>false</Dynamic>
+	
+
+
+
+	
+	
+
+
+
+
+</Information>
+<EffectFile>1195.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>watertail</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<PickingBox>
+		<Min>-200,-200,-200</Min>
+		<Max>200,200,200</Max>
+	</PickingBox>
+	<CullingRadius>800</CullingRadius>
+</Information>
+<EffectFile>0070.reb</EffectFile>
+</EffectScript>

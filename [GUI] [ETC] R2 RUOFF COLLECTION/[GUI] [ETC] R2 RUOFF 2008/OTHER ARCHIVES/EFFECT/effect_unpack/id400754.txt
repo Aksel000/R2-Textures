@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>Effect_regen</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>id400754.reb</EffectFile>
+</EffectScript>

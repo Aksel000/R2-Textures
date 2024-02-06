@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>effect_firebolttail05</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>title_chrselect.reb</EffectFile>
+</EffectScript>

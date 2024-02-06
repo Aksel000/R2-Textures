@@ -1,0 +1,112 @@
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float4x4 matGrassRotation;
+float4x4 matGrassRangeProjection;
+float4 vecSectorPosition;
+float3 vecSectorSize;
+
+float3 vecViewPosition;
+float3 vecSunDirection;
+float3 vecBetaRPlusBetaM;
+float3 vecHGg;
+float3 vecBetaDashR;
+float3 vecBetaDashM;
+float3 vecOneOverBetaRPlusBetaM;
+float4 vecMultipliers;
+float4 vecSunColorAndIntensity;
+float4 vecCloudShadow;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;    
+    float2 Texture1	  : TEXCOORD1;
+    float3 Fex		  : TEXCOORD2;
+    float3 Lin		  : TEXCOORD3;
+    float2 CloudShadowmap : TEXCOORD4;    
+    float4 FurRange : TEXCOORD5;    
+};
+
+sampler ColorTextureSampler : register(s0);
+sampler FurTextureSampler : register(s1);
+sampler OcclusionTextureSampler : register(s2);
+sampler CloudShadowmapTextureSampler : register(s3);
+sampler FurRangeSampler : register(s4);
+sampler GrassMaskSampler : register(s5);
+
+void HoffmanScattering( in float4 vecPosition, out float3 vecLin, out float3 vecFex )
+{
+	float4 vecTransformPosition = mul( vecPosition, matWorld );
+	
+	float3 vecViewDirection = vecTransformPosition - vecViewPosition;
+	float fDistance = length( vecViewDirection ) * 0.32658227f;
+	
+	vecViewDirection = normalize( vecViewDirection );
+	
+	float fTheta = dot( vecSunDirection, vecViewDirection );	
+	
+	float fPhase1 = 1.0f + fTheta * fTheta;	
+	float fPhase2 = pow( rsqrt( vecHGg.y - vecHGg.z * fTheta ), 3 ) * vecHGg.x;	
+	
+	float3 vecExtinction = exp( -vecBetaRPlusBetaM * fDistance );
+	
+	float3 vecTotalExtinction = vecExtinction * vecMultipliers.yzw;
+	float3 vecBetaRay = vecBetaDashR * fPhase1;
+	float3 vecBetaMie = vecBetaDashM * fPhase2;
+	float3 vecInscatter = ( vecBetaRay + vecBetaMie ) * vecOneOverBetaRPlusBetaM * ( 1.0f - vecExtinction );
+	
+	vecInscatter *= vecMultipliers.x;
+	vecInscatter *= vecSunColorAndIntensity.xyz * vecSunColorAndIntensity.w;
+	vecTotalExtinction *= vecSunColorAndIntensity.xyz * vecSunColorAndIntensity.w;
+	
+	
+	vecLin = vecInscatter;
+	vecFex = vecTotalExtinction;	
+}
+float2 CloudShadow( in float4 vPos )
+{
+	float4 vecPosition = mul( vPos, matWorld );		
+	vecPosition.x = vecPosition.x * vecCloudShadow.x;
+	vecPosition.y = vecPosition.z * vecCloudShadow.y;
+	vecPosition.xy += float2( vecCloudShadow.zw );
+	
+	return vecPosition;
+}
+
+VS_OUTPUT GrassFurScene_Shader_vs( float4 vPos : POSITION0,								
+								   float2 vTexCoord0 : TEXCOORD0 )
+{   
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );		
+    Output.Texture = vTexCoord0;    
+    Output.Texture1 = vTexCoord0 * 4.0f;    
+    
+    float3 vecLin, vecFex;    	
+	HoffmanScattering( vPos, vecLin, vecFex );        
+		
+	Output.Fex.xyz = vecFex * 4.0f;	
+	Output.Lin = vecLin * 0.5f;	    
+	Output.CloudShadowmap = CloudShadow( vPos );
+	Output.FurRange = mul( vPos, matGrassRangeProjection );
+            
+    return Output;
+}
+float4 GrassFurScene_Shader_ps( float3 Tex : TEXCOORD0,							   
+							   float3 Tex2 : TEXCOORD1,
+							   float3 Fex : TEXCOORD2,
+							   float3 Lin : TEXCOORD3,
+							   float2 CloudShadowmap : TEXCOORD4,
+							   float4 FurRange : TEXCOORD5 ) : COLOR
+{	
+	float4 vecColor = tex2D( FurTextureSampler, Tex2 );	
+	vecColor.xyz *= tex2D( ColorTextureSampler, Tex ) * tex2D( OcclusionTextureSampler, Tex ) * 2.0f;	
+	vecColor.xyz = vecColor * Fex + Lin;	
+	vecColor.xyz *= max( ( 1.0f - tex2D( CloudShadowmapTextureSampler, CloudShadowmap ).a ), 0.4f );	
+	
+	vecColor.w *= tex2D( FurRangeSampler, FurRange ).x;
+	vecColor.w *= tex2D( GrassMaskSampler, Tex ).x;
+	
+	//vecColor.xyz = ;
+	//vecColor.w = 1.0f;
+	return vecColor;
+}

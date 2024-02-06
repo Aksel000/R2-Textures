@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>Effect_regen</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<PickingBox>
+		<Min>-500,-100,-500</Min>
+		<Max>500,100,500</Max>
+	</PickingBox>
+	<CullingRadius>700</CullingRadius>
+</Information>
+<EffectFile>0057.reb</EffectFile>
+</EffectScript>

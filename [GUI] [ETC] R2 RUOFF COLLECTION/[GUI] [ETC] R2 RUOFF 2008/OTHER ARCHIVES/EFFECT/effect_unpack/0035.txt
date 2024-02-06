@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>Web10</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>0035.reb</EffectFile>
+</EffectScript>

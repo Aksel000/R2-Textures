@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>Web11</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<PickingBox>
+		<Min>-800,-800,-800</Min>
+		<Max>800,800,800</Max>
+	</PickingBox>
+	<CullingRadius>1000</CullingRadius>
+</Information>
+<EffectFile>0039.reb</EffectFile>
+</EffectScript>

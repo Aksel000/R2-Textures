@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>Effect_MouseClick</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>Effect_MouseClick.reb</EffectFile>
+</EffectScript>

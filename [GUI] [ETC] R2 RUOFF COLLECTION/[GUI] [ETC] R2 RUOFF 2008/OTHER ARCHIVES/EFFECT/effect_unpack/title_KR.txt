@@ -1,0 +1,12 @@
+<EffectScript>
+<Information>
+	<Name>title</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>title_KR.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">Login01.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="73" Min="1400" Max="2000">Login02.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="114" Min="1400" Max="2000">Login03.wav</FrameEvent>	
+</Event>
+</EffectScript>

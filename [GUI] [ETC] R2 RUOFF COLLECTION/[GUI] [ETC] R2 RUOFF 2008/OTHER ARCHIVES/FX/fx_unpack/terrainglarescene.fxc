@@ -1,0 +1,47 @@
+
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float3 vecViewPosition;
+float3 vecSunDirection;
+float3 vecBrBm;
+float4 vecHen;
+float3 vecBm;
+float3 vecBr;
+float3 vecAtmosphereColor;	
+float3 vecLin;
+float3 vecUpdateViewPosition;
+
+float3 vecBetaRPlusBetaM;
+float3 vecHGg;
+float3 vecBetaDashR;
+float3 vecBetaDashM;
+float3 vecOneOverBetaRPlusBetaM;
+float4 vecMultipliers;
+float4 vecSunColorAndIntensity;
+
+float4x4 matShadowCameraProjTexScale;
+float4x4 matNearShadowCameraProjTexScale;
+float4x4 matShadowProjectionTexScale;
+float2 vecNearFarPlane;	
+
+float4x4 matSunInvLightDirection;
+float3 vecShadowColor;
+
+float4x4 matLODCharacterShadowCameraProjTexScale;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position         
+};
+
+VS_OUTPUT Terrain_Glare_Shader_vs( float4 vPos : POSITION,							  
+								  float2 vTexCoord0 : TEXCOORD0 )
+{	
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );	
+    return Output;
+}
+half4 Terrain_Glare_Shader_ps( void ) : COLOR
+{	
+	return half4( 0.0f, 0.0f, 0.0f, 0.0f );		
+}	

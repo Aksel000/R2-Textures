@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>SteelArrow</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>i012001.reb</EffectFile>
+</EffectScript>

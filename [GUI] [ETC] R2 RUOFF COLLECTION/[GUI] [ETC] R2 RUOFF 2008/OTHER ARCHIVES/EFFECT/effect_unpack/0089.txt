@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>waterfall 01</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<PickingBox>
+		<Min>-150,-1800,-150</Min>
+		<Max>150,1800,150</Max>
+	</PickingBox>
+	<CullingRadius>3000</CullingRadius>
+</Information>
+<EffectFile>0089.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,63 @@
+float4x4 matWorldViewProj;
+float4 OceanColor;
+float fElapesTime;
+
+sampler WaterReflectTextureSampler : register( s0 );
+sampler WaterBumpTextureSampler0 : register( s1 );
+sampler WaterBumpTextureSampler1 : register( s2 );
+sampler WaterBumpTextureSampler2 : register( s3 );
+
+
+struct VS_INPUT
+{
+	float4 Position : POSITION;
+	float2 TextureCoord  : TEXCOORD0;
+};
+
+struct VS_OUTPUT
+{
+	float4 Position: POSITION;
+	float2 ProjTexCoord : TEXCOORD0;
+	float2 BumpTexCoord0 : TEXCOORD1;
+	float2 BumpTexCoord1 : TEXCOORD2;
+	float2 BumpTexCoord2 : TEXCOORD3;	
+};
+
+VS_OUTPUT Ocean_Shader_1_1_vs( VS_INPUT In )
+{
+	VS_OUTPUT Out;
+
+	Out.Position = mul( In.Position, matWorldViewProj );
+
+	// ¿Ö°îµÈ ¹üÇÁ¸Ê ÁÂÇ¥¸¦ °è»ê Èê·¯°¡°Ô ÇÑ´Ù.
+	Out.BumpTexCoord0 = In.TextureCoord + fElapesTime * float2( 0, 0.01 );
+	Out.BumpTexCoord1 = In.TextureCoord + fElapesTime * float2( 0, -0.01 ); 
+	Out.BumpTexCoord2 = In.TextureCoord + fElapesTime * float2( 0, -0.25 );
+	
+	float4 TrafoPos = Out.Position;
+	float3 ProjTexCoord = TrafoPos.xyz / TrafoPos.w;
+	Out.ProjTexCoord = 0.5 + 0.5 * ProjTexCoord.xy * float2( 1, -1 );
+	return Out;
+}
+
+struct PS_OUTPUT
+{
+	float4 Color : COLOR0;
+};
+
+PS_OUTPUT Ocean_Shader_1_1_ps( VS_OUTPUT In ) : COLOR
+{
+	PS_OUTPUT output;
+	float3 BumpMap0 = 2 * tex2D( WaterBumpTextureSampler0, In.BumpTexCoord0 ) - 1;
+	float3 BumpMap1 = 2 * tex2D( WaterBumpTextureSampler1, In.BumpTexCoord1 ) - 1;
+	float3 BumpMap2 = 2 * tex2D( WaterBumpTextureSampler2, In.BumpTexCoord2 ) - 1;	
+	float3 BumpMap = BumpMap0 * float3( 1, 1, 1 );
+	BumpMap = BumpMap1 * float3( 1, 1, 1 ) + BumpMap;
+	BumpMap = BumpMap2 * float3( 1, 1, 1 ) + BumpMap;
+	float2 ReflCoord = BumpMap.xy * float2( 0.1, 0.1 ) + In.ProjTexCoord;
+	float4 refl = tex2D( WaterReflectTextureSampler, In.ProjTexCoord );
+	refl.a = 0.6;
+	refl.rgb *= OceanColor;
+	output.Color = refl;
+	return output;
+}

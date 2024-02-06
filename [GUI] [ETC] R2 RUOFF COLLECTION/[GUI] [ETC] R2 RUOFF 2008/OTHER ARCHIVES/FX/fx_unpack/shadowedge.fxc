@@ -1,0 +1,64 @@
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture0   : TEXCOORD0;    
+    float2 Texture1   : TEXCOORD1;    
+    float2 Texture2   : TEXCOORD2;    
+    float2 Texture3   : TEXCOORD3;    
+    
+};
+
+sampler DepthShadowSampler : register( s0 );
+
+VS_OUTPUT ShadowEdgeExtract_Shader_vs( float4 vPos : POSITION, 								  
+									  float2 vTexCoord0 : TEXCOORD0 )
+{    
+	VS_OUTPUT Output;	
+	Output.Position = vPos;
+    Output.Texture0 = vTexCoord0;
+    Output.Texture1 = vTexCoord0 + float2( 1.0f / 512.0f, 0.0f );
+    Output.Texture2 = vTexCoord0 + float2( 0.0f, 1.0f / 512.0f );
+    Output.Texture3 = vTexCoord0 + float2( 1.0f / 512.0f, 1.0f / 512.0f );
+    return Output;
+}
+
+float4 ShadowEdgeExtract_Shader_ps( float3 Tex0 : TEXCOORD0,
+								   float3 Tex1 : TEXCOORD1,
+								   float3 Tex2 : TEXCOORD2,
+								   float3 Tex3 : TEXCOORD3 ) :COLOR0
+{
+	float fShadowEdge[ 4 ];
+	float4 ShadowmapTex;
+	
+	ShadowmapTex = tex2D( DepthShadowSampler, Tex0 );	
+	fShadowEdge[ 0 ] = ShadowmapTex.x + ShadowmapTex.y;
+	
+	ShadowmapTex = tex2D( DepthShadowSampler, Tex1 );
+	fShadowEdge[ 1 ] = ShadowmapTex.x + ShadowmapTex.y;
+	
+	ShadowmapTex = tex2D( DepthShadowSampler, Tex2 );
+	fShadowEdge[ 2 ] = ShadowmapTex.x + ShadowmapTex.y;
+	
+	ShadowmapTex = tex2D( DepthShadowSampler, Tex3 );
+	fShadowEdge[ 3 ] = ShadowmapTex.x + ShadowmapTex.y;
+	
+	
+	fShadowEdge[ 0 ] = ( fShadowEdge[ 3 ] - fShadowEdge[ 0 ] ) * 4.0f;	
+	
+	fShadowEdge[ 1 ] = ( fShadowEdge[ 2 ] - fShadowEdge[ 1 ] ) * 4.0f;
+	
+	fShadowEdge[ 0 ] = ( fShadowEdge[ 0 ] * fShadowEdge[ 0 ] ) * 80.0f;
+	fShadowEdge[ 1 ] = ( fShadowEdge[ 1 ] * fShadowEdge[ 1 ] ) * 80.0f;		
+	
+	//fShadowEdge[ 0 ] = ( 1.0f - fShadowEdge[ 0 ] + fShadowEdge[ 1 ] ) * 4.0f;	
+	
+	fShadowEdge[ 0 ] = ( fShadowEdge[ 0 ] + fShadowEdge[ 1 ] ) * 4.0f;
+	
+	if( fShadowEdge[ 0 ] > 0.8f )
+		fShadowEdge[ 0 ] = 0.0f;
+	else
+		fShadowEdge[ 0 ] = 1.0f;	
+		
+	return float4( fShadowEdge[ 0 ] , fShadowEdge[ 0 ], fShadowEdge[ 0 ], 1.0f );
+	//return ShadowmapTex;
+}

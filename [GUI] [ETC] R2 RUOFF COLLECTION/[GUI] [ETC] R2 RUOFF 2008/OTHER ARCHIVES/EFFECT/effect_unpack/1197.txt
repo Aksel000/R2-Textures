@@ -1,0 +1,16 @@
+<EffectScript>
+<Information>
+	<Name>Event_Pig</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0060.txt</Particle>
+	<Loop>true</Loop>
+	
+	<Attach>
+    		<BodyPart>bvbottom</BodyPart>
+		<Pos> 0,220,0</Pos>
+    		<Scale>TRUE</Scale>
+
+	</Attach>
+</Information>
+<EffectFile>1197.reb</EffectFile>
+</EffectScript>

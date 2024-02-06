@@ -1,0 +1,22 @@
+<EffectScript>
+<Information>
+	<Name>RED_DRUG</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>P0073.txt</Particle>
+	<Attach>
+    		<BodyPart>HEAD</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		
+	</Attach>
+
+
+
+
+</Information>
+<EffectFile>1270.reb</EffectFile>
+
+
+</EffectScript>

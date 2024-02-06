@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>Web02</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>0025.reb</EffectFile>
+</EffectScript>

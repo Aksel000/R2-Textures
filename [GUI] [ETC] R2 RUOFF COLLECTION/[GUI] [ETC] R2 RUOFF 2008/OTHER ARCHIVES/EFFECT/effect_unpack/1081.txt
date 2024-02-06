@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>Wand_curse</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1081.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>Light02</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>0010.reb</EffectFile>
+</EffectScript>

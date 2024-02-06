@@ -1,0 +1,89 @@
+
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float3 vecViewPosition;
+float3 vecSunDirection;
+float3 vecBrBm;
+float4 vecHen;
+float3 vecBm;
+float3 vecBr;
+
+float3 vecAtmosphereColor;	
+float3 vecLin;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;
+    float3 Normal	  : TEXCOORD1;
+    float3 Fex		  : TEXCOORD2;
+    float3 Lin		  : TEXCOORD3;
+};
+
+sampler ColorTextureSampler : register(s0);
+sampler NormalTextureSampler : register(s1);
+
+samplerCUBE LightSampler : register( s2 );
+
+float3 Lin( in float3 Fex, in float fCosTheta, in float fPlusOneCosTheta )
+{		
+	float3 vecBmTheta = vecBm / pow( vecHen.z * fCosTheta + vecHen.y, vecHen.w );					
+	float3 vecBrTheta = fPlusOneCosTheta * vecBm;		
+	float3 vecLinTheta = ( ( vecBmTheta + vecBrTheta ) * vecLin ) * ( 1.0f - Fex );							
+	return vecLinTheta;
+}
+
+float3 Fex( in float fDistance )
+{
+	float3 Fex = exp( vecBrBm * ( -fDistance ) );	
+	return Fex;
+}
+
+VS_OUTPUT StandardAlpha_MeshShader_vs( float4 vPos : POSITION, 
+								  float3 vNormal : NORMAL,								  
+								  float2 vTexCoord0 : TEXCOORD0 )
+{    
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );
+    Output.Texture = vTexCoord0;
+    Output.Normal =  mul( vNormal, (float3x3)matWorld );    
+    
+    ///////////////////////////////////////////
+    
+    float4 vecTransformPosition = mul( vPos, matWorld );
+	float3 vecViewDirection = vecViewPosition - vecTransformPosition;
+	float fDistance = length( vecViewDirection ) * 0.00001f;
+	vecViewDirection = normalize( vecViewDirection );
+	
+	float fCosTheta = dot( vecViewDirection, vecSunDirection );
+	float fPlusOneCosTheta = fCosTheta * fCosTheta + 1.0f;
+	
+	float3 vecFEx = Fex( fDistance );	
+	
+	Output.Fex = vecFEx * vecAtmosphereColor;
+	
+	Output.Lin = Lin( vecFEx, fCosTheta, fPlusOneCosTheta );		
+            
+    return Output;
+}
+
+struct PS_OUTPUT
+{
+    float4 Color[2] : COLOR0;    
+};
+
+
+
+PS_OUTPUT StandardAlpha_MeshShader_ps( float3 Tex : TEXCOORD0,							   
+							   float3 Normal : TEXCOORD1,
+							   float3 Fex : TEXCOORD2,
+							   float3 Lin : TEXCOORD3 ) : COLOR
+{	
+	PS_OUTPUT Output;
+	float4 vecLight = texCUBE( LightSampler, Normal );		
+	float4 vecColorTex = tex2D( ColorTextureSampler, Tex ) * vecLight * 1.4f;		
+	vecColorTex.xyz = vecColorTex + Lin;
+	Output.Color[ 0 ] = vecColorTex;
+	Output.Color[ 1 ] = float4( 0.0f, 0.0f, 0.0f, vecColorTex.a );
+	return Output;
+}

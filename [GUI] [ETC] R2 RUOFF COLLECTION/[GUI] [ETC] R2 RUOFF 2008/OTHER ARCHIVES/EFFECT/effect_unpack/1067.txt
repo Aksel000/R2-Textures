@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>elementalarmmor_Exp</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0014.txt</Particle>
+	
+</Information>
+<EffectFile>1067.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">exp_elemen.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="20" Min="1400" Max="2000">exp_elemen003.wav</FrameEvent>
+</Event>
+</EffectScript>

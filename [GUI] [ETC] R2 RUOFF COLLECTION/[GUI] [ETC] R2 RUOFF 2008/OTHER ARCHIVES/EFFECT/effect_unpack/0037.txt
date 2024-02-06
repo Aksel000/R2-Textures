@@ -1,0 +1,9 @@
+<EffectScript>
+<Information>
+	<Name>Fountain</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<CullingRadius>300</CullingRadius>
+</Information>
+<EffectFile>0037.reb</EffectFile>
+</EffectScript>

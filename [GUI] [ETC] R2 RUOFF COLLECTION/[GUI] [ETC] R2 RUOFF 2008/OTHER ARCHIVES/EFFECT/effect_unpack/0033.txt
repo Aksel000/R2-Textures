@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>Web08</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>	
+	<PickingBox>
+		<Min>-500,-200,-500</Min>
+		<Max>500,200,500</Max>
+	</PickingBox>
+	<CullingRadius>600</CullingRadius>
+</Information>
+<EffectFile>0033.reb</EffectFile>
+</EffectScript>

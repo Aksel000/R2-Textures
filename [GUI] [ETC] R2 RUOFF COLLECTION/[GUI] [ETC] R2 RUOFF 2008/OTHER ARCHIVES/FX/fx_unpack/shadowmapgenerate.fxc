@@ -1,0 +1,31 @@
+float4x4 matNearShadowCameraProj;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;        
+    float2 ShadowTexture : TEXCOORD1;
+};
+
+sampler ColorTextureSampler : register(s0);
+sampler ShadowTextureSampler : register(s1);
+
+VS_OUTPUT ShadowmapGenerate_Shader_vs( float4 vPos : POSITION, 								  				  
+								 float2 vTexCoord0 : TEXCOORD0 )
+{    
+	VS_OUTPUT Output;		
+	
+	Output.Position = mul( vPos, matNearShadowCameraProj );
+    Output.Texture = vTexCoord0;
+    Output.ShadowTexture = mul( vPos, matNearShadowCameraProj ).z;    
+    
+    return Output;
+}
+
+float4 ShadowmapGenerate_Shader_ps( float2 Tex : TEXCOORD0, 
+									float2 ShadowTexture : TEXCOORD1 ) : COLOR
+{
+	float fAlpha = tex2D( ColorTextureSampler, Tex ).a * 3.0f;	
+	float3 fShadow = tex2D( ShadowTextureSampler, ShadowTexture ).xyz;
+	return float4( fShadow.x , fShadow.y, 0.0f, fAlpha );
+}

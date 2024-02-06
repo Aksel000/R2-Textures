@@ -1,0 +1,9 @@
+<EffectScript>
+<Information>
+	<Name>Loading_CN</Name>
+	<Dynamic>false</Dynamic>
+
+
+</Information>
+<EffectFile>Loading_CN.reb</EffectFile>
+</EffectScript>

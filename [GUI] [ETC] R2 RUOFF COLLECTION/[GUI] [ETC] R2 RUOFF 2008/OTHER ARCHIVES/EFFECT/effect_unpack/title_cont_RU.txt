@@ -1,0 +1,9 @@
+<EffectScript>
+<Information>
+	<Name>title_cont_RU</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+
+</Information>
+<EffectFile>title_cont_RU.reb</EffectFile>
+</EffectScript>

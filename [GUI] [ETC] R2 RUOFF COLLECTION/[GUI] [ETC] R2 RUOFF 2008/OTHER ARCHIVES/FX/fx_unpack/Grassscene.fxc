@@ -1,0 +1,156 @@
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float4x4 matGrassRotation;
+float4 vecSectorPosition;
+float3 vecSectorSize;
+
+float3 vecViewPosition;
+float3 vecSunDirection;
+
+float3 vecSunColor;		
+float3 vecSkyColor;
+float3 vecGrassColor;
+float fMultiplySunColor;
+float fMultiplyHorizonColor;
+float3 vecHorizonColor;
+float fHorizonExp;
+float fSunExp;
+float fFogStart;
+float fFogEnd;
+float fScatterEnd;
+float fBlendStart;
+float fBlendEnd;
+float3 vecScatterStartColor;
+float3 vecScatterEndColor;
+float fMultiplyObjectScatter;
+float3 vecFogColor;
+float3 vecShadowColor;
+
+float4 vecCloudShadow;
+float3 vecHeightFog;
+float4 vecOceanColor;
+
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;    
+    float2 Texture1	  : TEXCOORD1;
+    float4 Fex		  : TEXCOORD2;
+    float4 Lin		  : TEXCOORD3;
+    float2 CloudShadowmap : TEXCOORD4;
+    
+};
+
+sampler ColorTextureSampler : register(s0);
+sampler SectorColorTextureSampler : register(s1);
+sampler OcclusionTextureSampler : register(s2);
+sampler CloudShadowmapTextureSampler : register(s3);
+sampler GrassMaskTextureSampler: register(s4);
+
+void HoffmanScattering( in float4 vecPosition, out float3 vecLin, out float3 vecFex )
+{
+	float4 vecTransformPosition = mul( vecPosition, matWorld );
+	float3 vecViewDirection = vecTransformPosition - vecViewPosition;
+	float fLens = length( vecViewDirection );
+		
+	vecViewDirection = normalize( vecViewDirection );
+	
+	float fTheta = saturate( dot( vecSunDirection, vecViewDirection ) );
+	float fSunTheta = pow( fTheta, fSunExp );
+	
+	float3 vecXYDirection = vecViewDirection;	
+	vecXYDirection.y = 0.0f;	
+	vecXYDirection = normalize( vecXYDirection );		
+		
+	float3 vecHorizon = pow( saturate( dot( vecXYDirection, vecViewDirection ) ), fHorizonExp ) * vecHorizonColor * fMultiplyHorizonColor;
+	
+	float3 vecInscatter = vecSunColor * fSunTheta * fMultiplySunColor + vecFogColor;// + vecHorizon;		
+	
+	float fPhase1 = 1.0f + fTheta * fTheta;		
+	
+	float fFogRate = saturate( ( fLens - fFogStart ) / ( fFogEnd - fFogStart ) );
+	fFogRate *= fPhase1;	
+		
+	vecInscatter = lerp( float3( 0.0f, 0.0f, 0.0f ), vecInscatter * fPhase1, fFogRate );		
+	
+	
+	vecLin = vecInscatter;	
+		
+	float fScatterRate = saturate( fLens / fScatterEnd );
+	vecFex = lerp( vecScatterStartColor, vecScatterEndColor, fScatterRate ) * fMultiplyObjectScatter;		
+}
+float2 CloudShadow( in float4 vPos )
+{
+	float4 vecPosition = mul( vPos, matWorld );		
+	vecPosition.x = vecPosition.x * vecCloudShadow.x;
+	vecPosition.y = vecPosition.z * vecCloudShadow.y;
+	vecPosition.xy += float2( vecCloudShadow.zw );
+	
+	return vecPosition;
+}
+
+VS_OUTPUT GrassScene_Shader_vs( float4 vPos : POSITION0, 
+								float vBlendWeight : BLENDWEIGHT,								
+								float2 vTexCoord0 : TEXCOORD0,
+								float3 vPos1 : POSITION1 )
+{   
+	VS_OUTPUT Output;
+	float4 vecPosition = float4( vPos1, 0.0f ) + lerp( vPos, mul( vPos, matGrassRotation ), vBlendWeight );	
+	Output.Position = mul( vecPosition, matWorldViewProj );		
+    Output.Texture = vTexCoord0;    
+    
+    float4 vecInSectorPosition = mul( vecPosition, matWorld ) - vecSectorPosition;
+    Output.Texture1.x = vecInSectorPosition.x * vecSectorSize.x;
+    Output.Texture1.y = vecInSectorPosition.z * vecSectorSize.z;
+    
+    float3 vecLin, vecFex;
+	
+	HoffmanScattering( vPos, vecLin, vecFex );        
+	
+	Output.Fex.xyz = vecFex;	
+	Output.Lin.xyz = vecLin * 0.2f;	    
+	Output.CloudShadowmap = CloudShadow( vPos );
+	Output.Fex.xyz = vecFex;	
+	Output.Lin.xyz = vecLin * 0.4f;	
+
+	float4 vecPos = mul( vecPosition, matWorld );
+	float fLength = length( vecPos - vecViewPosition );
+	Output.Fex.w = 1.0 - saturate( ( fLength - fBlendStart ) / ( fBlendEnd - fBlendStart ) );	
+	if( vecPos.y < vecHeightFog.y )
+	{
+		float3 vecV = vecPos - vecViewPosition;
+		float fX = ( vecHeightFog.y - vecViewPosition.y ) / vecV.y;
+		float3 vecP = vecViewPosition + fX * vecV;
+		Output.Lin.w = saturate( length( vecP - vecPos ) / vecHeightFog.z );
+	}
+	else
+	{
+		Output.Lin.w = 0;
+	}
+	
+            
+    return Output;
+}
+float4 GrassScene_Shader_ps( float3 Tex : TEXCOORD0,							   
+							   float3 Tex2 : TEXCOORD1,
+							   float4 Fex : TEXCOORD2,
+							   float4 Lin : TEXCOORD3,
+							   float2 CloudShadowmap : TEXCOORD4 ) : COLOR
+{	
+		
+	half4 vecColorTexture = tex2D( ColorTextureSampler, Tex );			
+	half4 vecMask = tex2D( GrassMaskTextureSampler, Tex );			
+	half4 vecSectorColor = tex2D( SectorColorTextureSampler, Tex2 );
+	half4 vecShadow = max( tex2D( OcclusionTextureSampler, Tex2 ), float4( vecShadowColor + float3( 0.3f, 0.3f, 0.3f ), 1.0f ) );
+	half4 vecColor = vecColorTexture * vecShadow;		
+	vecColor.xyz *= vecSectorColor * 2.0f;	
+	vecColor.xyz = lerp( vecColorTexture, vecColor, vecMask );	
+	vecColor.xyz *= vecShadow;	
+	vecColor.xyz = vecColor * Fex + Lin;
+	//vecColor.xyz *= max( ( 1.0f - tex2D( CloudShadowmapTextureSampler, CloudShadowmap ).a ), 0.4f );
+	vecColor.xyz *= vecGrassColor * 1.5;
+	vecColor.xyz = lerp( vecColor.xyz, vecOceanColor, Lin.w );	
+	vecColor.w *= Fex.w;
+	return vecColor;
+}

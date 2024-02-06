@@ -1,0 +1,20 @@
+<EffectScript>
+<Information>
+	<Name>DRAG</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>P0086.txt</Particle>
+	
+	<Attach>
+    		<BodyPart>R_HAND</BodyPart>
+		<Pos>25,60,13</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+	
+	</Attach>
+
+</Information>
+<EffectFile>1302.reb</EffectFile>
+
+
+</EffectScript>

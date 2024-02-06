@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>Damage_Up</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>test_effect_damage_up.reb</EffectFile>
+</EffectScript>

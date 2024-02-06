@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>Dust</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+		<PickingBox>
+		<Min>-200,-200,-200</Min>
+		<Max>200,200,200</Max>
+	</PickingBox>
+	<CullingRadius>400</CullingRadius>
+</Information>
+<EffectFile>0006.reb</EffectFile>
+</EffectScript>

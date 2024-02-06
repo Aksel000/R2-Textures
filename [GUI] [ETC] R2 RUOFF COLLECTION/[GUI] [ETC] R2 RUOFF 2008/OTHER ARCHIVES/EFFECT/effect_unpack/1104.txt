@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>eat_bread</Name>
+	<Dynamic>false</Dynamic>
+
+</Information>
+<EffectFile>1104.reb</EffectFile>
+</EffectScript>

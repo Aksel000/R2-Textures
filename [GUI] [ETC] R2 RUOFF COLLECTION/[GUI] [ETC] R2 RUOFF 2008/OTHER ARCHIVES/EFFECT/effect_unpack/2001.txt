@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>e_dropitem</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>2001.reb</EffectFile>
+</EffectScript>

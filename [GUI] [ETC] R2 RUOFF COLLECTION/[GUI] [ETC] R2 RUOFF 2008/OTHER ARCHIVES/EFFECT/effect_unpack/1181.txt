@@ -1,0 +1,29 @@
+<EffectScript>
+<Information>
+	<Name>ASSE</Name>
+	<Dynamic>false</Dynamic>
+	
+	
+	<Attach>
+    		<BodyPart>R_HAND</BodyPart>
+		<Pos>21,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		
+	
+	</Attach>
+	<Attach>
+    		<BodyPart>L_HAND</BodyPart>
+		<Pos>21,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		
+	
+	</Attach>
+
+</Information>
+<EffectFile>1181.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">EF_1181.wav</FrameEvent>
+</Event>
+</EffectScript>

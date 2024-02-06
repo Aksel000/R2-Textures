@@ -1,0 +1,36 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>weight</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>1147.txt</FileName>
+</EffectScene>
+
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>1146.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE" To="SOURCE"> cast </Scene>
+	</Group>
+
+	<Group Sequential="TRUE">
+		<Scene From="TARGET" To="TARGET"> exp </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

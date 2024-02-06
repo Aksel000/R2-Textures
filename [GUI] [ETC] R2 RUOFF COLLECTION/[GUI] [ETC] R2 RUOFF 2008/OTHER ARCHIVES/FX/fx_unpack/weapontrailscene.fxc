@@ -1,0 +1,46 @@
+float4x4 matWorldViewProj;
+float4x4 matTexProj;
+
+sampler BackBufferSampler : register( s1 );	
+sampler WeaponTrailSampler : register( s0 );
+sampler WaveSampler : register( s2 );
+
+struct VS_INPUT
+{
+	float4 Position : POSITION;
+	float2 Texture  : TEXCOORD0;
+};
+
+struct VS_OUTPUT
+{
+    float4 Position            : POSITION;
+    float2 TrafoTexture        : TEXCOORD0;
+    float2 BumpTextureCoord    : TEXCOORD1;
+    float2 Texture			   : TEXCOORD2;
+};
+
+
+VS_OUTPUT WeaponTrail_Shader_vs( VS_INPUT In )
+{
+	VS_OUTPUT Output;
+	Output.Position = mul( In.Position, matWorldViewProj );
+	Output.BumpTextureCoord = In.Texture;
+	Output.Texture = In.Texture;
+
+	float4 TrafoPos = Output.Position;
+	TrafoPos.xyz = TrafoPos.xyz / TrafoPos.w;
+	TrafoPos.xy = 0.5 + 0.5 * TrafoPos.xy * float2( 1, -1 );
+	Output.TrafoTexture = TrafoPos.xy;
+	return Output;	
+}
+
+float4 WeaponTrail_Shader_ps( VS_OUTPUT In ) : COLOR
+{
+	float4 WaveTexture = 2 * tex2D( WaveSampler, In.BumpTextureCoord ) - 1;
+	float2 TransCoord = WaveTexture.xy * float2( 0.08, 0.08 ) + In.TrafoTexture;
+	float4 BackBuffer = tex2D( BackBufferSampler, TransCoord );
+	float4 TrailTexture = tex2D( WeaponTrailSampler, In.Texture );
+	BackBuffer.rgb = BackBuffer.rgb * float3( 1.6, 1.6, 1.45 );
+	BackBuffer.a = TrailTexture.a;
+	return BackBuffer;
+}

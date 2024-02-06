@@ -1,0 +1,15 @@
+<EffectScript>
+<Information>
+	<Name>MOB_Chaos_cast</Name>
+	<Dynamic>false</Dynamic>
+	
+	
+</Information>
+<EffectFile>1113.reb</EffectFile>
+</EffectScript>
+
+
+
+
+
+

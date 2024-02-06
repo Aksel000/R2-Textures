@@ -1,0 +1,226 @@
+
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float3 vecViewPosition;
+float3 vecSunDirection;
+float3 vecSunColor;		
+float3 vecSkyColor;
+float fMultiplySunColor;
+float fMultiplyHorizonColor;
+float3 vecHorizonColor;
+float fHorizonExp;
+float fSunExp;
+float fFogStart;
+float fFogEnd;
+float fScatterEnd;
+float3 vecScatterStartColor;
+float3 vecScatterEndColor;
+float fMultiplyObjectScatter;
+float3 vecFogColor;
+float3 vecSectorPosition;
+
+float4x4 matNearShadowCameraProj;
+float4x4 matNearShadowCameraProjTexScale;
+
+float4x4 matLODShadowCameraProj;
+float4x4 matLODShadowCameraProjTexScale;
+
+float4x4 matShadowProjectionTexScale;
+float4x4 matCharacterShadowCameraProj;
+
+float4x4 matSunLightDirection;
+float4 vecShadowColor;
+float4 vecObjectLightIntensity;
+float4 vecCloudShadow;
+float3 vecSpecularColor;
+float3 vecGlareColor;
+
+float3 vecHeightFog;
+float4 vecOceanColor;
+
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float4 Texture    : TEXCOORD0;
+    float3 Tangent	  : COLOR0;
+    float3 Binormal   : COLOR1;
+    float3 Normal	  : TEXCOORD3;            
+    float3 Half		  : TEXCOORD4;
+    float2 Lightmap   : TEXCOORD5;
+    float4 LODShadowmap  : TEXCOORD6;
+    float4 CharacterShadowmap : TEXCOORD7;        
+    float4 Fex		  : TEXCOORD1;
+    float4 Lin		  : TEXCOORD2;
+};
+
+sampler ColorTextureSampler : register(s0);
+sampler NormalTextureSampler : register(s1);
+samplerCUBE LightSampler : register( s2 );
+sampler RadianceSampler : register( s3 );
+sampler CloudShadowmapSampler : register( s4 );
+sampler LODShadowmapSampler : register( s5 );
+sampler CharacterShadowmapSampler : register( s6 );
+sampler SpecularTextureSampler: register( s7 );
+sampler ShadowSampler : register( s8 );
+
+void HoffmanScattering( in float4 vecPosition, out float3 vecLin, out float3 vecFex )
+{
+	float4 vecTransformPosition = mul( vecPosition, matWorld );
+	float3 vecViewDirection = vecTransformPosition - vecViewPosition;
+	float fLens = length( vecViewDirection );
+		
+	vecViewDirection = normalize( vecViewDirection );
+	
+	float fTheta = saturate( dot( vecSunDirection, vecViewDirection ) );
+	float fSunTheta = pow( fTheta, fSunExp );
+	
+	float3 vecXYDirection = vecViewDirection;	
+	vecXYDirection.y = 0.0f;	
+	vecXYDirection = normalize( vecXYDirection );		
+		
+	float3 vecHorizon = pow( saturate( dot( vecXYDirection, vecViewDirection ) ), fHorizonExp ) * vecHorizonColor * fMultiplyHorizonColor;
+	
+	float3 vecInscatter = vecSunColor * fSunTheta * fMultiplySunColor + vecFogColor;// + vecHorizon;		
+	
+	float fPhase1 = 1.0f + fTheta * fTheta;		
+	
+	float fFogRate = saturate( ( fLens - fFogStart ) / ( fFogEnd - fFogStart ) );
+	fFogRate *= fPhase1;	
+		
+	vecInscatter = lerp( float3( 0.0f, 0.0f, 0.0f ), vecInscatter * fPhase1, fFogRate );		
+	
+	
+	vecLin = vecInscatter;	
+		
+	float fScatterRate = saturate( fLens / fScatterEnd );
+	vecFex = lerp( vecScatterStartColor, vecScatterEndColor, fScatterRate ) * fMultiplyObjectScatter;		
+}
+
+float2 CloudShadow( in float4 vPos )
+{
+	float4 vecPosition = mul( vPos, matWorld );		
+	vecPosition.x = vecPosition.x * vecCloudShadow.x;
+	vecPosition.y = vecPosition.z * vecCloudShadow.y;
+	vecPosition.xy += float2( vecCloudShadow.zw );
+	
+	return vecPosition;
+}
+
+VS_OUTPUT StandardUnderWaterOutdoor_MeshShader_vs( float4 vPos : POSITION, 
+								  float3 vNormal : NORMAL,
+								  float3 vTangent : TANGENT,
+								  float3 vBinormal : BINORMAL,
+								  float2 vTexCoord0 : TEXCOORD0,
+								  float2 vTexCoord1 : TEXCOORD1 )
+{    
+	VS_OUTPUT Output = (VS_OUTPUT)0;	
+	Output.Position = mul( vPos, matWorldViewProj );
+    Output.Texture.xy = vTexCoord0;
+    Output.Lightmap.xy = vTexCoord1;
+    
+    
+    float3x3 vecTransTangentSpace;
+    vecTransTangentSpace[ 0 ] = normalize( mul( vTangent * 2.0f - 1.0f, matWorld ) );
+    vecTransTangentSpace[ 1 ] = normalize( mul( vBinormal * 2.0f - 1.0f, matWorld ) );
+    vecTransTangentSpace[ 2 ] = normalize( mul( vNormal * 2.0f - 1.0f, matWorld) );        
+    
+    Output.Fex.w = max( dot( vecTransTangentSpace[ 2 ], vecSunDirection ), float3( 0.0f, 0.0f, 0.0f ) );            
+    
+    float3 vecPosition = mul( vPos, matWorld );
+    
+    float3 vecInSectorPosition = vecPosition - vecSectorPosition;    
+    
+    vecInSectorPosition *= 1.0f / ( 31507.686f );
+    
+    Output.Texture.z = vecInSectorPosition.x;
+    Output.Texture.w = vecInSectorPosition.z;
+    
+    //float3 ViewPosition = vecViewPosition - vecPosition;   
+    
+    //Output.ViewPosition = normalize( ViewPosition );
+    
+    ///////////////////////////////////////////
+    
+    float4 vecTransformPosition = mul( vPos, matWorld );
+	float3 vecViewDirection = normalize( vecViewPosition - vecTransformPosition );	
+	Output.Half = mul( vecTransTangentSpace, ( vecViewDirection + vecSunDirection ) );		
+	
+	Output.Tangent = float3( ( vecTransTangentSpace[ 0 ].x + 1.0f ) * 0.5f, ( vecTransTangentSpace[ 1 ].x + 1.0f ) * 0.5f, ( vecTransTangentSpace[ 2 ].x  + 1.0f ) * 0.5f);
+    Output.Binormal = float3( ( vecTransTangentSpace[ 0 ].y + 1.0f ) * 0.5f, ( vecTransTangentSpace[ 1 ].y + 1.0f ) * 0.5f, ( vecTransTangentSpace[ 2 ].y  + 1.0f ) * 0.5f);
+    Output.Normal = float3( vecTransTangentSpace[ 0 ].z, vecTransTangentSpace[ 1 ].z, vecTransTangentSpace[ 2 ].z );    
+	
+	float3 vecLin, vecFex;
+	
+	HoffmanScattering( vPos, vecLin, vecFex );        
+	
+	Output.Fex.xyz = vecFex;	
+	Output.Lin.xyz = vecLin * 0.4f;	
+
+	float3 vecV = vecPosition - vecViewPosition;
+	float fX = ( vecHeightFog.y - vecViewPosition.y ) / vecV.y;
+	if( fX >= 0 && fX <= 1 )
+	{			
+		float3 vecP = vecViewPosition + fX * vecV;
+		Output.Lin.w = saturate( length( vecP - vecViewPosition ) / vecHeightFog.x );
+	}
+	else
+	{
+		Output.Lin.w = saturate( length( vecPosition - vecViewPosition ) / vecHeightFog.x );
+	}
+
+	//Output.CloudShadowmap = CloudShadow( vPos );
+		
+	Output.CharacterShadowmap = mul( vPos, matShadowProjectionTexScale );
+	float4 vecShadowProj = mul( vPos, matCharacterShadowCameraProj );
+	
+	if( vecShadowProj.z > 0.999f )
+		Output.CharacterShadowmap.z = 0.999f; 		
+	else
+		Output.CharacterShadowmap.z = vecShadowProj.z ;    
+            
+    return Output;
+}
+
+struct PS_OUTPUT
+{
+    float4 Color[2] : COLOR0;    
+};
+
+PS_OUTPUT StandardUnderWaterOutdoor_MeshShader_ps( float4 Tex : TEXCOORD0,
+							   float3 Tangent : COLOR0,
+							   float3 Binormal : COLOR1,
+							   float3 Normal : TEXCOORD3, 							   							    
+							   float3 Half : TEXCOORD4,
+							   float2 Lightmap : TEXCOORD5,
+							   float4 LODShadowmap : TEXCOORD6,							   
+							   float4 CharacterShadowmap : TEXCOORD7,							   
+							   float4 Fex : TEXCOORD1,
+							   float4 Lin : TEXCOORD2 ) : COLOR
+{
+	PS_OUTPUT output;	
+	
+	float4 vecHeightSpecular = tex2D( SpecularTextureSampler, Tex);
+	
+	float4 vecLightmap = tex2D( ShadowSampler, Lightmap );
+					
+	float3 NormalTex;
+	NormalTex = ( tex2D( NormalTextureSampler, Tex ).xyz - 0.5f ) * 2.0f;			
+	float3x3 matRotate = float3x3( Tangent * 2.0f - 1.0f, Binormal* 2.0f - 1.0f, Normal );		
+	float3 vecTransNormal = mul( matRotate, NormalTex );			
+	
+	float3 vecSpecular = pow( saturate ( dot( normalize( Half ), NormalTex ) ), 30.0f  ) * vecHeightSpecular.x * 2.0f;	
+	
+	float4 vecLight = texCUBE( LightSampler, vecTransNormal );
+	vecLight.xyz = max( vecLight.xyz, vecShadowColor ) * vecLightmap.r * vecObjectLightIntensity.x;	
+	vecLight.xyz += ( 1.0f - vecLightmap.r ) * ( vecLightmap.g * 1.0f );
+	float4 vecColorTex = tex2D( ColorTextureSampler, Tex ) * vecLight;	
+	vecColorTex.xyz += vecSpecular * vecLight * vecSpecularColor;		
+	vecColorTex.xyz = vecColorTex * Fex + Lin;	
+	vecColorTex.xyz = lerp( vecColorTex.xyz, vecOceanColor.xyz, Lin.w );	
+	output.Color[ 0 ] = vecColorTex;		
+	output.Color[ 1 ] = float4( vecSpecular * vecLight * vecGlareColor * vecHeightSpecular.y, 1.0f );
+		
+	return output;		
+
+}

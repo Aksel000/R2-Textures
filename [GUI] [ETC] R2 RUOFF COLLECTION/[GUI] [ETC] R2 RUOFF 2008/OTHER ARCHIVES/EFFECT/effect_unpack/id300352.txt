@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>wand</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>id210192.reb</EffectFile>
+</EffectScript>

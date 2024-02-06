@@ -1,0 +1,16 @@
+<EffectScript>
+<Information>
+	<Name>vempire</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	
+	<Attach>
+    		<BodyPart>R_HAND</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+	
+	</Attach>
+</Information>
+<EffectFile>1297.reb</EffectFile>
+</EffectScript>	

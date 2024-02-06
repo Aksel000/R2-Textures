@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name>head</Name>
+	<Dynamic>false</Dynamic>
+
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+
+		<Rot>true</Rot>
+		<Once>true</Once>
+	</Attach>
+	
+
+
+</Information>
+<EffectFile>1157.reb</EffectFile>
+	<Event>
+		<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">EF_1157.wav</FrameEvent>
+	</Event>
+
+
+</EffectScript>

@@ -1,0 +1,21 @@
+<EffectScript>
+<Information>
+	<Name>WISP</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>P0034.txt</Particle>	
+
+	<Attach>
+    		<BodyPart>R_HAND</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+	</Attach>
+
+</Information>
+<EffectFile>1103.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

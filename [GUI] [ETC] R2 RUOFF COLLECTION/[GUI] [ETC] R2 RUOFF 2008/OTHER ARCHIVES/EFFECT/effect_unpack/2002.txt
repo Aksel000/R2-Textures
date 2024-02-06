@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>e_droped</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>2002.reb</EffectFile>
+</EffectScript>

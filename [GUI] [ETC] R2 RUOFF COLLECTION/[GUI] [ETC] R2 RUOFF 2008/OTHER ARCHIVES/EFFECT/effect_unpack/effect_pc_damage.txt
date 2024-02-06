@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>effect_pc_damage</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>effect_pc_damage.reb</EffectFile>
+</EffectScript>

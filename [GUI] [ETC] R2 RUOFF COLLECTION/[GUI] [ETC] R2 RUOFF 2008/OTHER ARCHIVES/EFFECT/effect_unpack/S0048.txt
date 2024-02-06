@@ -1,0 +1,33 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>destruction</Name>
+</Information>
+
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		
+	</Method>
+	<FileName>1285.txt</FileName>
+</EffectScene>
+
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="TARGET" To="TARGET"> cast </Scene>
+		
+	</Group>
+
+	<Group Sequential="true">
+	</Group>
+	
+	<Group Sequential="TRUE">
+	
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

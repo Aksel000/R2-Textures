@@ -1,0 +1,70 @@
+
+
+float4 vecTextureSize;
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Tex0		  : TEXCOORD0;
+    float2 Tex1		  : TEXCOORD1;
+    float2 Tex2		  : TEXCOORD2;
+    float2 Tex3		  : TEXCOORD3;    
+    float2 Tex4		  : TEXCOORD4;
+    float2 Tex5		  : TEXCOORD5;
+    float2 Tex6		  : TEXCOORD6;
+    float2 Tex7		  : TEXCOORD7;
+};
+
+sampler ColorTextureSampler : register(s0);
+
+VS_OUTPUT Reduction_Shader_vs( float4 vPos : POSITION, 								 
+							   float2 vTexCoord0 : TEXCOORD0 )							
+{    
+	VS_OUTPUT Output;	
+	Output.Position = vPos;
+		
+    Output.Tex0 = vTexCoord0 + float2( 3.0f / vecTextureSize.x, 1.0f / vecTextureSize.y );
+    Output.Tex1 = vTexCoord0 + float2( 3.0f / vecTextureSize.x, 3.0f / vecTextureSize.y );
+    Output.Tex2 = vTexCoord0 + float2( 3.0f / vecTextureSize.x, 5.0f / vecTextureSize.y );
+    Output.Tex3 = vTexCoord0 + float2( 3.0f / vecTextureSize.x, 7.0f / vecTextureSize.y );
+    Output.Tex4 = vTexCoord0 + float2( 1.0f / vecTextureSize.x, 1.0f / vecTextureSize.y );
+    Output.Tex5 = vTexCoord0 + float2( 1.0f / vecTextureSize.x, 3.0f / vecTextureSize.y );
+    Output.Tex6 = vTexCoord0 + float2( 1.0f / vecTextureSize.x, 5.0f / vecTextureSize.y );
+    Output.Tex7 = vTexCoord0 + float2( 1.0f / vecTextureSize.x, 7.0f / vecTextureSize.y );   
+    
+    return Output;
+}
+
+float4 Reduction_Shader_ps( float3 Tex0: TEXCOORD0,
+							   float3 Tex1: TEXCOORD1,
+							   float3 Tex2: TEXCOORD2,
+							   float3 Tex3: TEXCOORD3,
+							   float3 Tex4: TEXCOORD4,
+							   float3 Tex5: TEXCOORD5,
+							   float3 Tex6: TEXCOORD6,
+							   float3 Tex7: TEXCOORD7 ) : COLOR
+{	
+	float4 t0 = tex2D( ColorTextureSampler, Tex0 );
+	float4 t1 = tex2D( ColorTextureSampler, Tex1 );
+	float4 t2 = tex2D( ColorTextureSampler, Tex2 );
+	float4 t3 = tex2D( ColorTextureSampler, Tex3 );
+	
+	float4 t4 = tex2D( ColorTextureSampler, Tex4 );
+	float4 t5 = tex2D( ColorTextureSampler, Tex5 );
+	float4 t6 = tex2D( ColorTextureSampler, Tex6 );
+	float4 t7 = tex2D( ColorTextureSampler, Tex7 );
+	
+	float4 t8 = tex2D( ColorTextureSampler, Tex0 + float2( +4.0f / vecTextureSize.x, 0));
+	float4 t9 = tex2D( ColorTextureSampler, Tex1 + float2( +4.0f / vecTextureSize.x, 0));
+	float4 ta = tex2D( ColorTextureSampler, Tex2 + float2( +4.0f / vecTextureSize.x, 0));
+	float4 tb = tex2D( ColorTextureSampler, Tex3 + float2( +4.0f / vecTextureSize.x, 0));
+	
+	float4 tc = tex2D( ColorTextureSampler, Tex4 + float2( +4.0f / vecTextureSize.x, 0));
+	float4 td = tex2D( ColorTextureSampler, Tex5 + float2( +4.0f / vecTextureSize.x, 0));
+	float4 te = tex2D( ColorTextureSampler, Tex6 + float2( +4.0f / vecTextureSize.x, 0));
+	float4 tf = tex2D( ColorTextureSampler, Tex7 + float2( +4.0f / vecTextureSize.x, 0));
+	
+	return ( ( t0 + t1 + t2 + t3 )
+		    +( t4 + t5 + t6 + t7 )
+		    +( t8 + t9 + ta + tb )
+		    +( tc + td + te + tf ) ) /16.0f;
+}

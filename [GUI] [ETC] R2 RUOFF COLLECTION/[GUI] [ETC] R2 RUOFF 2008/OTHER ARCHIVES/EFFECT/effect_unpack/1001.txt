@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>jump</Name>
+	<Dynamic>false</Dynamic>
+	
+</Information>
+<EffectFile>1001.reb</EffectFile>
+</EffectScript>

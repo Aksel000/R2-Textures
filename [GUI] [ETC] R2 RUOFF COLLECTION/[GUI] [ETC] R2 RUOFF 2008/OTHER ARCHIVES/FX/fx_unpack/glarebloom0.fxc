@@ -1,0 +1,247 @@
+
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+
+float4x4 matShadowProjectionTexScale;
+float4x4 matCharacterShadowCameraProj;
+float3 vecViewPosition;
+
+float3 vecSunDirection;
+float3 vecBrBm;
+float4 vecHen;
+float3 vecBm;
+float3 vecBr;
+
+float3 vecAtmosphereColor;	
+float3 vecLin;
+
+float3 vecCharacterLightPosition;
+float3 vecCharacterLightColor;
+float3 vecCharacterShadowColorDepth;
+
+float4x4 matNearShadowCameraProj;
+float4x4 matNearShadowCameraProjTexScale;
+float4x4 matSunLightDirection;
+float3 vecCharacterLightDepth;
+float3 vecCharacterAddColor;
+
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;
+    float3 Tangent	  : TEXCOORD1;
+    float3 Binormal   : TEXCOORD2;
+    float3 Normal	  : TEXCOORD3;            
+    float3 Half		  : TEXCOORD4;
+    float3 DynamicLight : TEXCOORD5;
+    float3 Shadowmap : TEXCOORD6;    
+	float3 NearShadowmap : TEXCOORD7;
+    float3 Diffuse    : COLOR0;
+};
+
+sampler ColorTextureSampler : register(s0);
+sampler NormalTextureSampler : register(s1);
+sampler SpecularTextureSampler : register(s2);
+samplerCUBE LightSampler : register( s3 );
+sampler ShadowmapSampler : register( s4 );
+samplerCUBE EnvSampler : register( s5 );
+sampler NearShadowmapSampler : register( s6 );
+
+float3 Lin( in float3 Fex, in float fCosTheta, in float fPlusOneCosTheta )
+{		
+	float3 vecBmTheta = vecBm / pow( vecHen.z * fCosTheta + vecHen.y, vecHen.w );				
+	
+	float3 vecBrTheta = fPlusOneCosTheta * vecBm;
+		
+	float3 vecLinTheta = ( ( vecBmTheta + vecBrTheta ) * vecLin ) * ( 1.0f - Fex );						
+	
+	return vecLinTheta;
+}
+
+float3 Fex( in float fDistance )
+{
+	float3 Fex = exp( vecBrBm * ( -fDistance ) );	
+	return Fex;
+}
+
+float3 PointLight( in float3 vecPosition, in float3 vecLightPosition, in float3 vecNormal, in float3 vecLightColor )
+{
+	float3 vecDirection = vecLightPosition - vecPosition;
+	float fLightDistance = length( vecDirection );
+	vecDirection = normalize( vecDirection );
+	
+	//return dot( vecDirection, vecNormal );
+	
+	return saturate( dot( vecDirection, vecNormal ) ) * vecLightColor;
+	//return vecDirection;
+}
+
+
+VS_OUTPUT Character_Normal_Shader_vs( float4 vPos : POSITION, 
+								  float3 vNormal : NORMAL,
+								  float3 vTangent : TANGENT,
+								  float3 vBinormal : BINORMAL,
+								  float2 vTexCoord0 : TEXCOORD0 )
+{    
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );
+    Output.Texture = vTexCoord0;
+    
+    float3x3 vecTransTangentSpace;
+    vecTransTangentSpace[ 0 ] = mul( vTangent, matWorld );
+    vecTransTangentSpace[ 1 ] = mul( vBinormal, matWorld );
+    vecTransTangentSpace[ 2 ] = mul( vNormal, matWorld);
+    
+    Output.Diffuse = min( dot( vecTransTangentSpace[ 2 ], float3( vecSunDirection.x, vecSunDirection.y, vecSunDirection.z ) ) , float3( 0.5f, 0.5f, 0.5f ) );    
+    
+    if( vecCharacterShadowColorDepth.x > 0.5f )
+		Output.Diffuse.x = -1.0f;
+     
+    
+	//Output.Diffuse = dot( vecTransTangentSpace[ 2 ], vecSunDirection );
+    
+    Output.Tangent = float3( vecTransTangentSpace[ 0 ].x, vecTransTangentSpace[ 1 ].x, vecTransTangentSpace[ 2 ].x );
+    Output.Binormal = float3( vecTransTangentSpace[ 0 ].y, vecTransTangentSpace[ 1 ].y, vecTransTangentSpace[ 2 ].y );
+    Output.Normal = float3( vecTransTangentSpace[ 0 ].z, vecTransTangentSpace[ 1 ].z, vecTransTangentSpace[ 2 ].z );    
+    
+    float3 vecPosition = mul( vPos, matWorld );      
+    
+    ////////////////////////////////////////         
+        
+    //vecTransTangentSpace[ 2 ]
+    
+    Output.DynamicLight = PointLight( vecPosition, vecCharacterLightPosition, vecTransTangentSpace[ 2 ], vecCharacterLightColor );
+    
+    ///////////////////////////////////////    
+    
+    float4 vecTransformPosition = mul( vPos, matWorld );
+	float3 vecViewDirection = normalize( vecViewPosition - vecTransformPosition );
+	Output.Half = mul( vecTransTangentSpace, ( vecViewDirection + vecSunDirection ) );		
+	
+	Output.Shadowmap = mul( vPos, matShadowProjectionTexScale );	
+	
+	Output.Shadowmap.xy -= float2( ( 1.0f / 2048 ) * 0.5f, ( 1.0f / 2048 ) * 0.5f );	
+	
+	float3 vecShadowProj = mul( vPos, matCharacterShadowCameraProj );
+	
+	if( vecShadowProj.z > 0.999f )	
+		Output.Shadowmap.z = 0.999f; 		
+	else
+		Output.Shadowmap.z = vecShadowProj.z ;
+		
+	Output.NearShadowmap = mul( vPos, matNearShadowCameraProjTexScale );	
+	vecShadowProj = mul( vPos, matNearShadowCameraProj );
+	
+	if( vecShadowProj.z > 0.999f )	
+		Output.NearShadowmap.z = 0.999f; 		
+	else
+		Output.NearShadowmap.z = vecShadowProj.z ; 	
+		
+		
+            
+    return Output;
+}
+
+struct PS_OUTPUT
+{
+    float4 Color[2] : COLOR0;    
+};
+
+PS_OUTPUT Character_Normal_Shader_ps( float3 Tex : TEXCOORD0,
+							   float3 Tangent : TEXCOORD1,
+							   float3 Binormal : TEXCOORD2,
+							   float3 Normal : TEXCOORD3, 							   							   
+							   float3 Half : TEXCOORD4,
+							   float3 DynamicLight : TEXCOORD5 ,
+							   float3 Shadowmap : TEXCOORD6,
+							   float3 NearShadowmap : TEXCOORD7,
+							   float3 Diffuse    : COLOR0 )
+{
+	PS_OUTPUT OutputColor;
+	
+	float3 NormalTex = ( tex2D( NormalTextureSampler, Tex ).xyz - 0.5f ) * 2.0f;			
+	NormalTex = normalize( NormalTex );
+	
+	float3x3 matRotate = float3x3( Tangent, Binormal, Normal );	
+	half3 vecTransNormal = mul( matRotate, NormalTex );
+	
+	//vecTransNormal = normalize( vecTransNormal );	
+	
+	vecTransNormal = mul( matSunLightDirection , vecTransNormal );
+				
+	half vecShadow = 0.0f;
+	{			
+		float4 ShadowmapTex = tex2D( ShadowmapSampler, Shadowmap + float3( ( 1.0f / 2048.0f ) * 0.5f, ( 1.0f / 2048.0f ) * 0.5f, 0.0f ) );
+		float fTemp = ShadowmapTex.x / 8.0f + ShadowmapTex.y;		
+				
+		if( fTemp < Shadowmap.z - 0.001f )
+			vecShadow -= Diffuse.x;
+		ShadowmapTex = tex2D( ShadowmapSampler, Shadowmap + float3( -( 1.0f / 2048.0f ) * 0.5f, ( 1.0f / 2048.0f ) * 0.5f, 0.0f ) );
+		fTemp = ShadowmapTex.x / 8.0f + ShadowmapTex.y;	
+				
+		if( fTemp < Shadowmap.z - 0.001f )
+			vecShadow -= Diffuse.x;
+			
+		ShadowmapTex = tex2D( ShadowmapSampler, Shadowmap + float3( ( 1.0f / 2048.0f ) * 0.5f, -( 1.0f / 2048.0f ) * 0.5f, 0.0f ) );
+		fTemp = ShadowmapTex.x / 8.0f + ShadowmapTex.y;	
+				
+		if( fTemp < Shadowmap.z - 0.001f )
+			vecShadow -= Diffuse.x;
+			
+			/*			
+		ShadowmapTex = tex2D( ShadowmapSampler, Shadowmap + float3( -( 1.0f / 2048.0f ) * 0.5f, -( 1.0f / 2048.0f ) * 0.5f, 0.0f ) );
+		fTemp = ShadowmapTex.x / 8.0f + ShadowmapTex.y;	
+				
+		if( fTemp < Shadowmap.z - 0.001f )
+			vecShadow -= Diffuse;
+			
+			/*					
+		ShadowmapTex = tex2D( ShadowmapSampler, Shadowmap );
+		fTemp = ShadowmapTex.x / 8.0f + ShadowmapTex.y;					
+		if( fTemp < Shadowmap.z - 0.001f )
+			vecShadow -= Diffuse;			*/
+			
+			
+		//////////////////////////////		
+			
+		ShadowmapTex = tex2D( NearShadowmapSampler, NearShadowmap );
+		fTemp = ShadowmapTex.x / 8.0f + ShadowmapTex.y;	
+				
+		if( fTemp < NearShadowmap.z - 0.001f )
+			vecShadow -= ( Diffuse.y * 1.6f ) * 1.0f;		
+			
+			
+		vecShadow = max( 1.0f + ( vecShadow * 0.4f ) , 0.0f );		
+	
+	}
+	
+	////////////////
+	float4 vecLight = float4( 1.f, 1.0f, 1.0f, 1.0f );
+	
+	if( vecCharacterLightDepth.x > 0.0f )
+		 vecLight = texCUBE( LightSampler, vecTransNormal );		
+	
+	float3 vecSpecularMaskTexture = tex2D( SpecularTextureSampler, Tex );
+	    
+	//float3 vecSpecular = pow( max( dot( normalize( Half ), vecTransNormal ), 0.0f ), 8.0f ) * vecSpecularMaskTexture.x * vecShadow.x;		
+	//float3 vecSpecular = pow( max( dot( normalize( Half ), NormalTex ), 0.0f ), 8.0f ) * vecSpecularMaskTexture.x * vecShadow.x;
+	float3 vecSpecular = pow( max( dot( normalize( Half ), NormalTex ), 0.0f ), 8.0f ) * vecSpecularMaskTexture.x * vecShadow.x;
+	
+	vecLight = max( vecLight, 0.4f );	
+	vecShadow = max( vecShadow, 0.75f );
+	float4 vecColorTex = tex2D( ColorTextureSampler, Tex ) * min( vecLight, half4( vecShadow, vecShadow, vecShadow, 1.0f ) ) * 1.5f;
+		
+	
+	
+	vecColorTex.xyz = vecColorTex.xyz + DynamicLight.xyz;
+	vecColorTex.xyz *= vecShadow;
+	vecSpecular.xyz *= vecShadow;		
+	vecColorTex.xyz += vecSpecular.xyz;	
+	vecColorTex.xyz += vecCharacterAddColor;
+	
+	OutputColor.Color[ 0 ] = vecColorTex;
+	OutputColor.Color[ 1 ] = float4( vecSpecular.xyz * 1.0f, 1.0f );//float4( vecSpecular.xyz * 0.1f, 1.0f );//	
+	
+	return OutputColor;
+}

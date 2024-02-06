@@ -1,0 +1,15 @@
+<EffectScript>
+<Information>
+	<Name>Black_unicon_Head</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>True</Loop>
+	<Attach>
+    		<BodyPart>HEAD</BodyPart>
+		<Pos>0,0,0</Pos>
+		<Rot>true</Rot>
+    		<Scale>TRUE</Scale>
+	</Attach>
+
+</Information>
+<EffectFile>1086.reb</EffectFile>
+</EffectScript>

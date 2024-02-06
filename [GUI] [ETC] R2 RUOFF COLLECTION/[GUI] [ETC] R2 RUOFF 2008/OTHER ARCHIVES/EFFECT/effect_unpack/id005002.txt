@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>mantle</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>id005002.reb</EffectFile>
+</EffectScript> 
+

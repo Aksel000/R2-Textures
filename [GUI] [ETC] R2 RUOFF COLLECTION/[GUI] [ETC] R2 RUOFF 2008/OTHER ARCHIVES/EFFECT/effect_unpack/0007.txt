@@ -1,0 +1,14 @@
+<EffectScript>
+<Information>
+	<Name>test</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<PickingBox>
+		<Min>-1000,-1000,-1000</Min>
+		<Max>1000,1000,1000</Max>
+	</PickingBox>
+	<CullingRadius>18000</CullingRadius>
+	
+</Information>
+<EffectFile>0007.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,18 @@
+<EffectScript>
+<Information>
+	<Name>Giant_king</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	
+	<Attach>
+    		<BodyPart>PELVIS</BodyPart>
+		<Pos>21,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		
+	
+	</Attach>
+
+</Information>
+<EffectFile>1180.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>silence_Cont</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+</Information>
+<EffectFile>1032.reb</EffectFile>
+</EffectScript>

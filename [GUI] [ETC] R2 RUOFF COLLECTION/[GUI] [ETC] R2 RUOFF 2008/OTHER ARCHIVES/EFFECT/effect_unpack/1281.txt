@@ -1,0 +1,18 @@
+<EffectScript>
+<Information>
+	<Name>pk_mode</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>P0082.txt</Particle>
+
+	<Attach>
+    		<BodyPart>CHEST</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+
+	
+	</Attach>
+	
+</Information>
+<EffectFile>1281.reb</EffectFile>
+</EffectScript>

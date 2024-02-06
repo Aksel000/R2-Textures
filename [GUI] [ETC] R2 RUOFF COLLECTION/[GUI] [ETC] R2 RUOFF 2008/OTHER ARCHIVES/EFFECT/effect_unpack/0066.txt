@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>Candle</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<PickingBox>
+		<Min>-150,-50,-1500</Min>
+		<Max>150,50,150</Max>
+	</PickingBox>
+	<CullingRadius>200</CullingRadius>
+</Information>
+<EffectFile>0066.reb</EffectFile>
+</EffectScript>

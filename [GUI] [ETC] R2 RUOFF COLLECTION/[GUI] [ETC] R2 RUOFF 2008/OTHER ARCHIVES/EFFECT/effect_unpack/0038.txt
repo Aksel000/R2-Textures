@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>WaterGate</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>0038.reb</EffectFile>
+</EffectScript>

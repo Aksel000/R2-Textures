@@ -1,0 +1,53 @@
+
+float4x4 matShadowCameraProj;
+float4x4 matWorld;
+float3 vecUpdateViewPosition;
+float2 vecNearFarPlane;
+float3 vecInvSunLightDirection;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;        
+};
+
+sampler ColorTextureSampler : register(s0);
+
+float4 CompressLens( in float4 vPos )
+{
+	float4 vecPosition = mul( vPos, matWorld );
+	float3 vecDistance = vecPosition - vecUpdateViewPosition;
+	vecDistance.y = 0.0f;	
+	float fDistance = length( vecDistance );
+	fDistance = ( vecNearFarPlane.x * fDistance + vecNearFarPlane.y ) / fDistance;
+	if( fDistance < 0.0f )
+		fDistance = 0.0f;
+		
+	float3 vecDirection = normalize( vecDistance );	
+	vecPosition.xyz = vecDirection * fDistance;	
+	vecPosition.w = 1.0f;
+	
+	return mul( vecPosition, matShadowCameraProj );
+}
+
+VS_OUTPUT CompressShadowmapGenerate_Shader_vs( float4 vPos : POSITION, 								  				  
+								 float2 vTexCoord0 : TEXCOORD0 )
+{    
+	VS_OUTPUT Output;		
+	
+	float fHeight = vPos.y;	
+	float fLens = -fHeight / vecInvSunLightDirection.y;	
+	//float fLens = -3000.0f;
+	
+	float4 vecPosition = vPos + fLens * float4( vecInvSunLightDirection, 0.0f );	
+		
+	Output.Position = CompressLens( vecPosition );
+    Output.Texture = vTexCoord0;
+    return Output;
+}
+
+float4 CompressShadowmapGenerate_Shader_ps( float3 Tex : TEXCOORD0 ) : COLOR
+{
+	float fAlpha = tex2D( ColorTextureSampler, Tex ).a;
+	return float4( 0.0f, 0.0f, 0.0f, fAlpha );
+}

@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>Warpgate</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>0017.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>tower</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>0018.reb</EffectFile>
+</EffectScript>

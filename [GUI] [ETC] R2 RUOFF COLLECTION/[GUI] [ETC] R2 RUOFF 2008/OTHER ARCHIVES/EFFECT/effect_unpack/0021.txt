@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>Wave</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<PickingBox>
+		<Min>-1200,-200,-1200</Min>
+		<Max>1200,200,1200</Max>
+	</PickingBox>
+	<CullingRadius>1200</CullingRadius>
+</Information>
+<EffectFile>0021.reb</EffectFile>
+</EffectScript>

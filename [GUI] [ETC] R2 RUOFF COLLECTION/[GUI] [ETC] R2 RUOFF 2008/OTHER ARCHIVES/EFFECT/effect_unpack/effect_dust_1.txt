@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>effect_dust_1</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>effect_dust_1.reb</EffectFile>
+</EffectScript>

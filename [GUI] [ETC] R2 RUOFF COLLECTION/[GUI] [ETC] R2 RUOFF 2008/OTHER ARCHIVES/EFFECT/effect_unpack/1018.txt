@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>effect_Web_Cont</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+</Information>
+<EffectFile>1018.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,20 @@
+<EffectScript>
+<Information>
+	<Name>skill_reflection_left</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>
+    		<BodyPart>BVCENTER</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+	</Attach>
+
+
+</Information>
+<EffectFile>1127.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

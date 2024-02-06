@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>Wand_IceStorm</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1083.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,14 @@
+<EffectScript>
+<Information>
+	<Name>effect_Icestorm_Missile</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0003.txt</Particle>
+	<Loop>true</Loop>
+</Information>
+<EffectFile>1015.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">storms.wav</FrameEvent>
+		
+
+</Event>
+</EffectScript>

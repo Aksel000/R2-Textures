@@ -1,0 +1,17 @@
+<EffectScript>
+<Information>
+	<Name>power</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>false</Loop>
+	<Particle>P0033.txt</Particle>
+
+
+
+</Information>
+<EffectFile>1095.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,18 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>Dummy</Name>
+</Information>
+
+<SceneControl>
+	<Group Sequential="FALSE">
+	</Group>
+
+	<Group Sequential="TRUE">
+	</Group>
+
+	<Group Sequential="TRUE">
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

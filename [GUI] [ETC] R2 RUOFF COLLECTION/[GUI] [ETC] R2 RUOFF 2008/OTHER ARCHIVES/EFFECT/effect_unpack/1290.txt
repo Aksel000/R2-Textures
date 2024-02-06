@@ -1,0 +1,19 @@
+<EffectScript>
+<Information>
+	<Name>DRAG</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	
+	<Attach>
+    		<BodyPart>HEAD</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+	
+	</Attach>
+
+</Information>
+<EffectFile>1290.reb</EffectFile>
+
+
+</EffectScript>

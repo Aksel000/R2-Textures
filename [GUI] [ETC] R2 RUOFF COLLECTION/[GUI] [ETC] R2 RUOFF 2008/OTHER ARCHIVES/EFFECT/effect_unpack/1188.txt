@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name>elfking_ice</Name>
+	<Dynamic>false</Dynamic>
+
+	
+	
+	
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos> 0,10,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		<Once>true</Once>
+	
+	</Attach>
+
+
+
+</Information>
+<EffectFile>1188.reb</EffectFile>
+</EffectScript>

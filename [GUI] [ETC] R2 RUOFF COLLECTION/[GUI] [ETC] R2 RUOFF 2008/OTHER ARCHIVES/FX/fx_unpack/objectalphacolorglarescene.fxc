@@ -1,0 +1,83 @@
+
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float3 vecViewPosition;
+float3 vecSunDirection;
+float3 vecBetaRPlusBetaM;
+float3 vecHGg;
+float3 vecBetaDashR;
+float3 vecBetaDashM;
+float3 vecOneOverBetaRPlusBetaM;
+float4 vecMultipliers;
+float4 vecSunColorAndIntensity;
+
+float3 vecAtmosphereColor;	
+float3 vecLin;
+float4x4 matSunLightDirection;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;    
+    float3 Normal	  : TEXCOORD1;
+    float3 Fex		  : TEXCOORD2;
+    float3 Lin		  : TEXCOORD3;
+    float3 Color	  : TEXCOORD4;
+};
+
+sampler ColorTextureSampler : register(s0);
+sampler NormalTextureSampler : register(s1);
+
+samplerCUBE LightSampler : register( s2 );
+
+void HoffmanScattering( in float4 vecPosition, out float3 vecLin, out float3 vecFex )
+{
+	float4 vecTransformPosition = mul( vecPosition, matWorld );
+	
+	float3 vecViewDirection = vecTransformPosition - vecViewPosition;
+	float fDistance = length( vecViewDirection ) * 0.32658227f;
+	
+	vecViewDirection = normalize( vecViewDirection );
+	
+	float fTheta = dot( vecSunDirection, vecViewDirection );	
+	
+	float fPhase1 = 1.0f + fTheta * fTheta;	
+	float fPhase2 = pow( rsqrt( vecHGg.y - vecHGg.z * fTheta ), 3 ) * vecHGg.x;	
+	
+	float3 vecExtinction = exp( -vecBetaRPlusBetaM * fDistance );
+	
+	float3 vecTotalExtinction = vecExtinction * vecMultipliers.yzw;
+	float3 vecBetaRay = vecBetaDashR * fPhase1;
+	float3 vecBetaMie = vecBetaDashM * fPhase2;
+	float3 vecInscatter = ( vecBetaRay + vecBetaMie ) * vecOneOverBetaRPlusBetaM * ( 1.0f - vecExtinction );
+	
+	vecInscatter *= vecMultipliers.x;
+	vecInscatter *= vecSunColorAndIntensity.xyz * vecSunColorAndIntensity.w;
+	vecTotalExtinction *= vecSunColorAndIntensity.xyz * vecSunColorAndIntensity.w;
+	
+	
+	vecLin = vecInscatter;
+	vecFex = vecTotalExtinction;	
+}
+
+
+VS_OUTPUT StandardAlphaColorGlare_MeshShader_vs( float4 vPos : POSITION, 
+								  float3 vNormal : NORMAL,		
+								  float4 vColor : COLOR,						  
+								  float2 vTexCoord0 : TEXCOORD0 )
+{    
+	VS_OUTPUT Output = (VS_OUTPUT)0;	
+	Output.Position = mul( vPos, matWorldViewProj );
+    Output.Texture = vTexCoord0;            
+    return Output;
+}
+float4 StandardAlphaColorGlare_MeshShader_ps( float3 Tex : TEXCOORD0,							   
+							   float3 Normal : TEXCOORD1,
+							   float3 Fex : TEXCOORD2,
+							   float3 Lin : TEXCOORD3,
+							   float3 Color : TEXCOORD4 ) : COLOR
+{		
+	float4 vecColorTex = tex2D( ColorTextureSampler, Tex );// * vecLight * 1.4f;		
+	
+	return float4( 0.0f, 0.0f, 0.0f, vecColorTex.a );	
+}

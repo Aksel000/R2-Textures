@@ -1,0 +1,17 @@
+<EffectScript>
+<Information>
+	<Name>SPECTER</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>P0038.txt</Particle>
+	
+	<Attach>
+    		<BodyPart>PELVIS</BodyPart>
+		<Pos>10,0,17</Pos>
+		<Rot>true</Rot>
+    		<Scale>TRUE</Scale>
+	</Attach>
+	
+</Information>
+<EffectFile>1118.reb</EffectFile>
+</EffectScript>

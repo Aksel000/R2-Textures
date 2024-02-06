@@ -1,0 +1,26 @@
+<EffectScript>
+<Information>
+	<Name>head</Name>
+	<Dynamic>false</Dynamic>
+
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+		<Scale>false</Scale>
+		<Rot>true</Rot>
+		<Once>true</Once>
+	</Attach>
+	
+
+
+</Information>
+<EffectFile>1160.reb</EffectFile>
+	<Event>
+		
+		<FrameEvent Type="CAMERA" Frame="33" CamEffect="0" Time="1.0f"></FrameEvent>
+		<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">EF_1160.wav</FrameEvent>
+	</Event>
+
+
+
+</EffectScript>

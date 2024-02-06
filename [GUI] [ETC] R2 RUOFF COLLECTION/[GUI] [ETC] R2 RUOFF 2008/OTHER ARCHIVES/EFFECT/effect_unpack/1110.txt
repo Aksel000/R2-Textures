@@ -1,0 +1,14 @@
+<EffectScript>
+<Information>
+	<Name>MOB_Blood_exp</Name>
+	<Dynamic>false</Dynamic>
+	
+	
+</Information>
+<EffectFile>1110.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,20 @@
+<EffectScript>
+<Information>
+	<Name>Richking</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>P0029.txt</Particle>
+
+
+	
+
+	<Attach>
+    		<BodyPart>R_HAND</BodyPart>
+		<Pos>0,130,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+	</Attach>
+	
+</Information>
+<EffectFile>0106.reb</EffectFile>
+</EffectScript>

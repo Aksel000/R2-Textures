@@ -1,0 +1,15 @@
+<EffectScript>
+<Information>
+	<Name>pk_mode</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>
+    	<BodyPart>HEAD</BodyPart>
+  		<Pos>0,50,0</Pos>
+   		<Scale>FALSE</Scale>
+	
+   	</Attach>
+
+	<Loop>true</Loop>
+</Information>
+<EffectFile>1117.reb</EffectFile>
+</EffectScript>

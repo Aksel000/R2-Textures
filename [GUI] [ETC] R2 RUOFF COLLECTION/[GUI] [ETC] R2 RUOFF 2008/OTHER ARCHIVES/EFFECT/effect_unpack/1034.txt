@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>effect_pc_damage</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+</Information>
+<EffectFile>1034.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>DropletUpper</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>3004.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,9 @@
+<EffectScript>
+<Information>
+	<Name>Logo_TW</Name>
+	<Dynamic>false</Dynamic>
+
+
+</Information>
+<EffectFile>Logo_TW.reb</EffectFile>
+</EffectScript>

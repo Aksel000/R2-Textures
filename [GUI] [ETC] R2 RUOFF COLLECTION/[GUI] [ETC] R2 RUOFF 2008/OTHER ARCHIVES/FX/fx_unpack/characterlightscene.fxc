@@ -1,0 +1,105 @@
+
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+
+float4x4 matShadowProjectionTexScale;
+float4x4 matCharacterShadowCameraProj;
+float3 vecViewPosition;
+
+float3 vecSunDirection;
+float3 vecCharacterLightPosition;
+float3 vecCharacterLightColor;
+float3 vecCharacterLightRange;
+float3 vecCharacterShadowColorDepth;
+
+float4x4 matNearShadowCameraProj;
+float4x4 matNearShadowCameraProjTexScale;
+float4x4 matSunLightDirection;
+float3 vecCharacterLightDepth;
+float4 vecCharacterAddColor;
+
+float4 vecSectorPosition;
+float3 vecSectorSize;
+float4 vecCloudShadow;
+float4 vecInSectorPosition;
+
+float3 vecCharacterLightDirection1;
+float3 vecCharacterLightDirection2;
+float3 vecCharacterLightDirection3;
+
+float3 vecCharacterLightColor1;
+float3 vecCharacterLightColor2;
+float3 vecCharacterLightColor3;
+
+float3 vecCharacterSpecularLightColor1;
+float3 vecCharacterSpecularLightColor2;
+float3 vecCharacterSpecularLightColor3;
+float3 vecCharacterAmbientColor;
+float3 vecCharacterShadowColor;
+float vecCharacterSpecularExp1;
+float vecCharacterSpecularExp2;
+float vecCharacterSpecularExp3;
+float vecCharacterGlare1;
+float vecCharacterGlare2;
+float vecCharacterGlare3;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position         
+    float4 DynamicLight : COLOR0;
+    float2 Texture : TEXCOORD0;
+    float3 Ani : COLOR1;
+};
+
+sampler ColorTextureSampler : register(s0);
+
+float3 PointLight( in float3 vecPosition, in float3 vecLightPosition, in float3 vecNormal, in float3 vecLightColor )
+{
+	float3 vecDirection = vecLightPosition - vecPosition;
+	float fLightDistance = sqrt( vecDirection.x * vecDirection.x + vecDirection.y * vecDirection.y + vecDirection.z * vecDirection.z );
+	float fLightRangeRate = abs( vecCharacterLightRange.x - fLightDistance ) / vecCharacterLightRange.x;
+	vecDirection = normalize( vecDirection );
+	
+	return saturate( dot( vecDirection, vecNormal ) ) * vecLightColor * fLightRangeRate;		
+}
+
+VS_OUTPUT CharacterLight_Shader_vs( float4 vPos : POSITION, 
+								  float3 vNormal : NORMAL,								  
+								  float2 vTexCoord0 : TEXCOORD0 )
+{    
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );
+    Output.Texture = vTexCoord0;  
+    
+    float3 vecPosition = mul( vPos, matWorld );      
+    float3 vecNormal = normalize( mul( vNormal, matWorld ) );
+    
+    float fAniLight = dot( vecCharacterLightDirection1 , vecNormal );
+	float3 vecViewDirection = normalize( vecViewPosition - vecPosition );			
+	fAniLight -= dot( vecViewDirection , vecNormal ) * 4.0f;
+	//fAniLight *= 0.5f;
+    
+    Output.DynamicLight.xyz = PointLight( vecPosition, vecCharacterLightPosition, mul( vNormal, matWorld ), vecCharacterLightColor );   
+    Output.DynamicLight.w = 1.0f;
+    //Output.DynamicLight.xyz += float3( fAniLight, fAniLight, fAniLight );   
+    
+    
+    Output.Ani = float3( fAniLight, fAniLight, fAniLight ) * 0.5f;    
+    //Output.Ani = float3( 0.0f, 0.0f, 0.0f );
+            
+    return Output;
+}
+
+float4 CharacterLight_Shader_ps( float2 Tex : TEXCOORD0,							   
+								 float3 Ani : COLOR1,					   							   							   
+							   float4 DynamicLight : COLOR0							   
+							    ) : COLOR0
+{
+	
+	float4 vecColor = tex2D( ColorTextureSampler, Tex );
+	//vecColor.xyz = ( DynamicLight + Ani ) * vecColor.a;	
+	vecColor.xyz = ( DynamicLight ) * vecColor.a;	
+	vecColor.a *= DynamicLight.w;	
+			
+	return vecColor;	
+}

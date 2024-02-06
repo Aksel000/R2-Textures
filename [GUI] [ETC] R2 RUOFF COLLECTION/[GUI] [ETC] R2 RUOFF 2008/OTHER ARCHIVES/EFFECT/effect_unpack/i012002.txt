@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>ThunderStroke</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>i012002.reb</EffectFile>
+</EffectScript>

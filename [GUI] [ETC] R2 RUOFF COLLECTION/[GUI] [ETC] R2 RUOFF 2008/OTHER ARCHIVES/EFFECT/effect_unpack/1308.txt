@@ -1,0 +1,22 @@
+<EffectScript>
+<Information>
+	<Name>DRAG</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<Particle>P0087.txt</Particle>
+	<Attach>
+    		<BodyPart>L_HAND</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+	
+	</Attach>
+
+	
+
+
+</Information>
+<EffectFile>1308.reb</EffectFile>
+
+
+</EffectScript>

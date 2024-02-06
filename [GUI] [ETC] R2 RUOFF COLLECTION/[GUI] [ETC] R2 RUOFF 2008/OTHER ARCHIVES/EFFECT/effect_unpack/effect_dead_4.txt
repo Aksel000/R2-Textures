@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>effect_dead_4</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>effect_dead_4.reb</EffectFile>
+</EffectScript>

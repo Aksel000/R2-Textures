@@ -1,0 +1,120 @@
+
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float4x4 matLODTreeProjection;
+float3 vecViewPosition;
+float3 vecSunDirection;
+float3 vecSunColor;		
+float3 vecSkyColor;
+float fMultiplySunColor;
+float fMultiplyHorizonColor;
+float3 vecHorizonColor;
+float fHorizonExp;
+float fSunExp;
+float fFogStart;
+float fFogEnd;
+float fScatterEnd;
+float3 vecScatterStartColor;
+float3 vecScatterEndColor;
+float fMultiplyObjectScatter;
+float3 vecFogColor;
+float3 vecHeightFog;
+float4 vecOceanColor;
+
+float4x4 matSunLightDirection;
+float3 vecLightEnable;
+float4 vecCloudShadow;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;        
+    float3 Fex		  : COLOR0;
+    float4 Lin		  : COLOR1;    
+    float2 LODShade   : TEXCOORD1;
+};
+
+sampler ColorTextureSampler : register(s0);
+sampler LODShadeTextureSampler : register( s1 );
+
+void HoffmanScattering( in float4 vecPosition, out float3 vecLin, out float3 vecFex )
+{
+	float4 vecTransformPosition = mul( vecPosition, matWorld );
+	float3 vecViewDirection = vecTransformPosition - vecViewPosition;
+	float fLens = length( vecViewDirection );
+		
+	vecViewDirection = normalize( vecViewDirection );
+	
+	float fTheta = saturate( dot( vecSunDirection, vecViewDirection ) );
+	float fSunTheta = pow( fTheta, fSunExp );
+	
+	float3 vecXYDirection = vecViewDirection;	
+	vecXYDirection.y = 0.0f;	
+	vecXYDirection = normalize( vecXYDirection );		
+		
+	float3 vecHorizon = pow( saturate( dot( vecXYDirection, vecViewDirection ) ), fHorizonExp ) * vecHorizonColor * fMultiplyHorizonColor;
+	
+	float3 vecInscatter = vecSunColor * fSunTheta * fMultiplySunColor + vecFogColor;// + vecHorizon;		
+	
+	float fPhase1 = 1.0f + fTheta * fTheta;		
+	
+	float fFogRate = saturate( ( fLens - fFogStart ) / ( fFogEnd - fFogStart ) );
+	fFogRate *= fPhase1;	
+		
+	vecInscatter = lerp( float3( 0.0f, 0.0f, 0.0f ), vecInscatter * fPhase1, fFogRate );		
+	
+	
+	vecLin = vecInscatter;	
+		
+	float fScatterRate = saturate( fLens / fScatterEnd );
+	vecFex = lerp( vecScatterStartColor, vecScatterEndColor, fScatterRate ) * fMultiplyObjectScatter;		
+}
+
+VS_OUTPUT LODTreeUnderWaterScene_MeshShader_vs( float4 vPos : POSITION, 
+								  float3 vNormal : NORMAL,		
+								  float4 vColor : COLOR,						  
+								  float2 vTexCoord0 : TEXCOORD0 )
+{    
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );
+    Output.Texture = vTexCoord0;       
+    Output.LODShade = mul( vPos, matLODTreeProjection );    
+    
+    ///////////////////////////////////////////    
+    	
+	float3 vecFex, vecLin;
+	
+	HoffmanScattering( vPos, vecLin, vecFex );        
+	
+	Output.Fex = vecFex;	
+	Output.Lin.xyz = vecLin * 0.35f;
+    float4 vecPosition = mul( vPos, matWorld );
+	float3 vecV = vecPosition - vecViewPosition;
+	float fX = ( vecHeightFog.y - vecViewPosition.y ) / vecV.y;
+	if( fX >= 0 && fX <= 1 )
+	{			
+		float3 vecP = vecViewPosition + fX * vecV;
+		Output.Lin.w = saturate( length( vecP - vecViewPosition ) / vecHeightFog.x );
+	}
+	else
+	{
+		Output.Lin.w = saturate( length( vecPosition - vecViewPosition ) / vecHeightFog.x );
+	}
+	
+    return Output;
+}
+
+float4 LODTreeUnderWaterScene_MeshShader_ps( float3 Tex : TEXCOORD0,							   							   
+							   float3 Fex : COLOR0,
+							   float4 Lin : COLOR1,							   
+							   float2 LODShade : TEXCOORD1 ) : COLOR
+{		
+	float4 vecColorTex = tex2D( ColorTextureSampler, Tex );	
+	vecColorTex.xyz = vecColorTex * Fex + Lin;				
+	float3 vecShade = tex2D( LODShadeTextureSampler, LODShade );
+	vecShade += 0.5f;
+	vecColorTex.xyz *= vecShade;
+	vecColorTex.xyz = lerp( vecColorTex.xyz, vecOceanColor.xyz, Lin.w );
+	
+	return vecColorTex;
+}

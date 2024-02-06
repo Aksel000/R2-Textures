@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>title_serverback_out</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>title_serverback_out.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,15 @@
+<EffectScript>
+<Information>
+	<Name>CastleMark</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>
+    	<BodyPart>L_HAND</BodyPart>
+  		<Pos>0,0,0</Pos>
+   		<Scale>FALSE</Scale>
+	
+   	</Attach>
+
+	<Loop>true</Loop>
+</Information>
+<EffectFile>1145.reb</EffectFile>
+</EffectScript>

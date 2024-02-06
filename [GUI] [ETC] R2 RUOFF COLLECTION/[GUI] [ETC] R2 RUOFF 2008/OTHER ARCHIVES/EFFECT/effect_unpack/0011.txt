@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>Calton</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>0011.reb</EffectFile>
+</EffectScript>

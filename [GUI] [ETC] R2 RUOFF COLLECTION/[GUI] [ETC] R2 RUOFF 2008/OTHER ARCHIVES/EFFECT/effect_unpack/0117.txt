@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>Dummy</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>True</Loop>
+	<PickingBox>
+		<Min>-500,-500,-500</Min>
+		<Max>500,500,500</Max>
+	</PickingBox>
+	<CullingRadius>1000</CullingRadius>
+</Information>
+<EffectFile>0117.reb</EffectFile>
+</EffectScript>

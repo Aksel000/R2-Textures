@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>fountain</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>0040.reb</EffectFile>
+</EffectScript>

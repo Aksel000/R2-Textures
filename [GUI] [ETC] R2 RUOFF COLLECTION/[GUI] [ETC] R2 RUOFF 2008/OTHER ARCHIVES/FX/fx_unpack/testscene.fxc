@@ -1,0 +1,101 @@
+
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float3 vecViewPosition;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;
+    float2 Texture2   : TEXCOORD1;
+    float3 Tangent	  : TEXCOORD2;
+    float3 Binormal   : TEXCOORD3;
+    float3 Normal	  : TEXCOORD4;    
+    float3 SpaceView  : TEXCOORD5;
+    float3 View		  : TEXCOORD6;
+    float4 OutPosition : TEXCOORD7;
+};
+
+sampler ColorTextureSampler : register(s0);
+sampler NormalTextureSampler : register(s1);
+sampler SpecularSampler : register(s2);
+sampler LightSampler : register(s3);
+sampler DirectionSampler : register(s4);
+
+VS_OUTPUT Test_Shader_vs( float4 vPos : POSITION, 
+								  float3 vNormal : NORMAL,
+								  float3 vTangent : TANGENT,
+								  float3 vBinormal : BINORMAL,
+								  float2 vTexCoord0 : TEXCOORD0,
+								  float2 vTexCoord1 : TEXCOORD1 )
+{    
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );
+	Output.OutPosition = mul( vPos, matWorldViewProj );
+    Output.Texture = vTexCoord0;
+    Output.Texture2 = vTexCoord1;   
+    
+    
+    float3x3 vecTransTangentSpace;
+    vecTransTangentSpace[ 0 ] = normalize( mul( vTangent, matWorld ) );
+    vecTransTangentSpace[ 1 ] = normalize( mul( vBinormal, matWorld ) );
+    vecTransTangentSpace[ 2 ] = normalize( mul( vNormal, matWorld) );       
+    
+    Output.Tangent = float3( vecTransTangentSpace[ 0 ].x , vecTransTangentSpace[ 1 ].x, vecTransTangentSpace[ 2 ].x );
+    Output.Binormal = float3( vecTransTangentSpace[ 0 ].y , vecTransTangentSpace[ 1 ].y, vecTransTangentSpace[ 2 ].y );
+    Output.Normal = float3( vecTransTangentSpace[ 0 ].z, vecTransTangentSpace[ 1 ].z, vecTransTangentSpace[ 2 ].z );   
+    
+    float3 vecView = vecViewPosition - vPos;    
+    
+    Output.SpaceView.x = dot( vecView, vecTransTangentSpace[ 0 ] );
+    Output.SpaceView.y = dot( vecView, vecTransTangentSpace[ 1 ] );
+    Output.SpaceView.z = dot( vecView, vecTransTangentSpace[ 2 ] );
+    Output.View = normalize( vecView );
+    
+    return Output;
+}
+
+
+struct PS_OUTPUT
+{
+    half4 Color[2] : COLOR0;    
+};
+
+PS_OUTPUT Test_Shader_ps( float3 Tex : TEXCOORD0,
+						 float3 Tex2: TEXCOORD1,
+						 float3 Tangent : TEXCOORD2,
+						 float3 Binormal : TEXCOORD3,
+						 float3 Normal : TEXCOORD4,
+						 float3 SpaceView : TEXCOORD5,
+						 float3 View : TEXCOORD6,
+						 float4 OutPosition : TEXCOORD7 )
+{
+	PS_OUTPUT OutputColor;	
+			
+	half3 NormalTex = ( tex2D( NormalTextureSampler, Tex ).xyz - 0.5f ) * 2.0f;					
+	half3 vecTransNormal;
+	vecTransNormal.x = dot( Tangent , NormalTex );
+	vecTransNormal.y = dot( Binormal , NormalTex );
+	vecTransNormal.z = dot( Normal , NormalTex );	
+		
+	half4 vecColorTex = tex2D( ColorTextureSampler, Tex );	
+	
+	half4 vecLightmap = tex2D( LightSampler, Tex2 );	
+	half4 vecLightDirection = ( tex2D( DirectionSampler, Tex2 ) - 0.5f ) * 2.0f;		
+		
+	half4 vecLight = max( dot( vecTransNormal, vecLightDirection ), 0.5f );
+	
+	half3 vecHalf = normalize( normalize( View ) + vecLightDirection );
+	half3 vecSpecular = pow( saturate( dot( vecHalf, vecTransNormal ) ), 8.0f ) * 0.5f;		
+	
+	vecSpecular.xyz = vecSpecular * vecLightmap;		
+	vecColorTex = vecLightmap * vecLight * vecColorTex * 2.0 + half4( vecSpecular, 1.0f );	
+	
+		
+	//OutputColor.Color[ 0 ] = vecColorTex;	
+	OutputColor.Color[ 0 ] = vecLightmap;		
+	OutputColor.Color[ 1 ] = half4( 0.0f, 0.0f, 0.0f, 0.0f );
+	//OutputColor.Color[ 1 ] = vecLightDirection;	
+		
+	return OutputColor;
+}

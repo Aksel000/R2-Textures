@@ -1,0 +1,11 @@
+<EffectScript>
+<Information>
+	<Name>WHITE_DRUG</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0008.txt</Particle>
+</Information>
+<EffectFile>1040_03.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="5" Min="1400" Max="2000">swallow.wav</FrameEvent>
+</Event>
+</EffectScript>

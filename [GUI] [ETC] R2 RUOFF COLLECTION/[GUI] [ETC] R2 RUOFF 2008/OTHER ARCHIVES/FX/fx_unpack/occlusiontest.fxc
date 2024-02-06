@@ -1,0 +1,28 @@
+float4x4 matWorldView;
+
+struct VS_OUTPUT
+{
+    float4 Pos			: POSITION;
+    float2 Tex			: TEXCOORD0;    
+};
+
+sampler ColorTextureSampler : register(s0);
+
+VS_OUTPUT OcclusionTest_Shader_vs( float4 vPos : POSITION, 								  
+								  float2 vTexCoord0 : TEXCOORD0 )
+{    
+	VS_OUTPUT Output;	
+	
+	float4 vecPos = mul( vPos, matWorldView );	
+	Output.Pos = vecPos;		
+	Output.Tex = vTexCoord0;			
+    return Output;
+}
+
+
+float4 OcclusionTest_Shader_ps( float4 Tex : TEXCOORD0 ) : COLOR
+{			
+	float4 Texture = tex2D( ColorTextureSampler, Tex ) * 1.0f;
+	float4 Color = float4( 0.0f, 0.0f, 0.0f, Texture.w );	
+	return Color;
+}

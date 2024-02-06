@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>effect_firefly</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>effect_firefly.reb</EffectFile>
+</EffectScript>

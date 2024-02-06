@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>Effect_regen</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>id004000.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="20" Min="1400" Max="2000">drop_doublesw.wav</FrameEvent>
+</Event>
+</EffectScript>

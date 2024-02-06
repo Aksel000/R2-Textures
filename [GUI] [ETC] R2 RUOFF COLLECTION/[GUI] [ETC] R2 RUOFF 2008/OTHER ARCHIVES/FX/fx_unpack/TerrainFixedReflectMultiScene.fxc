@@ -1,0 +1,49 @@
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float3 vecViewPosition;
+float4 vecLowFogColor;
+float fFogStart;
+float fFogEnd;
+float4 vecScatterEndColor;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;
+    float2 CliffTextureX : TEXCOORD1;
+    float2 CliffTextureY : TEXCOORD2;    
+    float  Fog           : TEXCOORD3;
+};
+
+sampler CliffMaskSamplerX : register(s0);
+sampler CliffMaskSamplerY : register(s1);
+sampler CliffDetailSampler : register(s2);
+sampler OcclusionSampler : register(s3);
+
+VS_OUTPUT TerrainFixedReflectMulti_Shader_vs( float4 vPos : POSITION,							  
+								  float2 vTexCoord0 : TEXCOORD0 )
+{	
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );
+	float3 vecTransformPosition = mul( vPos, matWorld );
+    float fLens = length( vecTransformPosition - vecViewPosition );
+    Output.Fog = saturate( ( fLens - fFogStart ) / ( fFogEnd - fFogStart ) );
+    Output.Texture = vTexCoord0;
+    Output.CliffTextureX = float2( vTexCoord0.x * 10.0f, vecTransformPosition.y * -0.0004f );
+    Output.CliffTextureY = float2( vecTransformPosition.y * -0.0004f, vTexCoord0.y * 10.0f );
+    return Output;
+}
+
+float4 TerrainFixedReflectMulti_Shader_ps( VS_OUTPUT In ) : COLOR
+{
+	float4 vecMaskX = tex2D( CliffMaskSamplerX, In.Texture );
+	float4 vecMaskY = tex2D( CliffMaskSamplerY, In.Texture );	
+	float4 vecShadow = tex2D( OcclusionSampler, In.Texture );
+	float4 vecCliffTexX = tex2D( CliffDetailSampler, In.CliffTextureX );
+	float4 vecCliffTexY = tex2D( CliffDetailSampler, In.CliffTextureY );
+	float4 vecTexColor = vecCliffTexX * vecCliffTexY * 2 * vecScatterEndColor;
+	vecTexColor.xyz = vecTexColor.xyz * vecShadow.xyz * 2;
+	vecTexColor.xyz = lerp( vecTexColor.xyz, vecLowFogColor, In.Fog );
+	vecTexColor.a = vecMaskX.a + vecMaskY.a;
+	return vecTexColor;
+}

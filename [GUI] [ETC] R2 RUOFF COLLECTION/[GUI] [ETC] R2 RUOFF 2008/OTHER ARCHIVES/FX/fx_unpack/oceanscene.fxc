@@ -1,0 +1,99 @@
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float4x4 matTexProj;
+float4 vecViewPosition;
+float4 vecSunLightDirection;
+float4 vecSunLightColor;
+float fElapesTime;
+
+sampler WaterRefractTextureSampler : register( s0 );
+sampler WaterReflectTextureSampler : register( s1 );
+sampler WaterFresnelTextureSampler : register( s2 );
+sampler CrossBumpTextureSampler0 : register( s3 );
+sampler CrossBumpTextureSampler1 : register( s4 );
+sampler CrossBumpTextureSampler2 : register( s5 );
+sampler WaterInteractiveTextureSampler : register( s6 );
+
+struct VS_INPUT
+{
+	float4 Position : POSITION;
+	float2 TextureCoord  : TEXCOORD0;
+};
+
+struct VS_OUTPUT
+{
+	float4 Position: POSITION;
+	float2 BumpTexCoord0 : TEXCOORD0;
+	float2 BumpTexCoord1 : TEXCOORD1;
+	float2 BumpTexCoord2 : TEXCOORD2;
+	float2 BumpTexCoord3 : TEXCOORD3;
+	float2 BumpTexCoord4 : TEXCOORD4;
+	float3 ViewPos : TEXCOORD5;
+	float4 ProjTexCoord : TEXCOORD6;
+};
+
+struct PS_OUTPUT
+{
+    float4 Color[2] : COLOR0;    
+};
+
+VS_OUTPUT Ocean_Shader_vs( VS_INPUT In )
+{
+	VS_OUTPUT Out;
+	Out.Position = mul( In.Position, matWorldViewProj );
+	float4 vecPos = mul( In.Position, matWorld );
+	//Out.ViewPos = normalize( vecPos - vecViewPosition );
+	Out.ViewPos = ( vecPos - vecViewPosition );
+
+	// ¿Ö°îµÈ ¹üÇÁ¸Ê ÁÂÇ¥¸¦ °è»ê Èê·¯°¡°Ô ÇÑ´Ù.
+    Out.BumpTexCoord0 = In.TextureCoord * 0.0215 + fElapesTime * float2( 0, -0.0015 );
+	Out.BumpTexCoord1 = In.TextureCoord * 0.001 + fElapesTime * float2( 0, -0.0035 );
+	Out.BumpTexCoord2 = In.TextureCoord * 0.00033 + fElapesTime * float2( 0, -0.0055 );
+	Out.BumpTexCoord3 = In.TextureCoord * 0.000012 + fElapesTime * float2( 0, -0.002 );
+	Out.BumpTexCoord4 = In.TextureCoord * 0.00011 + fElapesTime * float2( 0, -0.009 );	
+	Out.ProjTexCoord = mul( In.Position, matTexProj );
+	return Out;
+}
+
+PS_OUTPUT Ocean_Shader_ps( VS_OUTPUT In ) : COLOR
+{
+	PS_OUTPUT output;
+	float3 BumpMap0 = 2 * tex2D( CrossBumpTextureSampler0, In.BumpTexCoord0 ) - 1;
+	float3 BumpMap1 = 2 * tex2D( CrossBumpTextureSampler1, In.BumpTexCoord1 ) - 1;
+	float3 BumpMap2 = 2 * tex2D( CrossBumpTextureSampler0, In.BumpTexCoord2 ) - 1;
+	float3 BumpMap3 = 2 * tex2D( CrossBumpTextureSampler1, In.BumpTexCoord3 ) - 1;
+	float3 BumpMap4 = 2 * tex2D( CrossBumpTextureSampler2, In.BumpTexCoord4 ) - 1;	
+	float3 BumpMap5 = 2 * tex2Dproj( WaterInteractiveTextureSampler, In.ProjTexCoord ) - 1;
+	//float3 BumpMap = BumpMap0 * float3( 0.54, 0.54, 2.0 );
+	
+	float3 BumpMap = BumpMap1 * float3( 0.85, 0.85, 2.0 );
+	BumpMap = BumpMap2 * float3( 0.91, 0.91, 2.0 ) + BumpMap;
+	BumpMap = BumpMap3 * float3( 0.77, 0.77, 2.0 ) + BumpMap;
+	BumpMap = BumpMap4 * float3( 0.3, 0.3, 2.0 ) + BumpMap;
+	BumpMap = BumpMap5 * float3( 3, 3, 2.0 ) + BumpMap;
+
+	float3 BumpMapRefraction = BumpMap0 * float3( 0.54, 0.54, 2.0 ) + BumpMap;
+	float3 BumpMapReflection = BumpMap0 * float3( 0.3, 0.3, 2.0 ) + BumpMap;
+
+	float4 RefractCoord, ReflectCoord;
+	RefractCoord.xyz = BumpMapRefraction + In.ProjTexCoord.xyz;
+	RefractCoord.w = In.ProjTexCoord.w;
+	float4 refr = tex2Dproj( WaterRefractTextureSampler, RefractCoord );
+	
+	ReflectCoord.xyz = BumpMapReflection * 10 + In.ProjTexCoord.xyz;
+	ReflectCoord.w = In.ProjTexCoord.w;	
+	float4 refl = tex2Dproj( WaterReflectTextureSampler, ReflectCoord );
+
+	float3 N = normalize( BumpMap ).xzy;
+	float3 V = normalize( In.ViewPos );
+	float3 R = normalize( reflect( V, N ) );
+	float fFresnel = tex1D( WaterFresnelTextureSampler, dot( R, N ) );	
+	//float dotRN = dot( R, N );	
+	//float fFresnel = 1.0f - saturate( pow( dotRN, 0.2f ) );	
+	
+	float3 SunLight = 100 * pow( saturate( dot( R, vecSunLightDirection ) ), 100 ) * vecSunLightColor;
+	refl.rgb += SunLight;
+	output.Color[ 0 ] = lerp( refr, refl, fFresnel );
+	output.Color[ 1 ] = float4( SunLight, 1 ) * 0.02;
+	return output;
+}

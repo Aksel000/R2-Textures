@@ -1,0 +1,31 @@
+float4x4 matWorldViewProj;
+float4 vecEdgeColor;
+
+sampler TextureSampler : register(s0);
+
+struct VS_INPUT
+{
+	float4 Position : POSITION;
+	float3 Normal : NORMAL;
+	float3 Tangent : TANGENT;
+	float3 Binormal : BINORMAL;
+	float2 TextureCoord  : TEXCOORD0;
+};
+
+struct VS_OUTPUT
+{
+	float4 Position: POSITION;
+	float2 TextureCoord : TEXCOORD0;
+};
+
+VS_OUTPUT EdgeStretchScene_Shader_vs( VS_INPUT In )
+{
+	VS_OUTPUT Out;
+	
+	float4 vPos = mul( In.Position, matWorldViewProj );
+	float4 vNormal = mul( In.Normal, matWorldViewProj );
+	vNormal.zw = 0;
+	Out.Position = vPos + 2.0 * vNormal;
+	Out.TextureCoord = In.TextureCoord;
+	return Out;
+}

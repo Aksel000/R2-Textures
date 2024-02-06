@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>Effect_regen</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>id400421.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="15" Min="1400" Max="2000">drop_magic.wav</FrameEvent>
+</Event>
+</EffectScript>

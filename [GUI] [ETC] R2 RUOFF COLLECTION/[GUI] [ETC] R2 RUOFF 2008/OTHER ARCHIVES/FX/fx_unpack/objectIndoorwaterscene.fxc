@@ -1,0 +1,121 @@
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float4x4 matTexProj;
+float4 vecWaterColor;
+float4 vecViewPosition;
+float4 vecLowFogColor;
+float fFogStart;
+float fFogEnd;
+float fElapesTime;
+float fScale;
+float fSpeed;
+
+sampler WaterEnvTextureSampler : register( s0 );
+sampler WaterRefractTextureSampler : register( s1 );
+sampler WaterFresnelTextureSampler : register( s2 );
+sampler WaterBumpTextureSampler0 : register( s3 );
+sampler WaterBumpTextureSampler1 : register( s4 );
+sampler WaterInteractiveTextureSampler : register( s5 );
+
+struct VS_INPUT
+{
+	float4 Position : POSITION;
+	float2 TextureCoord  : TEXCOORD0;
+	float3 Normal : NORMAL;
+	float3 Tangent : TANGENT;
+	float3 Binormal : BINORMAL;
+};
+
+struct VS_OUTPUT
+{
+	float4 Position: POSITION;
+	float2 BumpTexCoord0 : TEXCOORD0;
+	float2 BumpTexCoord1 : TEXCOORD1;
+	float2 BumpTexCoord2 : TEXCOORD2;
+	float2 BumpTexCoord3 : TEXCOORD3;
+	float4 ProjTexCoord : TEXCOORD4;
+	float4 ViewPos : TEXCOORD5;
+	float3 Tangent : COLOR0;
+	float3 Binormal : COLOR1;
+	float3 Normal : TEXCOORD6;
+	float  Fog : TEXCOORD7;	
+};
+
+VS_OUTPUT IndoorWater_MeshShader_vs( VS_INPUT In )
+{
+	VS_OUTPUT Out;
+
+	Out.Position = mul( In.Position, matWorldViewProj );
+	float4 vecPos = mul( In.Position, matWorld );
+	Out.ViewPos = normalize( vecPos - vecViewPosition );
+
+	// ¿Ö°îµÈ ¹üÇÁ¸Ê ÁÂÇ¥¸¦ °è»ê Èê·¯°¡°Ô ÇÑ´Ù.
+	float fCoordScale0 = fScale * 0.065;
+	float fCoordScale1 = fScale * 0.077;	
+	float fCoordScale2 = fScale * 0.1;	
+	float fCoordScale3 = fScale * 0.15;	
+	
+	float fCoordSpeed0 = fSpeed * 0.0015;
+	float fCoordSpeed1 = fSpeed * 0.00085;
+	float fCoordSpeed2 = fSpeed * 0.003;
+	float fCoordSpeed3 = fSpeed * 0.0009;
+	
+    Out.BumpTexCoord0 = In.TextureCoord * float2( fCoordScale0, fCoordScale0 ) + fElapesTime * float2( -fCoordSpeed0, 0 );
+	Out.BumpTexCoord1 = In.TextureCoord * float2( fCoordScale1, fCoordScale1 ) + fElapesTime * float2( -fCoordSpeed1, 0 );
+	Out.BumpTexCoord2 = In.TextureCoord * float2( fCoordScale2, fCoordScale2 ) + fElapesTime * float2( -fCoordSpeed2, 0 );
+	Out.BumpTexCoord3 = In.TextureCoord * float2( fCoordScale3, fCoordScale3 ) + fElapesTime * float2( -fCoordSpeed3, 0 );
+	Out.ProjTexCoord = mul( In.Position, matTexProj );
+	
+	float3x3 vecTransTangentSpace;
+	vecTransTangentSpace[ 0 ] = normalize( mul( In.Tangent * 2.0f - 1.0f, matWorld ) );
+	vecTransTangentSpace[ 1 ] = normalize( mul( In.Binormal * 2.0f - 1.0f, matWorld ) );
+	vecTransTangentSpace[ 2 ] = normalize( mul( In.Normal * 2.0f - 1.0f, matWorld ) );
+
+	Out.Tangent = float3( ( vecTransTangentSpace[ 0 ].x + 1.0f ) * 0.5f, ( vecTransTangentSpace[ 1 ].x + 1.0f ) * 0.5f, ( vecTransTangentSpace[ 2 ].x  + 1.0f ) * 0.5f);
+    Out.Binormal = float3( ( vecTransTangentSpace[ 0 ].y + 1.0f ) * 0.5f, ( vecTransTangentSpace[ 1 ].y + 1.0f ) * 0.5f, ( vecTransTangentSpace[ 2 ].y  + 1.0f ) * 0.5f);
+    Out.Normal = float3( vecTransTangentSpace[ 0 ].z, vecTransTangentSpace[ 1 ].z, vecTransTangentSpace[ 2 ].z );    
+
+    float fLens = length( vecPos.xyz - vecViewPosition.xyz );    
+    Out.Fog = saturate( ( fLens - fFogStart ) / ( fFogEnd - fFogStart ) );    
+
+	return Out;
+}
+
+struct PS_OUTPUT
+{
+    float4 Color : COLOR0;    
+};
+
+PS_OUTPUT IndoorWater_MeshShader_ps( VS_OUTPUT In ) : COLOR
+{
+	PS_OUTPUT output;	
+	float3 BumpMap0 = 2 * tex2D( WaterBumpTextureSampler0, In.BumpTexCoord0 ) - 1;
+	float3 BumpMap1 = 2 * tex2D( WaterBumpTextureSampler1, In.BumpTexCoord1 ) - 1;
+	float3 BumpMap2 = 2 * tex2D( WaterBumpTextureSampler0, In.BumpTexCoord2 ) - 1;
+	float3 BumpMap3 = 2 * tex2D( WaterBumpTextureSampler1, In.BumpTexCoord3 ) - 1;
+	float3 BumpMap4 = 2 * tex2Dproj( WaterInteractiveTextureSampler, In.ProjTexCoord ) - 1;	
+	float3 BumpMap = BumpMap0 * float3( 0.34, 0.34, 2.0 );
+	BumpMap = BumpMap1 * float3( 0.36, 0.36, 2.0 ) + BumpMap;
+	BumpMap = BumpMap2 * float3( 0.65, 0.65, 2.0 ) + BumpMap;
+	BumpMap = BumpMap3 * float3( 0.85, 0.85, 2.0 ) + BumpMap;
+	BumpMap = BumpMap4 * float3( 1.0, 1.0, 2.0 ) + BumpMap;
+
+	float4 RefrCoord;
+	RefrCoord.xyz = BumpMap + In.ProjTexCoord.xyz;
+	RefrCoord.w = In.ProjTexCoord.w;
+	float4 refr = tex2Dproj( WaterRefractTextureSampler, RefrCoord );
+
+	float3x3 matRotate = float3x3( In.Tangent * 2.0 - 1.0, In.Binormal * 2.0 - 1.0, In.Normal );
+	float3 vecTransNormal = mul( matRotate, BumpMap );
+		
+	float3 N = normalize( vecTransNormal );
+	float3 V = In.ViewPos;
+	float3 R = normalize( reflect( V, N ) );
+	float4 Env = texCUBE( WaterEnvTextureSampler, R );
+	float fFresnel = tex1D( WaterFresnelTextureSampler, dot( R, N ) );
+	refr *= vecWaterColor;
+	refr = lerp( refr, Env, fFresnel );
+	refr.xyz = lerp( refr.xyz, vecLowFogColor.xyz, In.Fog );	
+	output.Color = refr;
+	return output;
+}

@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>title_chrselect_out</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>title_chrselect_out.reb</EffectFile>
+</EffectScript>

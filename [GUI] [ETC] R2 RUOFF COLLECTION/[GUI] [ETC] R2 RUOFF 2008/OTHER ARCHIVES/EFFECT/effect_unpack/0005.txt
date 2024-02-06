@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>Candle</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>0005.reb</EffectFile>
+</EffectScript>

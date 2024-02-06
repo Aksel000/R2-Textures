@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>DropletLower</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>3005.reb</EffectFile>
+</EffectScript>

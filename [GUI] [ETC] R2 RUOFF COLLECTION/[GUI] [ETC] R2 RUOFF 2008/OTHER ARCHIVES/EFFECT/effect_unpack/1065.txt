@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>calllightning_Cast</Name>
+	<Dynamic>false</Dynamic>
+
+</Information>
+<EffectFile>1065.reb</EffectFile>
+</EffectScript>

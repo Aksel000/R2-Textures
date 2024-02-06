@@ -1,0 +1,31 @@
+
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float3 vecViewPosition;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position         
+    float3 Normal: TEXCOORD0;    
+    float3 PlaneNormal :TEXCOORD1;
+};
+
+VS_OUTPUT PRT_ShadowGenerate_Shader_vs( float4 vPos : POSITION, 
+										float3 vNormal : NORMAL,
+										float2 vTexCoord0 : TEXCOORD0 )
+{	
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );	
+	float3 vecPosition = mul( vPos, matWorld );	
+	Output.Normal = vecPosition - vecViewPosition;
+	Output.PlaneNormal = mul( vNormal, matWorld );
+    return Output;
+}
+
+float4 PRT_ShadowGenerate_Shader_ps( float3 Normal : TEXCOORD0,
+									 float3 PlaneNormal : TEXCOORD1 ) : COLOR
+{
+	float3 vecNormal = normalize( Normal );	
+	float fAngle = saturate( dot( vecNormal, PlaneNormal ) );									
+	return float4( fAngle, fAngle, fAngle, 1.0f );
+}	

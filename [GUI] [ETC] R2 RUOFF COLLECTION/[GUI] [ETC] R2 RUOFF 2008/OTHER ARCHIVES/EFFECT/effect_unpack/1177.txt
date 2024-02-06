@@ -1,0 +1,17 @@
+<EffectScript>
+<Information>
+	<Name>Giant_king</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>P0056.txt</Particle>
+	<Attach>
+    		<BodyPart>PELVIS</BodyPart>
+		<Pos>21,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+	
+	</Attach>
+
+</Information>
+<EffectFile>1177.reb</EffectFile>
+</EffectScript>

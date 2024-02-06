@@ -1,0 +1,17 @@
+<RaidSystem Version="1.1.0">
+	<Raid Type="0">
+		<ZoneColor>0x00ff96a5</ZoneColor>
+		<MonID>537</MonID>
+		<MaxFrame Anim="REGEN">332</MaxFrame>
+		<MaxFrame Anim="DEAD">600</MaxFrame>
+		<Event Type="CAMERA" Act="1" Time="6000"></Event>
+	</Raid>
+	<Raid Type="2">
+		<ZoneColor>0x0001fff0</ZoneColor>
+		<MonID>539</MonID>
+		<CheckCell>FALSE</CheckCell>
+		<OnlyOnMesh>TRUE</OnlyOnMesh>
+		<MaxFrame Anim="REGEN">206</MaxFrame>
+		<MaxFrame Anim="DEAD">110</MaxFrame>
+	</Raid>
+</RaidSystem>

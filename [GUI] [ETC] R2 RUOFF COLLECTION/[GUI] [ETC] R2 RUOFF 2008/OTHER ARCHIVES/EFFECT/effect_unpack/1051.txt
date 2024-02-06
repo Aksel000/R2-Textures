@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>trans</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1051.reb</EffectFile>
+</EffectScript>

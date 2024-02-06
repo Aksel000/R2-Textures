@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>effect_strongattack1</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>effect_strongattack1.reb</EffectFile>
+</EffectScript>

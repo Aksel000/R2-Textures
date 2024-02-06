@@ -1,0 +1,9 @@
+<EffectScript>
+<Information>
+	<Name>Logo_KR</Name>
+	<Dynamic>false</Dynamic>
+
+
+</Information>
+<EffectFile>Logo_RU.reb</EffectFile>
+</EffectScript>

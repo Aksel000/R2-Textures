@@ -1,0 +1,22 @@
+<EffectScript>
+<Information>
+	<Name>head</Name>
+	<Dynamic>false</Dynamic>
+
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>300,0,-400</Pos>
+		<Scale>false</Scale>
+		<Rot>true</Rot>
+
+		<Once>true</Once>
+	</Attach>
+	
+
+
+</Information>
+<EffectFile>1161.reb</EffectFile>
+	<Event>		
+		<FrameEvent Type="CAMERA" Frame="1" CamEffect="0" Time="1.0f"></FrameEvent>
+	</Event>
+</EffectScript>

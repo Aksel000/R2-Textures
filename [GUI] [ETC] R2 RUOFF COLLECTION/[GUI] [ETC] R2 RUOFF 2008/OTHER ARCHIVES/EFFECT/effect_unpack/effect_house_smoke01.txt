@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>Effect_regen</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>effect_house_smoke01.reb</EffectFile>
+</EffectScript>

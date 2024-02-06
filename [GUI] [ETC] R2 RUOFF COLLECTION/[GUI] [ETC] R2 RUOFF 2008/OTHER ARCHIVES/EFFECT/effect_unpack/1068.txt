@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>elementalarmmor_Cast</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0014.txt</Particle>
+
+</Information>
+<EffectFile>1068.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">cast_elemen.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="45" Min="1400" Max="2000">cast_elemen001.wav</FrameEvent>
+</Event>
+</EffectScript>

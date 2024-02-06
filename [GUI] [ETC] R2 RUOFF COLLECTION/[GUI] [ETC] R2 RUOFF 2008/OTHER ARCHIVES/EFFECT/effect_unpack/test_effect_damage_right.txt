@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>Damage_Left</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>test_effect_damage_left.reb</EffectFile>
+</EffectScript>

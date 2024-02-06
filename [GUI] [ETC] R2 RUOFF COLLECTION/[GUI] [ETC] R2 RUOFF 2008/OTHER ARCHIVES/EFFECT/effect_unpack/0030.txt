@@ -1,0 +1,9 @@
+<EffectScript>
+<Information>
+	<Name>Effect_regen</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<Particle>P0011.txt</Particle>
+</Information>
+<EffectFile>0030.reb</EffectFile>
+</EffectScript>

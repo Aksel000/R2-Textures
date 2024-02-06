@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>RED_DRUG</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	
+
+
+</Information>
+<EffectFile>1267.reb</EffectFile>
+
+
+</EffectScript>

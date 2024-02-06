@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>mantle</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>id300351.reb</EffectFile>
+	<Event>
+		<FrameEvent Type="SOUND" Frame="8" Min="1400" Max="2000">drop_spell.wav</FrameEvent>
+	</Event>
+</EffectScript>

@@ -1,0 +1,38 @@
+float4x4 matWorldViewProj;
+float4x4 matWorld;
+float3 vecViewPosition;
+float4 vecLowFogColor;
+float fFogStart;
+float fFogEnd;
+float4 vecScatterEndColor;
+
+struct VS_OUTPUT
+{
+    float4 Position   : POSITION;   // vertex position     
+    float2 Texture    : TEXCOORD0;
+    float2 Texture1   : TEXCOORD1;
+    float  Fog		  : TEXCOORD3;    
+};
+
+sampler ColorTextureSampler : register(s0);
+	
+VS_OUTPUT TerrainFixedReflect_Shader_vs( float4 vPos : POSITION,							  
+								  float2 vTexCoord0 : TEXCOORD0 )
+{	
+	VS_OUTPUT Output;	
+	Output.Position = mul( vPos, matWorldViewProj );
+    float3 vecPos = mul( vPos, matWorld );
+    float fLens = length( vecPos - vecViewPosition );
+    Output.Fog = saturate( ( fLens - fFogStart ) / ( fFogEnd - fFogStart ) );
+    Output.Texture = vTexCoord0;
+    Output.Texture1 = vTexCoord0 * float2( 80, 80 );
+    return Output;
+}
+
+float4 TerrainFixedReflect_Shader_ps( VS_OUTPUT In ) : COLOR
+{
+	float4 vecTexColor = tex2D( ColorTextureSampler, In.Texture );
+//	vecTexColor.xyz *= vecScatterEndColor;
+	vecTexColor.xyz = lerp( vecTexColor.xyz, vecLowFogColor, In.Fog );
+	return vecTexColor;
+}

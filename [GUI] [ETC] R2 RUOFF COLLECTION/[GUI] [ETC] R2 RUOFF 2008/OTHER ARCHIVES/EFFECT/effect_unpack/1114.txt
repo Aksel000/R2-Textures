@@ -1,0 +1,15 @@
+<EffectScript>
+<Information>
+	<Name>MOB_attackSpeed_down_exp</Name>
+	<Dynamic>false</Dynamic>
+	
+	
+</Information>
+<EffectFile>1114.reb</EffectFile>
+</EffectScript>
+
+
+
+
+
+

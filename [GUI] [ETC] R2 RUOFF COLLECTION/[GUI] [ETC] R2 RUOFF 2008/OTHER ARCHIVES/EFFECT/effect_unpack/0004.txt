@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>waterfall04</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>0004.reb</EffectFile>
+</EffectScript>

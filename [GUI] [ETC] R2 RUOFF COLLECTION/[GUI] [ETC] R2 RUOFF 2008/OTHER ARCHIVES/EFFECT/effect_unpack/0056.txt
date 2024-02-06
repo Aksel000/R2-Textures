@@ -1,0 +1,15 @@
+<EffectScript>
+<Information>
+	<Name>Fire_tower_top</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<PickingBox>
+		<Min>-10800,-22000,-10800</Min>
+		<Max>10800,22000,10800</Max>
+	</PickingBox>
+	<CullingRadius>24500</CullingRadius>
+	
+	
+</Information>
+<EffectFile>0056.reb</EffectFile>
+</EffectScript>

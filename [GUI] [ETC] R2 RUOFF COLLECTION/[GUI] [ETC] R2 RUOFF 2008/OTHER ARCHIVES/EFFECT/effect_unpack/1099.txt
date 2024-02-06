@@ -1,0 +1,20 @@
+<EffectScript>
+<Information>
+	<Name>WISP</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+
+	<Attach>
+    		<BodyPart>PELVIS</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+	</Attach>
+
+</Information>
+<EffectFile>1099.reb</EffectFile>
+</EffectScript>
+
+
+
+
+
