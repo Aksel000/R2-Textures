@@ -25,18 +25,18 @@
 <p><strong>1. Клонирование репозитория:</strong> Вы можете клонировать этот репозиторий на ваше локальное устройство с помощью следующей команды:</p>
 
 <blockquote>
-<p><code>git clone https://github.com/Aksel911/R2-Textures.git </code></p>
+<p><code>git clone https://github.com/Aksel000/R2-Textures.git </code></p>
 </blockquote>
 
-<p style="text-align:center"><img alt="CloneRepo.png" src="https://github.com/Aksel911/R2-Textures/blob/main/%5BGIT%5D/CloneRepo.png?raw=true" />&nbsp;</p>
+<p style="text-align:center"><img alt="CloneRepo.png" src="https://github.com/Aksel000/R2-Textures/blob/main/%5BGIT%5D/CloneRepo.png?raw=true" />&nbsp;</p>
 
 <p><strong>2. Загрузка ZIP:</strong> В качестве альтернативы вы можете скачать весь репозиторий в виде ZIP-архива, нажав на кнопку &quot;Code&quot; и выбрав &quot;Download ZIP&quot;. После загрузки вы можете извлечь содержимое в выбранное вами место.</p>
 
-<p><img alt="ZipSave.png" src="https://github.com/Aksel911/R2-Textures/blob/main/%5BGIT%5D/ZipSave.png?raw=true" /></p>
+<p><img alt="ZipSave.png" src="https://github.com/Aksel000/R2-Textures/blob/main/%5BGIT%5D/ZipSave.png?raw=true" /></p>
 
 <p><strong>3. Использовать </strong><a href="https://minhaskamal.github.io/DownGit/#/home"><strong>DownGit</strong></a>. Если Вы хотите скачать только определенную папку, а не весь репозиторий. Вставьте ссылку на папку и нажмите кнопку &quot;Download&quot;. <a href="https://github.com/MinhasKamal/DownGit">Git</a></p>
 
-<p><img alt="DownGit.png" src="https://github.com/Aksel911/R2-Textures/blob/main/%5BGIT%5D/DownGit.png?raw=true" /></p>
+<p><img alt="DownGit.png" src="https://github.com/Aksel000/R2-Textures/blob/main/%5BGIT%5D/DownGit.png?raw=true" /></p>
 
 <p><strong>4. Использовать расширение</strong> <a href="https://gitzip.org/"><strong>GitZip</strong></a>. Позволяет скачать выделленые&nbsp;подпапки/файлы из репозитория Github.</p>
 
@@ -64,7 +64,7 @@
 
 <h2>Лицензия</h2>
 
-<p>Репозиторий R2 Textures лицензируется на условиях лицензии <a href="https://creativecommons.org/licenses/by/4.0/deed.ru" target="_new">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>. Это означает, что вы можете свободно использовать, изменять и распространять текстуры в коммерческих и некоммерческих целях, <strong>при условии, что вы указываете соответствующую ссылку на оригинального автора (Aksel911)</strong> <strong>и указываете все внесенные изменения</strong>.</p>
+<p>Репозиторий R2 Textures лицензируется на условиях лицензии <a href="https://creativecommons.org/licenses/by/4.0/deed.ru" target="_new">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>. Это означает, что вы можете свободно использовать, изменять и распространять текстуры в коммерческих и некоммерческих целях, <strong>при условии, что вы указываете соответствующую ссылку на оригинального автора (Aksel000)</strong> <strong>и указываете все внесенные изменения</strong>.</p>
 
 <h2>Обратная связь и поддержка</h2>
 
