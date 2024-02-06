@@ -1,0 +1,339 @@
+<GUIText ver=2>
+
+<text no=0> 
+<p>RCLIENT_MSG_HELP_FILE_HEADER</p>
+
+<p color=FF00FF99 link=10>RCLIENT_MSG_HELP_FILE_MENU01</p>
+<p color=FF00FF99 link=20>RCLIENT_MSG_HELP_FILE_MENU02</p>
+<p color=FF00FF99 link=30>RCLIENT_MSG_HELP_FILE_MENU03</p>
+<p color=FF00FF99 link=40>RCLIENT_MSG_HELP_FILE_MENU04</p>
+<p color=FF00FF99 link=50>RCLIENT_MSG_HELP_FILE_MENU05</p>
+<p color=FF00FF99 link=60>RCLIENT_MSG_HELP_FILE_MENU06</p>
+<p color=FF00FF99 link=70>RCLIENT_MSG_HELP_FILE_MENU07</p>
+<p color=FF00FF99 link=80>RCLIENT_MSG_HELP_FILE_MENU08</p>
+<p color=FF00FF99 link=90>RCLIENT_MSG_HELP_FILE_MENU09</p>
+<p color=FF00FF99 link=100>RCLIENT_MSG_HELP_FILE_MENU10</p>
+<p color=FF00FF99 link=110>RCLIENT_MSG_HELP_FILE_MENU11</p>
+<p color=FF00FF99 link=120>RCLIENT_MSG_HELP_FILE_MENU12</p>
+<p color=FF00FF99 link=130>RCLIENT_MSG_HELP_FILE_MENU13</p>
+<p color=FF00FF99 link=140>RCLIENT_MSG_HELP_FILE_MENU14</p>
+<p color=FF00FF99 link=150>RCLIENT_MSG_HELP_FILE_MENU15</p>
+
+<p>RCLIENT_MSG_HELP_FILE_FOOTER</p>
+</text>
+
+// -------------------------------------------------
+//     클래스
+// -------------------------------------------------
+
+<text no=10>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=10>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=11>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=12>RCLIENT_MSG_HELP_FILE_PAGE3</p>
+
+<m width=478 height=636 value=10810></m>
+</text>
+
+<text no=11>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=10>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=11>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=12>RCLIENT_MSG_HELP_FILE_PAGE3</p>
+
+<m width=478 height=636 value=10811></m>
+</text>
+
+<text no=12>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=10>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=11>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=12>RCLIENT_MSG_HELP_FILE_PAGE3</p>
+
+<m width=478 height=636 value=10890></m>
+</text>
+
+// -------------------------------------------------
+//     아이템 1,2,3
+// -------------------------------------------------
+
+<text no=20>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=20>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=21>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=22>RCLIENT_MSG_HELP_FILE_PAGE3</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=23>RCLIENT_MSG_HELP_FILE_PAGE4</p>
+    
+<m width=478 height=636 value=10820></m>
+</text>
+
+<text no=21>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=20>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=21>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=22>RCLIENT_MSG_HELP_FILE_PAGE3</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=23>RCLIENT_MSG_HELP_FILE_PAGE4</p>
+
+<m width=478 height=636 value=10821></m>
+</text>
+
+<text no=22>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=20>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=21>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=22>RCLIENT_MSG_HELP_FILE_PAGE3</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=23>RCLIENT_MSG_HELP_FILE_PAGE4</p>
+    
+<m width=478 height=636 value=10830></m>
+</text>
+
+<text no=23>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=20>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=21>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=22>RCLIENT_MSG_HELP_FILE_PAGE3</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=23>RCLIENT_MSG_HELP_FILE_PAGE4</p>
+    
+<m width=478 height=636 value=10891></m>
+</text>
+
+// -------------------------------------------------
+//     넣어주기와 단축키 설정
+// -------------------------------------------------
+
+<text no=30>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=30>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=31>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+
+<m width=478 height=636 value=10831></m>
+</text>
+
+<text no=31>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=30>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=31>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+
+<m width=478 height=636 value=10900></m>
+</text>
+
+// -------------------------------------------------
+//     상점 이용 방법
+// -------------------------------------------------
+
+<text no=40>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+
+<m width=478 height=636 value=10840></m>
+</text>
+
+// -------------------------------------------------
+//     전투하는 방법
+// -------------------------------------------------
+
+<text no=50>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+
+<m width=478 height=636 value=10841></m>
+</text>
+
+// -------------------------------------------------
+//     채팅종류 및 필터기능
+// -------------------------------------------------
+
+<text no=60>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=60>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=61>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=62>RCLIENT_MSG_HELP_FILE_PAGE3</p>
+
+<m width=478 height=636 value=10850></m>
+</text>
+
+<text no=61>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=60>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=61>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=62>RCLIENT_MSG_HELP_FILE_PAGE3</p>
+
+<m width=478 height=636 value=10920></m>
+</text>
+
+<text no=62>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=60>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=61>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=62>RCLIENT_MSG_HELP_FILE_PAGE3</p>
+
+<m width=478 height=636 value=10921></m>
+</text>
+
+// -------------------------------------------------
+//     길드관련 정보(guild)
+// -------------------------------------------------
+
+<text no=70>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+
+<m width=478 height=636 value=10851></m>
+</text>
+
+// -------------------------------------------------
+//     무게(weight) 개념과 만복도 개념
+// -------------------------------------------------
+
+<text no=80>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+
+<m width=478 height=636 value=10860></m>
+</text>
+
+// -------------------------------------------------
+//     엘프마법(elf magic)
+// -------------------------------------------------
+
+<text no=90>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=90>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=91>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+
+<m width=478 height=636 value=10861></m>
+</text>
+
+<text no=91>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=90>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=91>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+
+<m width=478 height=636 value=10870></m>
+</text>
+
+// -------------------------------------------------
+//     서모너마법(summoner magic)
+// -------------------------------------------------
+<text no=100>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+
+<m width=478 height=636 value=10910></m>
+</text>
+
+// -------------------------------------------------
+//     스킬북(skill book)
+// -------------------------------------------------
+<text no=110>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=110>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=111>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+
+<m width=478 height=636 value=10871></m>
+</text>
+
+<text no=111>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=110>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=111>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+
+<m width=478 height=636 value=10901></m>
+</text>
+
+// -------------------------------------------------
+//     명령어(command)
+// -------------------------------------------------
+
+<text no=120>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+
+<m width=478 height=636 value=10880></m>
+</text>
+
+// -------------------------------------------------
+//     스킬 트리(Skill Tree)
+// -------------------------------------------------
+<text no=130>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=130>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=131>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+
+<m width=478 height=636 value=10922></m>
+</text>
+
+<text no=131>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=130>RCLIENT_MSG_HELP_FILE_PAGE1</p>
+<p>RCLIENT_MSG_HELP_FILE_PAGE_INTERVAL</p>
+<p link=131>RCLIENT_MSG_HELP_FILE_PAGE2</p>
+
+<m width=478 height=636 value=10923></m>
+</text>
+
+// -------------------------------------------------
+//     이모티콘(Emotiocon)
+// -------------------------------------------------
+
+<text no=140>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+
+<m width=478 height=636 value=10930></m>
+</text>
+
+// -------------------------------------------------
+//     모임(Party)
+// -------------------------------------------------
+
+<text no=150>
+<p link=0>RCLIENT_MSG_HELP_FILE_MENU_TOP</p>
+
+<m width=478 height=636 value=10931></m>
+</text>
+
+</GUItext>
