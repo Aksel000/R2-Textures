@@ -1,0 +1,14 @@
+<EffectScript>
+<Information>
+	<Name>Event_Pig</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Attach>
+    		<BodyPart>HEAD</BodyPart>
+		<Pos> 80,-1,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+	</Attach>
+</Information>
+<EffectFile>1169_76.reb</EffectFile>
+</EffectScript>
