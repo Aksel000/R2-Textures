@@ -1,0 +1,151 @@
+<ModelScript version="1.3.0">
+
+<Information>
+	<Name>m10098</Name>
+	<Type>TYPE2</Type>
+	<Part>BODY</Part>
+	<PickingBox>
+		<Min>-1, -1001, -1</Min>
+		<Max>1, -1000, 1</Max>
+	</PickingBox>
+	<CollisionBox>
+		<Min>-350, 0, -350</Min>
+		<Max>350, 3000, 350</Max>
+	</CollisionBox>
+	<Foot>2</Foot>
+        <LodCount>2</LodCount>
+	<Scale>1</Scale>
+	<BodyPart Type="HEAD" Bone="Bip01 Head">0, 0, 0</BodyPart>
+	<BodyPart Type="CHEST" Bone="Bip01 Spine2">0, 0, 0</BodyPart>
+	<BodyPart Type="PELVIS" Bone="Bip01 Pelvis">0, 0, 0</BodyPart>
+	<BodyPart Type="L_HAND" Bone="Bip01 L Hand">0, 0, 0</BodyPart>
+	<BodyPart Type="R_HAND" Bone="Bip01 R Hand">0, 0, 0</BodyPart>
+	<BodyPart Type="L_FOOT" Bone="Bip01 L Foot">0, 0, 0</BodyPart>
+	<BodyPart Type="R_FOOT" Bone="Bip01 R Foot">0, 0, 0</BodyPart>
+</Information>
+
+<Mesh>
+	<FileName>m10098.rmb</FileName>
+</Mesh>
+
+<Animation Group="G_DEFAULT">
+	<Action Name ="A_IDLE" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE1" Loop="FALSE">
+		<FileName>m10098_01.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE2" Loop="FALSE">
+		<FileName>m10098_01.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE3" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_BATTLE_STAND" Loop="TRUE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_WALK" Loop="TRUE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ITEM_PICKUP" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DEAD" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="3">sktdead.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="14">kung.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_USE_STICK" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="13" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SPELL" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="60" DamageType="D" ID="0" Delay="0"></FrameEvent>
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_RUN" Loop="TRUE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ATTACK1" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="8">one1.wav</FrameEvent>
+		<FrameEvent Type="DELAY" Frame="15" DamageType="R" ID="0" Delay="0.2"></FrameEvent>								
+	</Action>
+
+	<Action Name ="A_ATTACK2" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="8">one1.wav</FrameEvent>
+		<FrameEvent Type="DELAY" Frame="15" DamageType="U" ID="0" Delay="0.2"></FrameEvent>								
+	</Action>
+
+	<Action Name ="A_DAMAGE_UP" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="0">skthit.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_DAMAGE_DOWN" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="0">skthit.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_DAMAGE_LEFT" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="0">skthit.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_DAMAGE_RIGHT" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="0">skthit.wav</FrameEvent>
+	</Action>
+
+  	<Action Name ="A_WALK_BACK" Loop="TRUE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_JUMP" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_FALL" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_LAND" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_REGEN" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SAY" Loop="FALSE">
+		<FileName>m10098_14.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ON_THE_WATER" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SWIM" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SWIM_BACK" Loop="FALSE">
+		<FileName>m10098_00.rab</FileName>
+	</Action>
+	
+	
+</Animation>
+
+</ModelScript>
