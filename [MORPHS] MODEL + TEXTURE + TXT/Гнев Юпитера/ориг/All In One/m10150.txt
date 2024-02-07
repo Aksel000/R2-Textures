@@ -1,0 +1,215 @@
+<ModelScript version="1.5.0">
+
+<Information>
+	<Name>BLIZZARD</Name>
+	<Type>TYPE2</Type>
+	<Part>BODY</Part>
+	<PickingBox>
+		<Min>-0, 0, -0</Min>
+		<Max>0, 0, 0</Max>
+	</PickingBox>
+	<CollisionBox>
+		<Min>-0, 0, -0</Min>
+		<Max>0, 0, 0</Max>
+	</CollisionBox>
+	<Foot>2</Foot>
+	<FloatingDepth>0</FloatingDepth>
+	<Size>1</Size>
+	<BodyPart Type="HEAD" Bone="b_PV">0, 0, 0</BodyPart>
+	<BodyPart Type="CHEST" Bone="b_PV">0, 0, 0</BodyPart>
+	<BodyPart Type="PELVIS" Bone="b_PV">0, 0, 0</BodyPart>
+	<BodyPart Type="L_HAND" Bone="b_LH">0, 0, 0</BodyPart>
+	<BodyPart Type="R_HAND" Bone="b_RH">0, 0, 0</BodyPart>
+	<BodyPart Type="R_FOOT" Bone="b_PV">0, 0, 0</BodyPart>
+	<BodyPart Type="L_FOOT" Bone="b_PV">0, 0, 0</BodyPart>
+
+
+</Information>
+
+<Mesh>
+	<FileName>m00098.rmb</FileName>
+</Mesh>
+
+<Animation Group="G_DEFAULT">
+	<Action Name ="A_IDLE" Loop="FALSE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE1" Loop="FALSE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE2" Loop="FALSE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE3" Loop="FALSE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_BATTLE_STAND" Loop="TRUE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_WALK" Loop="TRUE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ITEM_PICKUP" Loop="FALSE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DEAD" Loop="FALSE">
+                <FileName>m00098_00.rab</FileName>
+                <FrameEvent Type="SOUND" Frame="3">ded_slime.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_USE_STICK" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SPELL" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="60" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+
+	<Action Name ="A_SKILL1" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+
+	<Action Name ="A_SKILL2" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+
+	<Action Name ="A_SKILL3" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+
+	<Action Name ="A_SKILL4" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+
+	<Action Name ="A_SKILL5" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+
+	<Action Name ="A_SKILL6" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+
+	<Action Name ="A_SKILL7" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+
+	<Action Name ="A_SKILL8" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+
+	<Action Name ="A_SKILL9" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+
+	<Action Name ="A_SKILL10" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+
+	<Action Name ="A_RUN" Loop="TRUE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ATTACK1" Loop="FALSE">
+		<FileName>m00098_05.rab</FileName>
+                <FrameEvent Type="SOUND" Frame="08">one1.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="20">atk_slime.wav</FrameEvent>
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0.2"></FrameEvent>								
+	</Action>
+
+	<Action Name ="A_ATTACK2" Loop="FALSE">
+		<FileName>m00098_05.rab</FileName>
+                <FrameEvent Type="SOUND" Frame="08">one1.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="20">atk_slime.wav</FrameEvent>
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0.2"></FrameEvent>								
+	</Action>
+
+	<Action Name ="A_DAMAGE_UP" Loop="FALSE">
+		<FileName>m00098_08.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="0">hit_slime.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_DAMAGE_DOWN" Loop="FALSE">
+		<FileName>m00098_08.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="0">hit_slime.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_DAMAGE_LEFT" Loop="FALSE">
+		<FileName>m00098_08.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="0">hit_slime.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_DAMAGE_RIGHT" Loop="FALSE">
+		<FileName>m00098_08.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="0">hit_slime.wav</FrameEvent>
+	</Action>
+
+  	<Action Name ="A_WALK_BACK" Loop="TRUE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_JUMP" Loop="FALSE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_FALL" Loop="FALSE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_LAND" Loop="FALSE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_REGEN" Loop="FALSE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SAY" Loop="FALSE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ON_THE_WATER" Loop="TRUE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SWIM" Loop="TRUE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SWIM_BACK" Loop="TRUE">
+		<FileName>m00098_00.rab</FileName>
+	</Action>
+	
+	
+</Animation>
+
+</ModelScript>

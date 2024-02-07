@@ -1,0 +1,253 @@
+<ModelScript version="1.5.0">
+
+<Information>
+	<Name>m00906</Name>
+	<Type>TYPE2</Type>
+	<Part>BODY</Part>
+	<PickingBox>
+		<Min>-45, 0, -37</Min>
+		<Max>42, 177, 45</Max>
+	</PickingBox>
+	<CollisionBox>
+		<Min>-45, 0, -37</Min>
+		<Max>42, 177, 45</Max>
+	</CollisionBox>
+	<Foot>2</Foot>
+	<FloatingDepth>0</FloatingDepth>
+	<Size>1</Size>
+	<BodyPart Type="HEAD" Bone="Bip001 Head">0, 0, 0</BodyPart>
+	<BodyPart Type="CHEST" Bone="Bip001 Spine2">0, 0, 0</BodyPart>
+	<BodyPart Type="PELVIS" Bone="Bip001 Pelvis">0, 0, 0</BodyPart>
+	<BodyPart Type="L_HAND" Bone="Bip001 L Hand">0, 0, 0</BodyPart>
+	<BodyPart Type="R_HAND" Bone="Bip001 R Hand">0, 0, 0</BodyPart>
+	<BodyPart Type="L_FOOT" Bone="Bip001 L Foot">0, 0, 0</BodyPart>
+	<BodyPart Type="R_FOOT" Bone="Bip001 R Foot">0, 0, 0</BodyPart>
+
+</Information>
+
+<Mesh>
+	<FileName>m00906.rmb</FileName>
+</Mesh>
+
+<Animation Group="G_DEFAULT">
+	<Action Name ="A_IDLE" Loop="FALSE">
+		<FileName>m00906_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE1" Loop="FALSE">
+		<FileName>m00906_01.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE2" Loop="FALSE">
+		<FileName>m00906_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_IDLE3" Loop="FALSE">
+		<FileName>m00906_01.rab</FileName>
+	</Action>
+
+	<Action Name ="A_BATTLE_STAND" Loop="TRUE">
+		<FileName>m00906_03.rab</FileName>
+
+	</Action>
+
+	<Action Name ="A_WALK" Loop="TRUE">
+		<FileName>m00906_02.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="9">FOOT_00.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="26">FOOT_01.wav</FrameEvent>
+
+	</Action>
+
+	<Action Name ="A_ITEM_PICKUP" Loop="FALSE">
+		<FileName>m00906_12.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DEAD" Loop="FALSE">
+		<FileName>m00906_13.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="2" Volume="100">m00906_13_1.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="35" Volume="60">DMG_AMOR_00.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="55" Volume="100">Fall_cloth_01.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_USE_STICK" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00906_07.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SPELL" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="60" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00906_19.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="1" Volume="100">Idle_leather_mid_01.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="10" Volume="100">m00906_19_1.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="55" Volume="100">m00906_19_2.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="58" Volume="100">SWORD_20_01.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_SKILL1" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00906_07.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL2" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00906_07.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL3" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00906_07.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL4" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00906_07.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL5" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00906_07.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL6" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00906_07.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL7" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00906_07.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL8" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00906_07.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL9" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00906_07.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL10" Loop="FALSE">
+		<FrameEvent Type="DELAY" Frame="20" DamageType="U" ID="0" Delay="0"></FrameEvent>
+		<FileName>m00906_07.rab</FileName>
+	</Action>
+
+	<Action Name ="A_RUN" Loop="TRUE">
+		<FileName>m00906_04.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="9">FOOT_00.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="19">FOOT_01.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_ATTACK1" Loop="FALSE">
+		<FileName>m00906_05.rab</FileName>
+		<FrameEvent Type="DELAY" Frame="9" DamageType="R" ID="0" Delay="0.04"></FrameEvent>
+		<FrameEvent Type="DELAY" Frame="10" DamageType="R" ID="0" Delay="0.1"></FrameEvent>
+		<FrameEvent Type="SOUND" Frame="8" Volume="100">m00906_05_1.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="9" Volume="100">SWORD_16_00.wav</FrameEvent>
+                <FrameEvent Type="EFFECT" Frame="8">5261.txt</FrameEvent>
+      	</Action>
+
+	<Action Name ="A_ATTACK2" Loop="FALSE">
+		<FileName>m00906_06.rab</FileName>
+		<FrameEvent Type="DELAY" Frame="14" DamageType="U" ID="0" Delay="0.04"></FrameEvent>
+		<FrameEvent Type="DELAY" Frame="15" DamageType="U" ID="0" Delay="0.12"></FrameEvent>
+		<FrameEvent Type="DELAY" Frame="16" DamageType="U" ID="0" Delay="0.03"></FrameEvent>
+		<FrameEvent Type="DELAY" Frame="17" DamageType="U" ID="0" Delay="0.06"></FrameEvent>
+		<FrameEvent Type="SOUND" Frame="9" Volume="100">m00906_06_1.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="12" Volume="100">SWORD_18.wav</FrameEvent>
+                <FrameEvent Type="EFFECT" Frame="12">5259.txt</FrameEvent>
+                <FrameEvent Type="EFFECT" Frame="14">5260.txt</FrameEvent>
+        </Action>
+
+	<Action Name ="A_DAMAGE_UP" Loop="FALSE">
+		<FileName>m00906_08.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="1" Volume="100">m00906_08_1.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_DAMAGE_DOWN" Loop="FALSE">
+		<FileName>m00906_09.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="1" Volume="100">m00906_08_1.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_DAMAGE_LEFT" Loop="FALSE">
+		<FileName>m00906_10.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="1" Volume="100">m00906_10_1.wav</FrameEvent>
+	</Action>
+
+	<Action Name ="A_DAMAGE_RIGHT" Loop="FALSE">
+		<FileName>m00906_11.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="1" Volume="100">m00906_10_1.wav</FrameEvent>
+	</Action>
+
+  	<Action Name ="A_WALK_BACK" Loop="TRUE">
+		<FileName>m00906_15.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="7">FOOT_00.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="24">FOOT_01.wav</FrameEvent>
+
+	</Action>
+
+	<Action Name ="A_STAND_JUMP" Loop="FALSE">
+		<FileName>m00906_16.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="1">jump.wav</FrameEvent>
+
+	</Action>
+
+	<Action Name ="A_STAND_FALL" Loop="TRUE">
+		<FileName>m00906_17.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_LAND" Loop="FALSE">
+		<FileName>m00906_18.rab</FileName>
+		<FrameEvent Type="SOUND" Frame="0">jump1.wav</FrameEvent>
+
+	</Action>
+
+	<Action Name ="A_REGEN" Loop="FALSE">
+		<FileName>m00906_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SAY" Loop="FALSE">
+		<FileName>m00906_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ON_THE_WATER" Loop="TRUE">
+		<FileName>m00906_24.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SWIM" Loop="TRUE">
+		<FileName>m00906_25.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SWIM_BACK" Loop="TRUE">
+		<FileName>m00906_26.rab</FileName>
+	</Action>
+	
+        <Action Name ="A_LEVITATE_IDLE" Loop="TRUE">
+		<FileName>m00906_24.rab</FileName>
+	</Action>
+	
+	<Action Name ="A_LEVITATE_FORWARD" Loop="TRUE">
+		<FileName>m00906_25.rab</FileName>
+	</Action>
+	
+	<Action Name ="A_LEVITATE_BACK" Loop="TRUE">
+		<FileName>m00906_26.rab</FileName>
+	</Action>
+
+        <Action Name ="A_LEVITATE_IDLE_ON_THE_WATER" Loop="TRUE">
+		<FileName>m00906_24.rab</FileName>
+	</Action>
+	
+	<Action Name ="A_LEVITATE_FORWARD_ON_THE_WATER" Loop="TRUE">
+		<FileName>m00906_25.rab</FileName>
+	</Action>
+
+	<Action Name ="A_LEVITATE_BACK_ON_THE_WATER" Loop="TRUE">
+		<FileName>m00906_26.rab</FileName>
+	</Action>	
+
+
+</Animation>
+
+</ModelScript>
