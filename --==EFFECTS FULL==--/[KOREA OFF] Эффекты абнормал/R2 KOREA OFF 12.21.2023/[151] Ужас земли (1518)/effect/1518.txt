@@ -1,0 +1,16 @@
+<EffectScript>
+<Information>
+	<Name>Event_Pig</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+	
+
+	</Attach>
+
+</Information>
+<EffectFile>1518.reb</EffectFile>
+</EffectScript>

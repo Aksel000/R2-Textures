@@ -1,0 +1,15 @@
+<EffectScript>
+<Information>
+	<Name> Summoner_ProzenShot_IceStun </Name>
+	<Dynamic> false	</Dynamic>
+	<Loop> TRUE </Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>	
+
+	</Attach>
+</Information>
+<EffectFile>5726.reb</EffectFile>
+</EffectScript>

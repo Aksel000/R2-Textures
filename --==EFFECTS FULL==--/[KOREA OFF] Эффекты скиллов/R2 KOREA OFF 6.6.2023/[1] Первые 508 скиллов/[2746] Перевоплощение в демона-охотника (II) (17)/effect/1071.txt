@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>effect_fireboltcast</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0014.txt</Particle>
+</Information>
+<EffectFile>1071.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">blc.wav</FrameEvent>
+
+
+</Event>
+</EffectScript>

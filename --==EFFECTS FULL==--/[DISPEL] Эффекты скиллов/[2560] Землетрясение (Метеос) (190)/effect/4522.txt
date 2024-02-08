@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name>Skill_Quake</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>False</Loop>
+	<CullingRadius>10000</CullingRadius>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		<Once>true</Once>
+	</Attach>
+</Information>
+<EffectFile>4522.reb</EffectFile>
+<Event>						
+	<FrameEvent Type="CAMERA" Frame="0" CamEffect="30" Time="1.5f"></FrameEvent>				
+</Event>					
+
+</EffectScript>
+
+
+

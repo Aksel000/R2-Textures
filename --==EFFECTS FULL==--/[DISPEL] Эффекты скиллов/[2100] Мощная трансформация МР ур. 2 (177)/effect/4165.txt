@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>effect_fireboltcast</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>4165.reb</EffectFile>
+<Event>
+<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">4165.wav</FrameEvent>
+</Event>
+</EffectScript>

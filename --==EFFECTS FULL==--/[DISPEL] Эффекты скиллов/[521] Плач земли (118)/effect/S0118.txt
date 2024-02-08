@@ -1,0 +1,41 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>Silence</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,130,-70</Pos>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>1496.txt</FileName>
+</EffectScene>
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>1495.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> cast </Scene>
+		
+	</Group>
+
+	<Group Sequential="true">
+	</Group>
+	
+	<Group Sequential="TRUE">
+		<Scene From="TARGET_BVBOTTOM" To="TARGET_BVBOTTOM"> exp </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

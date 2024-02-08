@@ -1,0 +1,17 @@
+<EffectScript>
+<Information>
+	<Name>100_LEVEL_CONT</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<Attach>
+    		<BodyPart>CHEST</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>FALSE</Scale>
+		<Rot>FALSE</Rot>
+		<Once>FASLE</Once>
+		<PickingScale>TRUE</PickingScale>
+	</Attach>
+	<Particle>P0276.txt</Particle>
+</Information>
+<EffectFile>4838.reb</EffectFile>
+</EffectScript>

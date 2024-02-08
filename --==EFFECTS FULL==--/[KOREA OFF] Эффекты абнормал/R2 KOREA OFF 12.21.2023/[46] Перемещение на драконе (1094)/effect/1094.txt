@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>draco</Name>
+	<Dynamic>false</Dynamic>
+
+</Information>
+<EffectFile>1094.reb</EffectFile>
+</EffectScript>

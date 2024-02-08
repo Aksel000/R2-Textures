@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name>arena_tower</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>TRUE</Rot>
+		<Size>TRUE</Size>
+		<Once>false</Once>
+
+	</Attach>
+</Information>
+<EffectFile>4903.reb</EffectFile>
+
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,25 @@
+<EffectScript>
+<Information>
+	<Name> Levitation_Custom_Cast2 </Name>
+	<Dynamic>false</Dynamic>
+
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>TRUE</Rot>	
+	</Attach>
+
+</Information>
+<EffectFile>5288.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">Levitation.wav</FrameEvent>
+		
+</Event>
+</EffectScript>
+
+
+
+
+

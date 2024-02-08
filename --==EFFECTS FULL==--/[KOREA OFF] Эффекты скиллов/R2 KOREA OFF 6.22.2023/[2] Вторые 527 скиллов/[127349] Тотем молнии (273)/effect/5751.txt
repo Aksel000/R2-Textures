@@ -1,0 +1,27 @@
+<EffectScript>
+<Information>
+	<Name> Summoner_Long-distance Totem </Name>
+	<Dynamic>false</Dynamic>
+
+
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>	
+		<Once>true</Once>
+	</Attach>
+
+</Information>
+<EffectFile>5751.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">Summoner_Long-distance Totem.wav</FrameEvent>
+	
+
+</Event>
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,17 @@
+<EffectScript>
+<Information>
+	<Name> Elemental Fusion Exp </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+            <Particle>p0334.txt</Particle>
+	<Attach>
+    		<BodyPart>Chest</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>false</Rot>
+				
+	</Attach>
+
+</Information>
+<EffectFile>5992.reb</EffectFile>
+</EffectScript>

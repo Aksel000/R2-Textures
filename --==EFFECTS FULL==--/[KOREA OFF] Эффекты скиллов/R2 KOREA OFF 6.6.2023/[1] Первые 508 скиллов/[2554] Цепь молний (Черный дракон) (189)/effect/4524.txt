@@ -1,0 +1,26 @@
+<EffectScript>
+<Information>
+	<Name>Skill_Chain_lightning_EXP</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>False</Loop>
+	<CullingRadius>40000</CullingRadius>
+	<Attach>
+    		<BodyPart>BVCENTER</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		<Once>true</Once>
+	</Attach>
+</Information>
+<EffectFile>4524.reb</EffectFile>
+<Event>					
+	<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">exp_light.wav</FrameEvent>
+	<FrameEvent Type="SOUND" Frame="30" Min="1400" Max="2000">exp_light.wav</FrameEvent>
+	<FrameEvent Type="SOUND" Frame="60" Min="1400" Max="2000">exp_light.wav</FrameEvent>			
+</Event>									
+									
+
+</EffectScript>
+
+
+

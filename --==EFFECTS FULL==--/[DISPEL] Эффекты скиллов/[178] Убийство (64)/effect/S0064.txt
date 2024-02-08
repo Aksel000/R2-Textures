@@ -1,0 +1,37 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>BLESS</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>21,0,0</Pos>
+		<Rot>true</Rot>
+		<Scale>TRUE</Scale>
+	</Method>
+	<FileName>1181.txt</FileName>
+</EffectScene>
+
+
+
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE_L_HAND" To="SOURCE_L_HAND"> cast </Scene>
+		<Scene From="SOURCE_R_HAND" To="SOURCE_R_HAND"> cast </Scene>
+	</Group>
+	<Group Sequential="TRUE">
+
+	</Group>
+
+	<Group Sequential="TRUE">
+
+	</Group>
+
+</SceneControl>
+
+</EffectSceneScript>

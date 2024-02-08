@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>effect_web</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1151.reb</EffectFile>
+</EffectScript>

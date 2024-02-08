@@ -1,0 +1,34 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>INVINCIBLE_CAST</Name>
+</Information>
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		<Rot>false</Rot>
+	</Method>
+	<FileName>4635.txt</FileName>
+</EffectScene>
+
+
+
+
+
+
+<SceneControl>
+	<Group Sequential="TRUE">
+		<Scene From="SOURCE_BVCENTER" To="SOURCE_BVCENTER"> cast </Scene>
+	</Group>
+	<Group Sequential="TRUE">
+	</Group>
+	
+	<Group Sequential="TRUE">
+	</Group>
+
+
+</SceneControl>
+</EffectSceneScript>

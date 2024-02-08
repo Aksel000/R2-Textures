@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>Weight_Exp</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0014.txt</Particle>
+</Information>
+<EffectFile>1147.reb</EffectFile>
+</EffectScript>

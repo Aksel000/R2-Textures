@@ -1,0 +1,17 @@
+<EffectScript>
+<Information>
+	<Name>skill_concentration</Name>
+	<Dynamic>false</Dynamic>
+
+
+</Information>
+<EffectFile>1121.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="5" Min="1400" Max="2000">powerbreak.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+

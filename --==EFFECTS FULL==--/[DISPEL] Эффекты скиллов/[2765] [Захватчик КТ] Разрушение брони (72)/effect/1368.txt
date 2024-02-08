@@ -1,0 +1,26 @@
+<EffectScript>
+<Information>
+	<Name> mana </Name>
+	<Dynamic>false</Dynamic>
+
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>TRUE</Rot>	
+		<Once>TRUE</Once>
+	</Attach>
+
+</Information>
+<EffectFile>1368.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">Armor_Break1.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="35" Min="1400" Max="2000">Armor_Break2.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+

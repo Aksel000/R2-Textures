@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>acid_ball_Exp</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1546.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">vampireric_zone_cast.wav</FrameEvent>
+
+
+</Event>
+
+</EffectScript>

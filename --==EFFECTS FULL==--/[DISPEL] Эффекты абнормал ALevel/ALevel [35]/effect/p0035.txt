@@ -1,0 +1,50 @@
+<ParticleScript>
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>TRUE</Loop>
+	<Power>80</Power>
+	<PowerVari>20</PowerVari>
+	<PullDist>300 </PullDist>
+	<PullPower>100</PullPower>
+	<Life>800</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,00,0</LocalPos>
+	<Gravity>0000,000,000</Gravity>
+	<SelfRotate>0,0,1</SelfRotate>
+	<SelfRotateVari>0,0,1</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>20,20,20</Scale>
+	<ScaleVari>6,6,6</ScaleVari>
+	<Direction>0,00,90</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_one</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>PULL</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>800</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>2</MakeTime>
+	<Texture>smog_cloud09.dds</Texture>
+
+	<StartShape Size="50">circle</StartShape>
+
+	<Ani Frame="0" Type="Scale">4,4,4</Ani>
+	
+	<Ani Frame="400" Type="Scale">2,2,2</Ani>
+	
+	
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="50" Type="Diffuse">150,150,150,150</Ani>
+	<Ani Frame="500" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+
+
+
+
+
+
+
+
+</ParticleScript>

@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>FireHale_BasicCast</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>5345.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">FireHale_Cast.wav</FrameEvent>
+</Event>
+</EffectScript>

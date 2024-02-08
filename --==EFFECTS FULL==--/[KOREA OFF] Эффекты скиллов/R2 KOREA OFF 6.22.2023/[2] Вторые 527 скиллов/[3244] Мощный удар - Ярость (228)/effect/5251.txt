@@ -1,0 +1,23 @@
+
+<EffectScript>
+
+<Information>
+
+	<Name> 2st HardHit </Name>
+	<Dynamic> false	</Dynamic>
+	<Loop> FALSE </Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>	
+
+	</Attach>
+
+</Information>
+
+<EffectFile>5251.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="5" Min="1400" Max="2000">hardhit.wav</FrameEvent>
+</Event>
+</EffectScript>

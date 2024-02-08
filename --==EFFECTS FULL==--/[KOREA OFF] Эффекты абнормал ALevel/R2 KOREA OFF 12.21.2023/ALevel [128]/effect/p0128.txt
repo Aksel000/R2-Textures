@@ -1,0 +1,78 @@
+<ParticleScript>
+
+
+<InfoData Name="warfare buff">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>3</Power>
+	<PowerVari>10</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1000</PullPower>
+	<Life>1500.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,0,0</LocalPos>
+	<Gravity>0000,-10,000</Gravity>
+	<SelfRotate>0,0,0.2</SelfRotate>
+	<SelfRotateVari>0,0,2</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>15,15,15</Scale>
+	<ScaleVari>3,3,3</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>1</StartTime>
+	<EndTime>2200</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>70</MakeTime>
+	<Texture>Glow_05.dds</Texture>
+	<StartShape Size="30">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">12,12,12</Ani>
+	<Ani Frame="200" Type="Scale">15,15,15</Ani>	
+	<Ani Frame="900" Type="Scale">30,30,30</Ani>
+
+	<Ani Frame="0" Type="Diffuse">0,255,255,255</Ani>
+	<Ani Frame="100" Type="Diffuse">30,255,255,255</Ani>
+	<Ani Frame="900" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+<InfoData Name="warfare buff">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>30</Power>
+	<PowerVari>10</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1000</PullPower>
+	<Life>1500.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,0,0</LocalPos>
+	<Gravity>0000,-10,000</Gravity>
+	<SelfRotate>0,0,0.2</SelfRotate>
+	<SelfRotateVari>0,0,2</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>8,8,8</Scale>
+	<ScaleVari>2,2,2</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>1</StartTime>
+	<EndTime>2200</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>70</MakeTime>
+	<Texture>Glow_05.dds</Texture>
+	<StartShape Size="40" >sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>
+	<Ani Frame="200" Type="Scale">2,2,2</Ani>	
+	<Ani Frame="900" Type="Scale">0,0,0</Ani>
+
+	<Ani Frame="0" Type="Diffuse">0,255,255,255</Ani>
+	<Ani Frame="100" Type="Diffuse">250,255,255,255</Ani>
+	<Ani Frame="900" Type="Diffuse">0, 0, 0, 0</Ani>
+</InfoData>
+
+</ParticleScript>

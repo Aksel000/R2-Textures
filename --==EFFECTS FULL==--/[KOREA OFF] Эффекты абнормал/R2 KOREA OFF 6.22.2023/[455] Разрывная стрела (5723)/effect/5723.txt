@@ -1,0 +1,17 @@
+<EffectScript>
+<Information>
+	<Name> Ranger_WindWalk_Condition </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>false</Rot>
+				
+	</Attach>
+
+
+</Information>
+<EffectFile>5723.reb</EffectFile>
+</EffectScript>

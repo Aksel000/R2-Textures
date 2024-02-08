@@ -1,0 +1,33 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>CallLightning</Name>
+</Information>
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>1419.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="TRUE">
+
+		
+	</Group>
+
+	<Group Sequential="TRUE">
+	</Group>
+	
+	<Group Sequential="TRUE">
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> exp </Scene>
+		
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

@@ -1,0 +1,21 @@
+<EffectScript>
+<Information>
+	<Name>Servant_POWER</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<Attach>
+    		<BodyPart>BVCENTER</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>False</Rot>
+	</Attach>
+	
+</Information>
+<EffectFile>5063.reb</EffectFile>
+
+</EffectScript>
+
+
+
+
+

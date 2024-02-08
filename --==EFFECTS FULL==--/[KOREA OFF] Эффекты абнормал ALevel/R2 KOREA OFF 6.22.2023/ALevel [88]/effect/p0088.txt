@@ -1,0 +1,87 @@
+<ParticleScript>
+
+
+
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>false</Loop>
+	<Power>300</Power>
+	<PowerVari>50</PowerVari>
+	<PullDist>100 </PullDist>
+	<PullPower>500</PullPower>
+	<Life>1000.0</Life>
+	<Cone>.9</Cone>
+	<LocalPos>0,20,0</LocalPos>
+	<Gravity>0000,-180,000</Gravity>
+	<SelfRotate>0,0,1</SelfRotate>
+	<SelfRotateVari>0,0,1</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>30,30,30</Scale>
+	<ScaleVari>2,2,2</ScaleVari>
+	<Direction>90,0,0</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_one</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>50</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>5</MakeTime>
+	<Texture>smog_cloud05.dds</Texture>
+
+	<StartShape Size="20">circle</StartShape>
+
+	<Ani Frame="0" Type="Scale">5,5,5</Ani>
+	
+	<Ani Frame="400" Type="Scale">7,7,7</Ani>
+	
+	
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="100" Type="Diffuse">250,184,155,100</Ani>
+	<Ani Frame="600" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>false</Loop>
+	<Power>300</Power>
+	<PowerVari>50</PowerVari>
+	<PullDist>100 </PullDist>
+	<PullPower>500</PullPower>
+	<Life>1000.0</Life>
+	<Cone>.9</Cone>
+	<LocalPos>0,20,0</LocalPos>
+	<Gravity>0000,-180,000</Gravity>
+	<SelfRotate>0,0,1</SelfRotate>
+	<SelfRotateVari>0,0,1</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>30,30,30</Scale>
+	<ScaleVari>2,2,2</ScaleVari>
+	<Direction>90,180,0</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_one</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>50</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>5</MakeTime>
+	<Texture>smog_cloud05.dds</Texture>
+
+	<StartShape Size="20">circle</StartShape>
+
+	<Ani Frame="0" Type="Scale">5,5,5</Ani>
+	
+	<Ani Frame="400" Type="Scale">7,7,7</Ani>
+		
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="100" Type="Diffuse">250,184,155,100</Ani>
+	<Ani Frame="600" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+
+
+
+</ParticleScript>

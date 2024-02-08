@@ -1,0 +1,17 @@
+<EffectScript>
+<Information>
+	<Name> Nite_ShakriPearce </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Attach>
+    		<BodyPart>CHEST</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>false</Rot>
+				
+	</Attach>
+
+
+</Information>
+<EffectFile>5738.reb</EffectFile>
+</EffectScript>

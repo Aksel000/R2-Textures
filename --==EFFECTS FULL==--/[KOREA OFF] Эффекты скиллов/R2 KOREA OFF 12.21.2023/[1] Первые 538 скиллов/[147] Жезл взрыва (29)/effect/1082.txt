@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>Wand_acid</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1082.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>trans</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1054.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">cast_icebolt.wav</FrameEvent>
+</Event>
+</EffectScript>

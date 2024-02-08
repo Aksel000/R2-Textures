@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>ASSE</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0023.txt</Particle>
+
+
+</Information>
+<EffectFile>1514.reb</EffectFile>
+</EffectScript>

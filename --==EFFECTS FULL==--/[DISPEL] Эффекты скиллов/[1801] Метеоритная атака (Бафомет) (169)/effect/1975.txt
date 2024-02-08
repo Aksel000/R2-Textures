@@ -1,0 +1,17 @@
+<EffectScript>
+<Information>
+	<Name>Emoticon</Name>
+	<Dynamic>false</Dynamic>
+	<CullingRadius>4000</CullingRadius>
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+   		<Scale>TRUE</Scale>
+                <Rot>TRUE</Rot>
+		<Once>true</Once>           	
+   	</Attach>
+</Information>
+<EffectFile>1975.reb</EffectFile>
+
+</EffectScript>

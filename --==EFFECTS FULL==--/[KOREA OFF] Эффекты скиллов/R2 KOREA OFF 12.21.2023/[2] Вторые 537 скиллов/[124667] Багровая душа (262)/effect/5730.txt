@@ -1,0 +1,18 @@
+<EffectScript>
+<Information>
+	<Name> Assassin_CrimsomSoul_Attack </Name>
+	<Dynamic>false</Dynamic>
+	
+	<Attach>
+    		<BodyPart>bvbottom</BodyPart>
+		<Pos> 0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+
+           </Attach>
+</Information>
+<EffectFile>5730.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">Assassin_CrimsomSoul_Attack.wav</FrameEvent>
+</Event>
+</EffectScript>

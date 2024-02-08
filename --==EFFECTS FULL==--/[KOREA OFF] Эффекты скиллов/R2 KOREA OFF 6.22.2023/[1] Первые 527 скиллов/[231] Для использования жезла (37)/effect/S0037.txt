@@ -1,0 +1,110 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>Flame_strike</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>1149.txt</FileName>
+</EffectScene>
+<EffectScene>
+	<Name> cast02 </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>1085.txt</FileName>
+</EffectScene>
+<EffectScene>
+	<Name> missile </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Delay>0</Delay>
+	</Method>
+</EffectScene>
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		<Delay>1.2</Delay>
+
+	</Method>
+	<FileName>1026.txt</FileName>
+</EffectScene>
+<EffectScene>
+	<Name> exp1 </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>350,0,0</Pos>
+		<Delay>1.4</Delay>
+	</Method>
+	<FileName>1026.txt</FileName>
+</EffectScene>
+
+<EffectScene>
+	<Name> exp2 </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>-350,0,0</Pos>
+		<Delay>1.5</Delay>
+	</Method>
+	<FileName>1026.txt</FileName>
+</EffectScene>
+
+<EffectScene>
+	<Name> exp3 </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,350</Pos>
+		<Delay>1.7</Delay>
+	</Method>
+	<FileName>1026.txt</FileName>
+</EffectScene>
+
+<EffectScene>
+	<Name> exp4 </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,-350</Pos>
+		<Delay>1.9</Delay>
+	</Method>
+	<FileName>1026.txt</FileName>
+</EffectScene>
+
+
+
+<SceneControl>
+	<Group Sequential="false">
+		<Scene From="SOURCE_HEAD" To="SOURCE_HEAD"> cast </Scene>
+		<Scene From="TARGET" To="TARGET"> cast02 </Scene>	
+	</Group>
+
+	<Group Sequential="true">
+		<Scene From="TARGET" To="TARGET"> missile </Scene>
+	
+	</Group>
+	
+	<Group Sequential="false">
+		<Scene From="TARGET" To="TARGET"> exp </Scene>
+		<Scene From="TARGET" To="TARGET"> exp1 </Scene>
+		<Scene From="TARGET" To="TARGET"> exp2 </Scene>
+		<Scene From="TARGET" To="TARGET"> exp3 </Scene>
+		<Scene From="TARGET" To="TARGET"> exp4 </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

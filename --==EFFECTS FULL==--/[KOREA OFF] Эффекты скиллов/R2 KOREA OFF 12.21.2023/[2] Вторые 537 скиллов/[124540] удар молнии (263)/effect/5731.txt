@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name> Elf_LightningShock </Name>
+	<Dynamic>false</Dynamic>
+	<Loop> FALSE </Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>	
+            </Attach>
+
+</Information>
+<EffectFile>5731.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">Elf_LightningShock.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+

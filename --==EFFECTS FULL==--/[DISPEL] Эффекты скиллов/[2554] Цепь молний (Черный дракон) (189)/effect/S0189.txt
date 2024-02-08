@@ -1,0 +1,112 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>CHAIN_LIGHTNING_B</Name>
+</Information>
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>4525.txt</FileName>
+</EffectScene>
+
+<EffectScene>
+	<Name> exp2 </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Delay>0.22</Delay>
+		<Pos>0,0,0</Pos>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>4568.txt</FileName>
+</EffectScene>
+
+<EffectScene>
+	<Name> line </Name>
+	<Method>
+		<Type>MT_CONNECTION</Type>
+		<Speed>1000</Speed>
+		<Delay>0.3</Delay>
+		<RotateSpeed>700</RotateSpeed>
+		<SpiralRadius>20</SpiralRadius>
+		<Loop>TRUE</Loop>
+		<Split>1</Split>
+		<HeightPerWidth>0.0</HeightPerWidth>
+		<Trail>false</Trail>
+		<TrailRadius>150</TrailRadius>
+		<TrailTexture>lightning_10.dds</TrailTexture>
+		<WaitConnect>0.2</WaitConnect>
+		<LifeTime>3.0</LifeTime>
+		<TextureAnimationMinChangeTime>0.02</TextureAnimationMinChangeTime>
+		<TextureAnimationMaxChangeTime>0.04</TextureAnimationMaxChangeTime>
+		<TextureAnimationChangeCount>8</TextureAnimationChangeCount>
+	</Method>
+	<FileName>4524.txt</FileName>
+</EffectScene>
+
+<EffectScene>
+	<Name> line2 </Name>
+	<Method>
+		<Type>MT_CONNECTION</Type>
+		<Speed>1000</Speed>
+		<Delay>0.3</Delay>
+		<RotateSpeed>700</RotateSpeed>
+		<SpiralRadius>20</SpiralRadius>
+		<Loop>TRUE</Loop>
+		<Split>1</Split>
+		<HeightPerWidth>0.0</HeightPerWidth>
+		<Trail>false</Trail>
+		<TrailRadius>100</TrailRadius>
+		<TrailTexture>elec_light_r02.dds</TrailTexture>
+		<WaitConnect>0.2</WaitConnect>
+		<LifeTime>3.0</LifeTime>
+		<TextureAnimationMinChangeTime>0.02</TextureAnimationMinChangeTime>
+		<TextureAnimationMaxChangeTime>0.04</TextureAnimationMaxChangeTime>
+		<TextureAnimationChangeCount>3</TextureAnimationChangeCount>
+	</Method>
+</EffectScene>
+
+<EffectScene>
+	<Name> line3 </Name>
+	<Method>
+		<Type>MT_CONNECTION</Type>
+		<Speed>1000</Speed>
+		<Delay>0.3</Delay>
+		<RotateSpeed>700</RotateSpeed>
+		<SpiralRadius>20</SpiralRadius>
+		<Loop>TRUE</Loop>
+		<Split>1</Split>
+		<HeightPerWidth>0.0</HeightPerWidth>
+		<Trail>false</Trail>
+		<TrailRadius>60</TrailRadius>
+		<TrailTexture>elec_light_r02.dds</TrailTexture>
+		<WaitConnect>0.2</WaitConnect>
+		<LifeTime>3.0</LifeTime>
+		<TextureAnimationMinChangeTime>0.02</TextureAnimationMinChangeTime>
+		<TextureAnimationMaxChangeTime>0.04</TextureAnimationMaxChangeTime>
+		<TextureAnimationChangeCount>3</TextureAnimationChangeCount>
+	</Method>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="TRUE">
+
+	</Group>
+	<Group Sequential="TRUE">
+		<Scene From="TARGET" To="TARGET"> exp </Scene>
+		<Scene From="SOURCE_R_HAND" To="SOURCE_R_HAND"> exp2 </Scene>
+		<Scene From="TARGET" To="TARGET"> line </Scene>
+		<Scene From="TARGET" To="TARGET"> line2 </Scene>
+		<Scene From="TARGET" To="TARGET"> line3 </Scene>
+	</Group>
+
+	
+</SceneControl>
+
+</EffectSceneScript>

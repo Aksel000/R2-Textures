@@ -1,0 +1,22 @@
+<EffectScript>
+<Information>
+	<Name>Anti_Servant_POWER</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<Attach>
+    		<BodyPart>BVCENTER</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>False</Rot>
+		<PickingScale>TRUE</PickingScale>
+	</Attach>
+	
+</Information>
+<EffectFile>5064.reb</EffectFile>
+
+</EffectScript>
+
+
+
+
+

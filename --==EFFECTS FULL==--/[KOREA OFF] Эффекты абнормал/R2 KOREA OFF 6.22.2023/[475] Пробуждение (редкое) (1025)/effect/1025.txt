@@ -1,0 +1,15 @@
+<EffectScript>
+<Information>
+	<Name>Doom_Cont</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>
+    	<BodyPart>HEAD</BodyPart>
+  		<Pos>0,0,0</Pos>
+   		<Scale>FALSE</Scale>
+	
+   	</Attach>
+
+	<Loop>true</Loop>
+</Information>
+<EffectFile>1025.reb</EffectFile>
+</EffectScript>

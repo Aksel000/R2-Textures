@@ -1,0 +1,18 @@
+<EffectScript>
+<Information>
+	<Name> Nite_Dual Sisson </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>false</Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>			
+	</Attach>
+</Information>
+
+<EffectFile>5867.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">Nite_DualSisson.wav</FrameEvent>
+</Event>
+</EffectScript>

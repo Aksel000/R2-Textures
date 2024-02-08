@@ -1,0 +1,21 @@
+<EffectScript>
+<Information>
+	<Name> Ranger_Sniper Condision </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Attach>
+    		<BodyPart>R_HAND</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>false</Rot>
+	</Attach>
+            <Attach>
+    		<BodyPart>L_HAND</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>false</Rot>
+	</Attach>
+
+</Information>
+<EffectFile>5873.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,26 @@
+<EffectScript>
+<Information>
+	<Name>INVINCIBLE_CAST</Name>
+	<Dynamic>false</Dynamic>
+	<CullingRadius>100</CullingRadius>	
+	<Loop>FALSE</Loop>
+	<Attach>
+    		<BodyPart>BVCENTER</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>FALSE</Rot>
+		<Size>TRUE</Size>
+		<Once>FALSE</Once>
+		<PickingScale>TRUE</PickingScale>
+	</Attach>
+
+
+	
+</Information>
+<EffectFile>4635.reb</EffectFile>
+					
+
+</EffectScript>
+
+
+

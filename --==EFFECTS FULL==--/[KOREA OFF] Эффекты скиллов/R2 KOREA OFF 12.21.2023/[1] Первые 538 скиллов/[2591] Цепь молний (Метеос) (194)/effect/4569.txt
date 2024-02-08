@@ -1,0 +1,21 @@
+<EffectScript>
+<Information>
+	<Name>MTS_CHAIN_LIGHTNING_CAST2</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>FALSE</Loop>
+	<CullingRadius>40000</CullingRadius>
+	<Attach>
+    		<BodyPart>R_HAND</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>TRUE</Rot>
+		<Once>TRUE</Once>
+	</Attach>
+</Information>
+<EffectFile>4569.reb</EffectFile>
+					
+
+</EffectScript>
+
+
+

@@ -1,0 +1,15 @@
+<EffectScript>
+<Information>
+	<Name>Effect_regen</Name>
+	<Dynamic>false</Dynamic>
+
+
+
+</Information>
+<EffectFile>1005.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">pch.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">pch2.wav</FrameEvent>
+
+</Event>
+</EffectScript>

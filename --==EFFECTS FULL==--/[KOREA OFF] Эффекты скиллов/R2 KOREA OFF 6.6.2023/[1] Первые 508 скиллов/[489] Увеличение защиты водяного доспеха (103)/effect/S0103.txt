@@ -1,0 +1,45 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>Acid_ball</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		<Rot>FALSE</Rot>
+	</Method>
+	<FileName>1558.txt</FileName>
+</EffectScene>
+
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		<Rot>FALSE</Rot>
+		<Delay>0.6</Delay>
+	</Method>
+	<FileName>1560.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE_CHEST" To="SOURCE_CHEST"> cast </Scene>
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> exp </Scene>
+	</Group>
+
+	<Group Sequential="TRUE">
+		
+	</Group>
+	
+	<Group Sequential="TRUE">
+
+	</Group>
+</SceneControl>
+</EffectSceneScript>

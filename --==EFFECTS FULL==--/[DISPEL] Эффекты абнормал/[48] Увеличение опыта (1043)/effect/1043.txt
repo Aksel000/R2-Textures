@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>Lev_up</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0010.txt</Particle>
+</Information>
+<EffectFile>1043.reb</EffectFile>
+</EffectScript>

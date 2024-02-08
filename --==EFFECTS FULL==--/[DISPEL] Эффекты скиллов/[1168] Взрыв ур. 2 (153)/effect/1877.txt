@@ -1,0 +1,28 @@
+<EffectScript>
+<Information>
+	<Name>skill_TripleHit_hit</Name>
+	<Dynamic>false</Dynamic>
+
+
+		
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		<Once>true</Once>
+	</Attach>
+
+</Information>
+<EffectFile>1877.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">arrowExp.wav</FrameEvent>
+</Event>
+
+
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>wand_calllightning</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1088.reb</EffectFile>
+<Event>
+		
+</Event>
+</EffectScript>

@@ -1,0 +1,43 @@
+<ParticleScript>
+
+<InfoData Name="Field_Dust">
+	<PosLink>TRUE</PosLink>
+	<Loop>TRUE</Loop>
+	<Power>10</Power>
+	<PowerVari>0.0</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>10</PullPower>
+	<Life>2000.0</Life>
+	<Cone>.1</Cone>
+	<LocalPos>0,200,0</LocalPos>
+	<Gravity>0000,00,000</Gravity>
+	<SelfRotate>2,2,2</SelfRotate>
+	<SelfRotateVari>2,2,2</SelfRotateVari>
+	<Rotate>0,0,90</Rotate>
+	<Scale>1,1,1</Scale>
+	<ScaleVari>20,20,20</ScaleVari>
+	<Direction> 0,00,90</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_INVSRCALPHA</BlendType>
+	<BillboardType>NONE</BillboardType>
+	<PlayType>GRAVITY</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>1000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>50</MakeTime>
+	<Texture>shape_leaf.dds</Texture>
+	<StartShape Size="50">SPHERE</StartShape>
+
+	<Ani Frame="0" Type="Scale">4,4,4</Ani>
+
+
+	
+	
+	<Ani Frame="0" Type="Diffuse">0,0,0,0</Ani>
+	<Ani Frame="1000" Type="Diffuse">255,255,255,255</Ani>
+	<Ani Frame="2000" Type="Diffuse">0,0,0,0</Ani>
+	
+</InfoData>
+
+
+</ParticleScript>

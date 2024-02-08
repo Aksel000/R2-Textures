@@ -1,0 +1,16 @@
+<EffectScript>
+<Information>
+	<Name>effect_Web_Cont</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+		<Size>TRUE</Size>
+    		<Scale>TRUE</Scale>
+
+
+	</Attach>
+</Information>
+<EffectFile>1018.reb</EffectFile>
+</EffectScript>

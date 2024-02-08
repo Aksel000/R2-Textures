@@ -1,0 +1,9 @@
+<EffectScript>
+<Information>
+	<Name>FLAMESTRIKE_CAST02</Name>
+	<Dynamic>false</Dynamic>
+	
+
+</Information>
+<EffectFile>1085.reb</EffectFile>
+</EffectScript>

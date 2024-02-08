@@ -1,0 +1,39 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>METEOS_QUAKE</Name>
+</Information>
+
+
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Delay>0.0</Delay>
+		<Pos>0,0,0</Pos>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>4522.txt</FileName>
+</EffectScene>
+<EffectScene>
+	<Name> exp2 </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Delay>0.0</Delay>
+		<Pos>0,0,0</Pos>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>4542.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> exp </Scene>
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> exp2 </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

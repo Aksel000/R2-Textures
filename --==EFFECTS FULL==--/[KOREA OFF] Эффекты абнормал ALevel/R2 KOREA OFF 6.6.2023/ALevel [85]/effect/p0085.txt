@@ -1,0 +1,46 @@
+<ParticleScript>
+
+
+<InfoData Name="warfare buff">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>10</Power>
+	<PowerVari>20</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1000</PullPower>
+	<Life>1500.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,30,0</LocalPos>
+	<Gravity>0000,50,000</Gravity>
+	<SelfRotate>0,0,0.8</SelfRotate>
+	<SelfRotateVari>0,0,0.8</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>9,9,9</Scale>
+	<ScaleVari>2,2,2</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>none</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>1</StartTime>
+	<EndTime>1600</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>2</MakeTime>
+	<Texture>Vena_01.DDS</Texture>
+	<StartShape Size="30" Size2="40" Size3="30">cube</StartShape>
+
+
+
+	<Ani Frame="0" Type="Scale">7,5,7</Ani>
+	<Ani Frame="600" Type="Scale">18,25,18</Ani>	
+	<Ani Frame="1000" Type="Scale">25,30,25</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="100" Type="Diffuse">250,250,30,180</Ani>
+	<Ani Frame="600" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+
+
+</ParticleScript>

@@ -1,0 +1,20 @@
+<EffectScript>
+<Information>
+	<Name>Emoticon</Name>
+	<Dynamic>false</Dynamic>
+	<CullingRadius>40000</CullingRadius>
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+   		<Scale>TRUE</Scale>
+                <Rot>TRUE</Rot>
+		<Once>true</Once>           	
+   	</Attach>
+</Information>
+<EffectFile>4540.reb</EffectFile>
+<Event>	
+	<FrameEvent Type="SOUND" Frame="30" Min="7000" Max="12000">4540.wav</FrameEvent>	
+	<FrameEvent Type="SOUND" Frame="0" Min="7000" Max="12000">dth.wav</FrameEvent>	
+</Event>	
+</EffectScript>

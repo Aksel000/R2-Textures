@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name>Vampireric_Zone_Lv2</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>TRUE</Rot>	
+	
+		
+	</Attach>
+
+</Information>
+<EffectFile>1617.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">Vampireric_Zone_Lv2.wav</FrameEvent>
+
+
+</Event>
+
+
+</EffectScript>

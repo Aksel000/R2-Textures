@@ -1,0 +1,7 @@
+<EffectScript>
+<Information>
+	<Name>Wand_Calllightning</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1078.reb</EffectFile>
+</EffectScript>

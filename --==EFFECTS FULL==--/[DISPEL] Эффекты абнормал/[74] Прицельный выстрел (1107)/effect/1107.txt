@@ -1,0 +1,14 @@
+<EffectScript>
+<Information>
+	<Name>MOB_SPEEDDOWN</Name>
+	<Dynamic>false</Dynamic>
+
+
+</Information>
+<EffectFile>1107.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,17 @@
+<EffectScript>
+<Information>
+	<Name>skill_berserk_cast</Name>
+	<Dynamic>false</Dynamic>
+
+
+</Information>
+<EffectFile>1129.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="5" Min="1400" Max="2000">berserk.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+

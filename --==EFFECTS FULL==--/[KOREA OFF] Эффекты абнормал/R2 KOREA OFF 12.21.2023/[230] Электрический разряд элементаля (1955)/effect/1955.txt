@@ -1,0 +1,24 @@
+<EffectScript>
+<Information>
+	<Name>Emoticon</Name>
+	<Dynamic>false</Dynamic>
+	
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+   		<Scale>FALSE</Scale>
+                <Rot>true</Rot>
+
+   	</Attach>
+   	
+
+
+</Information>
+<EffectFile>1955.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">Elf_amp_cast.wav</FrameEvent>
+</Event>
+
+
+</EffectScript>

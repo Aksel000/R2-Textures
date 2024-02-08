@@ -1,0 +1,9 @@
+<EffectScript>
+<Information>
+	<Name>FireHale_Cast03</Name>
+	<Dynamic>false</Dynamic>
+	
+
+</Information>
+<EffectFile>5355.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,14 @@
+<EffectScript>
+<Information>
+	<Name> Patron_Teleport </Name>
+	<Dynamic>false</Dynamic>
+
+
+</Information>
+<EffectFile>5509.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

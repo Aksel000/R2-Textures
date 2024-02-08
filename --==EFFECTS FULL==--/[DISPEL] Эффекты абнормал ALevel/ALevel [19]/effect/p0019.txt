@@ -1,0 +1,43 @@
+<ParticleScript>
+
+<InfoData Name="Field_Dust">
+	<PosLink>TRUE</PosLink>
+	<Loop>TRUE</Loop>
+	<Power>1500</Power>
+	<PowerVari>1000.0</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>10</PullPower>
+	<Life>3000.0</Life>
+	<Cone>.1</Cone>
+	<LocalPos>0,200,0</LocalPos>
+	<Gravity>0000,000,000</Gravity>
+	<SelfRotate>0,0,1</SelfRotate>
+	<SelfRotateVari>0,0,2</SelfRotateVari>
+	<Rotate>0,0,90</Rotate>
+	<Scale>25,25,25</Scale>
+	<ScaleVari> 10,10,10</ScaleVari>
+	<Direction>90,00,0</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_DESTALPHA</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>NONE</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>1000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>50</MakeTime>
+	<Texture>smog_cloud04.DDS</Texture>
+	<StartShape Size="500" Size2="80" Size3="1000">CUBE</StartShape>
+
+	<Ani Frame="0" Type="Scale">20,20,20</Ani>
+	<Ani Frame="1000" Type="Scale">30,30,30</Ani>
+	<Ani Frame="3000" Type="Scale">40,40,40</Ani>
+	
+	
+	<Ani Frame="0" Type="Diffuse">0,0,0,0</Ani>
+	<Ani Frame="1000" Type="Diffuse">60,60,60,60</Ani>
+	<Ani Frame="2000" Type="Diffuse">0,0,0,0</Ani>
+	
+</InfoData>
+
+
+</ParticleScript>

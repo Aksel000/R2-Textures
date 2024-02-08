@@ -1,0 +1,22 @@
+<EffectScript>
+<Information>
+	<Name>Armor_Break_exp_Custom</Name>
+	<Dynamic>false</Dynamic>
+
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>TRUE</Rot>	
+		
+	</Attach>
+
+</Information>
+<EffectFile>4601.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

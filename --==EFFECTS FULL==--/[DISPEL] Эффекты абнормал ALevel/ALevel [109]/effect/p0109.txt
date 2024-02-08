@@ -1,0 +1,47 @@
+<ParticleScript>
+
+
+<InfoData Name="warfare buff">
+	<PosLink>TRUE</PosLink>
+	<Loop>false</Loop>
+	<Power>200</Power>
+	<PowerVari>100</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1000</PullPower>
+	<Life>1500.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,120,0</LocalPos>
+	<Gravity>0000,-100,000</Gravity>
+	<SelfRotate>0,0,0.2</SelfRotate>
+	<SelfRotateVari>0,0,0.2</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>1,1,1</Scale>
+	<ScaleVari>2,2,2</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>1</StartTime>
+	<EndTime>600</EndTime>
+	<MakeCount>2</MakeCount>
+	<MakeTime>20</MakeTime>
+	<Texture>Glow_08.dds</Texture>
+	<StartShape Size="10" >sphere</StartShape>
+
+
+
+	<Ani Frame="0" Type="Scale">12,12,12</Ani>
+	<Ani Frame="400" Type="Scale">15,15,15</Ani>	
+	<Ani Frame="1000" Type="Scale">20,20,20</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0,255,255,255</Ani>
+	<Ani Frame="100" Type="Diffuse">255,255,255,255</Ani>
+	<Ani Frame="300" Type="Diffuse">255,255,255,255</Ani>
+	<Ani Frame="600" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+
+
+</ParticleScript>

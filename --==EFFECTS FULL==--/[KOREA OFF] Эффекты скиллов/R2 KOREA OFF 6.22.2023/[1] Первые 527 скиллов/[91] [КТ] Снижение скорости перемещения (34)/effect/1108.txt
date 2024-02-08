@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>MOB_SPEEDDOWN_CAST</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0036.txt</Particle>
+</Information>
+<EffectFile>1108.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,21 @@
+<EffectScript>
+<Information>
+	<Name>m04823</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>p0247.txt</Particle>
+	<CullingRadius>40000</CullingRadius>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>FALSE</Scale>
+		<Rot>FALSE</Rot>
+	</Attach>
+</Information>
+<EffectFile>4823.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

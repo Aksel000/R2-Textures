@@ -1,0 +1,18 @@
+<EffectScript>
+<Information>
+	<Name> Summoner_MultiTotem </Name>
+	<Dynamic> false	</Dynamic>
+	<Loop> FALSE </Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>	
+
+	</Attach>
+</Information>
+<EffectFile>5724.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">Summoner_MultiTotem.wav</FrameEvent>
+</Event>
+</EffectScript>

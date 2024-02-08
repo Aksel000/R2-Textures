@@ -1,0 +1,21 @@
+<EffectScript>
+<Information>
+	<Name>NECRO</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	
+	<Attach>
+    		<BodyPart>chest</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>false</Rot>
+	</Attach>
+
+</Information>
+<EffectFile>4207.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

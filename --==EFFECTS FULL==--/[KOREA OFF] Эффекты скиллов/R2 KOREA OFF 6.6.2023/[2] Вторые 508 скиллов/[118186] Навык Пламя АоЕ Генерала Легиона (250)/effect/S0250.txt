@@ -1,0 +1,65 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>Deinke_AreaAttack</Name>
+</Information>
+<EffectScene>
+	<Name> missile </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Delay>2.0</Delay>
+	</Method>
+</EffectScene>
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>5540.txt</FileName>
+</EffectScene>
+<EffectScene>
+	<Name> exp2 </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>5541.txt</FileName>
+</EffectScene>
+<EffectScene>
+	<Name> exp3 </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>5542.txt</FileName>
+</EffectScene>
+<EffectScene>
+	<Name> exp4 </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>5543.txt</FileName>
+</EffectScene>
+
+
+
+<SceneControl>
+	<Group Sequential="true">
+	</Group>
+
+	<Group Sequential="true">
+		<Scene From="TARGET" To="TARGET"> missile </Scene>
+	
+	</Group>
+	<Group Sequential="true">
+		<Scene From="TARGET" To="TARGET"> exp </Scene>
+		<Scene From="TARGET" To="TARGET"> exp2 </Scene>
+                        <Scene From="TARGET" To="TARGET"> exp3 </Scene>
+                        <Scene From="TARGET" To="TARGET"> exp4 </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

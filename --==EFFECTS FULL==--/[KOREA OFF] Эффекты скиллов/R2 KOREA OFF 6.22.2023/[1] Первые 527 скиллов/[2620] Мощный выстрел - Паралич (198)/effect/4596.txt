@@ -1,0 +1,24 @@
+<EffectScript>
+<Information>
+	<Name>skill_aimedshot_cast_custom</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		<Once>True</Once>
+	</Attach>
+
+
+</Information>
+<EffectFile>4596.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="5" Min="1400" Max="2000">aimedshot.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+

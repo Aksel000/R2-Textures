@@ -1,0 +1,9 @@
+<EffectScript>
+<Information>
+	<Name>CallLightning_CAST02</Name>
+	<Dynamic>false</Dynamic>
+	
+
+</Information>
+<EffectFile>1084.reb</EffectFile>
+</EffectScript>

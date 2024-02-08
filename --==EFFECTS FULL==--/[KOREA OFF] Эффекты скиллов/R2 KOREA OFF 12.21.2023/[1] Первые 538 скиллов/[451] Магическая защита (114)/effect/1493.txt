@@ -1,0 +1,21 @@
+<EffectScript>
+<Information>
+	<Name>effect</Name>
+	<Dynamic>false</Dynamic>
+
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+		<Size>TRUE</Size>
+    		<Scale>TRUE</Scale>
+
+
+	</Attach>
+</Information>
+<EffectFile>1493.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">magic_protect.wav</FrameEvent>
+
+
+</Event>
+</EffectScript>

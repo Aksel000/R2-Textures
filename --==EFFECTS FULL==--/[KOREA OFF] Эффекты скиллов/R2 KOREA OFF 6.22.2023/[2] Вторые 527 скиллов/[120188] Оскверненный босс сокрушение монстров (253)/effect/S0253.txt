@@ -1,0 +1,31 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>ChaosBoss_AreaAttack</Name>
+</Information>
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Delay>0.0</Delay>
+		<Pos>0,0,0</Pos>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>5668.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+           <Group Sequential="True">
+
+           </Group>
+           <Group Sequential="True">
+
+           </Group>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> exp </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

@@ -1,0 +1,31 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>BLESS</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>1630.txt</FileName>
+</EffectScene>
+
+
+
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE" To="SOURCE"> cast </Scene>
+	</Group>
+		<Group Sequential="TRUE">
+	</Group>
+
+		<Group Sequential="TRUE">
+	</Group>
+
+</SceneControl>
+
+</EffectSceneScript>

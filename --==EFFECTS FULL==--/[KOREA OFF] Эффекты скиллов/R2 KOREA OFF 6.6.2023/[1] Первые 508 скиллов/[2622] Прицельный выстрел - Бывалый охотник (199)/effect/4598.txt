@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name>skill_grapshot_cast_custom</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		<Once>True</Once>
+	</Attach>
+
+</Information>
+<EffectFile>4598.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="5" Min="1400" Max="2000">grapshot.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+

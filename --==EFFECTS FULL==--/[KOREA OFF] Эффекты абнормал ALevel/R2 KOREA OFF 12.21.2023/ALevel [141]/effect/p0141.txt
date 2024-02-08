@@ -1,0 +1,46 @@
+<ParticleScript>
+
+
+<InfoData Name="warfare buff">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>2</Power>
+	<PowerVari>2</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1000</PullPower>
+	<Life>1500.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,0,0</LocalPos>
+	<Gravity>0000,260,000</Gravity>
+	<SelfRotate>0,0,0.8</SelfRotate>
+	<SelfRotateVari>0,0,0.8</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>3,3,3</Scale>
+	<ScaleVari>10,10,10</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>1</StartTime>
+	<EndTime>1500</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>2</MakeTime>
+	<Texture>fire_ball2.dds</Texture>
+	<StartShape Size="5">sphere</StartShape>
+
+
+
+	<Ani Frame="0" Type="Scale">7,5,7</Ani>
+	<Ani Frame="700" Type="Scale">8,8,8</Ani>	
+	<Ani Frame="1000" Type="Scale">0,0,0</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0,160,255,0</Ani>
+	<Ani Frame="100" Type="Diffuse">150,250,40,30</Ani>
+	<Ani Frame="700" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+
+
+</ParticleScript>

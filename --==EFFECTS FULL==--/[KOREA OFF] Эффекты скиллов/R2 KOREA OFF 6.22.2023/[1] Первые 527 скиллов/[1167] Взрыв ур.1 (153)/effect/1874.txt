@@ -1,0 +1,21 @@
+<EffectScript>
+<Information>
+	<Name>skill_TripleHit_hit</Name>
+	<Dynamic>false</Dynamic>
+
+
+		
+
+
+</Information>
+<EffectFile>1874.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">FireArrowCast.wav</FrameEvent>
+</Event>
+
+</EffectScript>
+
+
+
+
+

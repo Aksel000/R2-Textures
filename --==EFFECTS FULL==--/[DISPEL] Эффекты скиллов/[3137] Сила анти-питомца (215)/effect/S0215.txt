@@ -1,0 +1,43 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>servant_active_a</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,130,-70</Pos>
+		<Rot>TRUE</Rot>
+	</Method>
+	<FileName>4923.txt</FileName>
+</EffectScene>
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		<Rot>false</Rot>
+	</Method>
+	<FileName>4918.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE" To="SOURCE"> cast </Scene>
+	</Group>
+	
+	<Group Sequential="TRUE">
+
+	</Group>
+
+	<Group Sequential="TRUE">
+		<Scene From="TARGET" To="TARGET"> exp </Scene>				
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

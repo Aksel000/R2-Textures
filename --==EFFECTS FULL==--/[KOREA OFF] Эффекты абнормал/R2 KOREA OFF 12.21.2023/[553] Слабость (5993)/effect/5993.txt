@@ -1,0 +1,20 @@
+<EffectScript>
+<Information>
+	<Name>Weakness Condision</Name>
+	<Dynamic>false</Dynamic>
+            <Loop>TRUE</Loop>
+	<Attach>
+    		<BodyPart>Chest</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+	</Attach>
+
+</Information>
+<EffectFile>5993.reb</EffectFile>
+
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,28 @@
+<EffectScript>
+<Information>
+	<Name>ResflectionAura_Custom</Name>
+	<Dynamic>false</Dynamic>
+
+	
+	<Attach>
+    		<BodyPart>CHEST</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>FALSE</Rot>	
+
+	</Attach>
+
+</Information>
+<EffectFile>4613.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">reflection_aura_cast.wav</FrameEvent>
+
+
+</Event>
+
+</EffectScript>
+
+
+
+
+

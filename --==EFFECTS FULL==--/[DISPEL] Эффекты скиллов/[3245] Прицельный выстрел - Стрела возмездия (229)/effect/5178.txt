@@ -1,0 +1,20 @@
+
+<EffectScript>
+
+<Information>
+
+	<Name> 2st Adshot exp </Name>
+	<Dynamic> false	</Dynamic>
+	<Loop> FALSE </Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>	
+
+	</Attach>
+
+</Information>
+
+<EffectFile>5178.reb</EffectFile>
+</EffectScript>

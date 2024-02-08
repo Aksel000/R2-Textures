@@ -1,0 +1,21 @@
+<EffectScript>
+<Information>
+	<Name>CHAIN_LIGHTNING_CAST2</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>FALSE</Loop>
+	<CullingRadius>40000</CullingRadius>
+	<Attach>
+    		<BodyPart>CHEST</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>TRUE</Rot>
+		<Once>TRUE</Once>
+	</Attach>
+</Information>
+<EffectFile>4568.reb</EffectFile>
+					
+
+</EffectScript>
+
+
+

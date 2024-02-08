@@ -1,0 +1,32 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>SERVANT_PARTY</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>4792.txt</FileName>
+</EffectScene>
+
+
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> cast </Scene>
+	</Group>
+
+	<Group Sequential="TRUE">
+	</Group>
+	
+	<Group Sequential="TRUE">
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

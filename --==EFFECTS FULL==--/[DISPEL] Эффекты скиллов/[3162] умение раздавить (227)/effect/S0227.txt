@@ -1,0 +1,29 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>Skill_Crush</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>5170.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="false">
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> cast </Scene>
+	</Group>
+
+	<Group Sequential="TRUE">
+	</Group>
+	
+	<Group Sequential="false">
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

@@ -1,0 +1,24 @@
+
+<EffectScript>
+
+<Information>
+
+	<Name>Armour_Crush	</Name>
+	<Dynamic>false		</Dynamic>
+	<Loop>FALSE		</Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>	
+
+	</Attach>
+
+</Information>
+
+<EffectFile>5165.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="24" Min="1400" Max="2000">5165.wav</FrameEvent>
+		<FrameEvent Type="CAMERA" Frame="25" CamEffect="0" Time="0.5f"></FrameEvent>
+</Event>
+</EffectScript>

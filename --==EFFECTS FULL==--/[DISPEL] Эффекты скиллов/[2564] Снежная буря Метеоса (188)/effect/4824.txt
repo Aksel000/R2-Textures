@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name>mblizzard</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>false</Loop>
+	<CullingRadius>40000</CullingRadius>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>FALSE</Scale>
+		<Rot>FALSE</Rot>
+	</Attach>
+</Information>
+<EffectFile>4824.reb</EffectFile>
+<Event>						
+	<FrameEvent Type="SOUND" Frame="0" Min="7000" Max="12000">4824.wav</FrameEvent>				
+</Event>		
+</EffectScript>
+
+
+
+
+

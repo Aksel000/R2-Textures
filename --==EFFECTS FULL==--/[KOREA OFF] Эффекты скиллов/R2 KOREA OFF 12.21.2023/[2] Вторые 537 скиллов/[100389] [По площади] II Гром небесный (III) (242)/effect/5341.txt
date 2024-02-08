@@ -1,0 +1,12 @@
+<EffectScript>
+<Information>
+	<Name>Calllightning_Cast</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>5341.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">Elect_cast_01.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">Elect_cast_01.wav</FrameEvent>
+
+</Event>
+</EffectScript>

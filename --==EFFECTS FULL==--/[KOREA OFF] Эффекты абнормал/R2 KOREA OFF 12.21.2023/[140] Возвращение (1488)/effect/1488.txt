@@ -1,0 +1,16 @@
+<EffectScript>
+<Information>
+	<Name>effect</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+		<Size>TRUE</Size>
+    		<Scale>TRUE</Scale>
+
+
+	</Attach>
+</Information>
+<EffectFile>1488.reb</EffectFile>
+</EffectScript>

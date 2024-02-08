@@ -1,0 +1,52 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>FIRE_BOLT</Name>
+</Information>
+
+
+<EffectScene>
+	<Name> missile</Name>
+	<Method>
+		<Type>MT_BALLISTIC</Type>
+		<Speed>6000</Speed>
+		<Delay>0.0</Delay>
+		<RotateSpeed>1440</RotateSpeed>
+		<SpiralRadius>10</SpiralRadius>
+		<Loop>TRUE</Loop>
+		<Split>10</Split>
+		<HeightPerWidth>0.1</HeightPerWidth>
+		<Trail>true</Trail>
+		<TrailPos>0, 0, 0</TrailPos>
+		<TrailRadius>60</TrailRadius>
+		<TrailTexture>elec_test.DDS</TrailTexture>
+
+	</Method>
+
+	<FileName>I012017.txt</FileName>
+</EffectScene>
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		
+	</Method>
+	<FileName>1895.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="TRUE">
+	
+	</Group>
+	<Group Sequential="TRUE">
+		<Scene From="SOURCE_L_HAND" To="TARGET_CHEST"> missile </Scene>
+	</Group>
+	<Group Sequential="TRUE">
+		<Scene From="TARGET_CHEST" To="TARGET_CHEST"> exp </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

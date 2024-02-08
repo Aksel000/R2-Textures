@@ -1,0 +1,50 @@
+<ParticleScript>
+
+
+
+
+
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>19</Power>
+	<PowerVari>30</PowerVari>
+	<PullDist>1</PullDist>
+	<PullPower>1000</PullPower>
+	<Life>1000.0</Life>
+	<Cone>.1</Cone>
+	<LocalPos>0,10,0</LocalPos>
+	<Gravity>0000,000,000</Gravity>
+	<SelfRotate>0,0,0.1</SelfRotate>
+	<SelfRotateVari>0,0,0.0</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>8,8,8</Scale>
+	<ScaleVari>7,7,7</ScaleVari>
+	<Direction>0,00,90</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>NONE</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>1000</EndTime>
+	<MakeCount>2</MakeCount>
+	<MakeTime>20</MakeTime>
+	<Texture>fireg.dds</Texture>
+	<StartShape Size="11">SPHERE</StartShape>
+
+	<Ani Frame="0" Type="Scale">8,2,8</Ani>
+	<Ani Frame="500" Type="Scale">3,5,3</Ani>
+		
+	<Ani Frame="700" Type="Scale">4,5,4</Ani>
+	
+	
+	<Ani Frame="0" Type="Diffuse">0,30,30,255</Ani>
+	<Ani Frame="300" Type="Diffuse">150,30,30,255</Ani>
+	<Ani Frame="400" Type="Diffuse">150,30,30,255</Ani>
+	
+	<Ani Frame="700" Type="Diffuse">0, 30,30,255</Ani>
+</InfoData>
+
+
+</ParticleScript>

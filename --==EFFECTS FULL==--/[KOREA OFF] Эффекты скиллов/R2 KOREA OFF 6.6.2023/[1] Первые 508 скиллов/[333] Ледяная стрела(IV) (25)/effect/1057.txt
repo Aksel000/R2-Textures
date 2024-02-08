@@ -1,0 +1,11 @@
+<EffectScript>
+<Information>
+	<Name>icebolt_Exp</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1057.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">exp_icebolt.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">firebh2.wav</FrameEvent>
+</Event>
+</EffectScript>

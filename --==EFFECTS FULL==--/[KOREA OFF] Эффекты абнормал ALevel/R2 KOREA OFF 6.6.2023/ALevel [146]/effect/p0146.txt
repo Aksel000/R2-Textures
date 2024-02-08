@@ -1,0 +1,83 @@
+<ParticleScript>
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>10</Power>
+	<PowerVari>20</PowerVari>
+	<PullDist>1</PullDist>
+	<PullPower>1000</PullPower>
+	<Life>2000.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,0,0</LocalPos>
+	<Gravity>0000,000,000</Gravity>
+	<SelfRotate>0,0,0.1</SelfRotate>
+	<SelfRotateVari>0,0,1</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>50,50,50</Scale>
+	<ScaleVari>1,1,1</ScaleVari>
+	<Direction>0,00,90</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>resub_SRCALPHA_ONE</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>NONE</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>2000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>270</MakeTime>
+	<Texture>smog_cloud21.dds</Texture>
+	<StartShape Size="20">SPHERE</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>
+	<Ani Frame="800" Type="Scale">7,7,7</Ani>
+		
+	<Ani Frame="1500" Type="Scale">8,8,8</Ani>
+	
+	
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="500" Type="Diffuse">250,255,190,255</Ani>
+	
+	<Ani Frame="1500" Type="Diffuse">0, 0, 0, 0</Ani>
+</InfoData>
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>10</Power>
+	<PowerVari>20</PowerVari>
+	<PullDist>1</PullDist>
+	<PullPower>1000</PullPower>
+	<Life>1300.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,0,0</LocalPos>
+	<Gravity>0000,000,000</Gravity>
+	<SelfRotate>0,0,1.0</SelfRotate>
+	<SelfRotateVari>0,0,0.0</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>10,10,10</Scale>
+	<ScaleVari>20,20,20</ScaleVari>
+	<Direction>0,00,90</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>NONE</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>1300</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>30</MakeTime>
+	<Texture>blob.DDS</Texture>
+	<StartShape Size="50">SPHERE</StartShape>
+
+	<Ani Frame="0" Type="Scale">3,3,3</Ani>
+	<Ani Frame="300" Type="Scale">6,6,6</Ani>
+		
+	<Ani Frame="800" Type="Scale">8,8,8</Ani>
+	
+	
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="300" Type="Diffuse">255,200,255,255</Ani>
+	
+	<Ani Frame="800" Type="Diffuse">0, 0, 0, 0</Ani>
+</InfoData>
+
+
+</ParticleScript>

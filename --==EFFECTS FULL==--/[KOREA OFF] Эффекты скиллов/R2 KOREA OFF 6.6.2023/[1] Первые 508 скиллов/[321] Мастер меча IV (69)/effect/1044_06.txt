@@ -1,0 +1,22 @@
+<EffectScript>
+<Information>
+	<Name>RED_DRUG</Name>
+	<Dynamic>false</Dynamic>
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+	
+	</Attach>
+
+</Information>
+<EffectFile>1044_06.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="0" Max="2000">Sword_Master4.wav</FrameEvent>
+</Event>
+
+</EffectScript>
+
+

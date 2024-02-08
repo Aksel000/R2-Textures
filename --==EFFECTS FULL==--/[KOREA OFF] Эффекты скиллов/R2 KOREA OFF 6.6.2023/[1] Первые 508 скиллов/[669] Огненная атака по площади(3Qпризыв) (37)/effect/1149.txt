@@ -1,0 +1,21 @@
+<EffectScript>
+<Information>
+	<Name>flame_strike</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>false</Loop>
+	<Particle>P0045.txt</Particle>
+
+	<Attach>
+    		<BodyPart>head</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+	</Attach>
+
+</Information>
+<EffectFile>0000.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

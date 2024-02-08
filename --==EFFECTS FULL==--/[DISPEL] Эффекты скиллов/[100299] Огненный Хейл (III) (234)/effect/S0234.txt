@@ -1,0 +1,56 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>Flame_strike</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>5345.txt</FileName>
+</EffectScene>
+<EffectScene>
+	<Name> cast02 </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+                <Delay>1.2</Delay>
+	</Method>
+	<FileName>5346.txt</FileName>
+</EffectScene>
+<EffectScene>
+	<Name> missile </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+</EffectScene>
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>5344.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="false">
+		<Scene From="SOURCE" To="SOURCE"> cast </Scene>
+		<Scene From="TARGET" To="TARGET"> cast02 </Scene>	
+	</Group>
+
+	<Group Sequential="true">
+		<Scene From="TARGET" To="TARGET"> missile </Scene>
+	
+	</Group>
+	
+	<Group Sequential="false">
+		<Scene From="TARGET" To="TARGET"> exp </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

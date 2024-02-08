@@ -1,0 +1,25 @@
+<EffectScript>
+<Information>
+	<Name>PET_SKILL_LOOP</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>True</Loop>
+	<Attach>
+    		<BodyPart>Chest</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>False</Rot>
+		<Size>TRUE</Size>
+		<Once>False</Once>
+	</Attach>
+	<Particle>P0179.txt</Particle>
+
+	
+	
+</Information>
+<EffectFile>4593.reb</EffectFile>
+					
+
+</EffectScript>
+
+
+

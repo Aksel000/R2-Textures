@@ -1,0 +1,9 @@
+<EffectScript>
+<Information>
+	<Name>VIRUS</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0013.txt</Particle>
+	<Loop>TRUE</Loop>
+</Information>
+<EffectFile>0000.reb</EffectFile>
+</EffectScript>

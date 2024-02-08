@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name> Summoner_Long-distance Totem SkillSisson </Name>
+	<Dynamic>false</Dynamic>
+
+	
+	<Attach>
+    		<BodyPart>CHEST</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>TRUE</Rot>	
+		<Once>TRUE</Once>
+	</Attach>
+
+</Information>
+<EffectFile>5756.reb</EffectFile>
+
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,22 @@
+<EffectScript>
+<Information>
+	<Name> levitation_custom </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>P0319.txt</Particle>
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>	
+	</Attach>
+
+</Information>
+<EffectFile>5403.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

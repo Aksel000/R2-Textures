@@ -1,0 +1,45 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>Lenabe_AreaAttack</Name>
+</Information>
+<EffectScene>
+	<Name> missile </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Delay>2.5</Delay>
+	</Method>
+</EffectScene>
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>5537.txt</FileName>
+</EffectScene>
+<EffectScene>
+	<Name> exp2 </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>5538.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+            <Group Sequential="True">
+
+           </Group>
+           <Group Sequential="True">
+                        <Scene From="TARGET" To="TARGET"> missile </Scene>
+
+           </Group>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> exp </Scene>
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> exp2 </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

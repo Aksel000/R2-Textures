@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>Dummy</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>True</Loop>
+</Information>
+<EffectFile>0000.reb</EffectFile>
+</EffectScript>

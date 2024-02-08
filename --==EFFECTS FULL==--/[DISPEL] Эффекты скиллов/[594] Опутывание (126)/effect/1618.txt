@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name>Fear_Of_Earth_Lv3</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>TRUE</Rot>	
+	
+		
+	</Attach>
+
+</Information>
+<EffectFile>1618.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">Fear_Of_Earth_Lv3.wav</FrameEvent>
+
+
+</Event>
+
+
+</EffectScript>

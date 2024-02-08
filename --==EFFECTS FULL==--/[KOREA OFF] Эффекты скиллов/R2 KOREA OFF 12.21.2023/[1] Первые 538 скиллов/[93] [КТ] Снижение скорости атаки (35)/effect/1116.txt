@@ -1,0 +1,15 @@
+<EffectScript>
+<Information>
+	<Name>MOB_attackSpeed_down_cast</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0036.txt</Particle>	
+	
+</Information>
+<EffectFile>1116.reb</EffectFile>
+</EffectScript>
+
+
+
+
+
+

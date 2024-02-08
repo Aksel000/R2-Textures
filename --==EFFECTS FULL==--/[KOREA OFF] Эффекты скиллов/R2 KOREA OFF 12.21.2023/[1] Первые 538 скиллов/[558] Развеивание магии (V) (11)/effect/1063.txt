@@ -1,0 +1,14 @@
+<EffectScript>
+<Information>
+	<Name>DESPELLMAGIC</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0014.txt</Particle>
+	
+</Information>
+<EffectFile>1063.reb</EffectFile>
+<Event>
+		
+<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">dispc.wav</FrameEvent>
+
+</Event>
+</EffectScript>

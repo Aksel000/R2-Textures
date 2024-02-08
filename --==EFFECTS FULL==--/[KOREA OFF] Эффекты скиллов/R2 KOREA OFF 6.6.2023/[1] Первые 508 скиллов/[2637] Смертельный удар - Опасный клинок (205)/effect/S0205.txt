@@ -1,0 +1,29 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>Motal_Blow_Custom</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>4611.txt</FileName>
+</EffectScene>
+
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> cast </Scene>
+	</Group>
+
+	<Group Sequential="TRUE">
+	</Group>
+	
+	<Group Sequential="TRUE">
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

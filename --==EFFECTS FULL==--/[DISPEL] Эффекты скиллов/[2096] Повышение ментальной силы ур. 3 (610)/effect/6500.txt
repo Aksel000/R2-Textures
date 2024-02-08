@@ -1,0 +1,26 @@
+<EffectScript>
+<Information>
+	<Name> holy_light_cast </Name>
+	<Dynamic>false</Dynamic>
+
+
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>	
+		<Once>true</Once>
+	</Attach>
+
+</Information>
+<EffectFile>6500.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">manasc.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="60" Min="1400" Max="1800">EXP_Heal_01.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+

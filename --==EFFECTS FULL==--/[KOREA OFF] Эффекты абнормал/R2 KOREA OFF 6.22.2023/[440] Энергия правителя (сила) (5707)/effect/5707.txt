@@ -1,0 +1,18 @@
+<EffectScript>
+<Information>
+	<Name>Power Item</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+	</Attach>
+
+</Information>
+<EffectFile>5707.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

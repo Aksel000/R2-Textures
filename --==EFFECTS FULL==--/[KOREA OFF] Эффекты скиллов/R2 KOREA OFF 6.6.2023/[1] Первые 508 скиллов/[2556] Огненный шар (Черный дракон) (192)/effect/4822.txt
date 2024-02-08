@@ -1,0 +1,24 @@
+<EffectScript>
+<Information>
+	<Name>m04822</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>FALSE</Loop>
+	<CullingRadius>40000</CullingRadius>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>FALSE</Scale>
+		<Rot>FALSE</Rot>
+	</Attach>
+</Information>
+<EffectFile>4822.reb</EffectFile>
+<Event>					
+	<FrameEvent Type="SOUND" Frame="0 Min="7000" Max="12000">4822.wav</FrameEvent>
+							
+</Event>									
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name>Event_Pig</Name>
+	<Dynamic>false</Dynamic>
+	
+	
+	
+	
+	<Attach>
+    		<BodyPart>bvbottom</BodyPart>
+		<Pos> 0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+
+
+	</Attach>
+</Information>
+<EffectFile>1199.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">EF_1199.wav</FrameEvent>
+</Event>
+
+</EffectScript>

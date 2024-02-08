@@ -1,0 +1,31 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>TripleHit</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Delay>0</Delay>
+
+	</Method>
+	<FileName>1888.txt</FileName>
+</EffectScene>
+
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> cast </Scene>
+	</Group>
+
+	<Group Sequential="TRUE">
+	</Group>
+	
+	<Group Sequential="TRUE">
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

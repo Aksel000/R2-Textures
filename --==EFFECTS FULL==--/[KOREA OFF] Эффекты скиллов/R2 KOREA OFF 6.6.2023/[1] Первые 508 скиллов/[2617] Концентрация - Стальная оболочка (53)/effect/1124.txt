@@ -1,0 +1,17 @@
+<EffectScript>
+<Information>
+	<Name>skill_reflection_cast</Name>
+	<Dynamic>false</Dynamic>
+
+
+</Information>
+<EffectFile>1124.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="5" Min="1400" Max="2000">painkiller.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,129 @@
+<ParticleScript>
+
+
+<InfoData Name="warfare buff">
+	<PosLink>TRUE</PosLink>
+	<Loop>FALSE</Loop>
+	<Power>30</Power>
+	<PowerVari>20</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1000</PullPower>
+	<Life>2300.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,400,0</LocalPos>
+	<Gravity>0000,-80,000</Gravity>
+	<SelfRotate>0,0,1</SelfRotate>
+	<SelfRotateVari>0,0,1</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>7,7,7</Scale>
+	<ScaleVari>3,3,3</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>2500</EndTime>
+	<MakeCount>2</MakeCount>
+	<MakeTime>30</MakeTime>
+	<Texture>smog_cloud09.dds</Texture>
+	<StartShape Size="80" Size2="80" Size3="160">cube</StartShape>
+
+
+
+	<Ani Frame="0" Type="Scale">7,7,7</Ani>
+	<Ani Frame="600" Type="Scale">20,20,20</Ani>	
+	<Ani Frame="2000" Type="Scale">35,35,35</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0, 255,255, 0</Ani>
+	<Ani Frame="300" Type="Diffuse">0, 255,255, 0</Ani>
+	<Ani Frame="600" Type="Diffuse">150,250,100,80</Ani>
+	<Ani Frame="2000" Type="Diffuse">0, 255, 0, 10</Ani>
+	
+</InfoData>
+<InfoData Name="warfare buff">
+	<PosLink>TRUE</PosLink>
+	<Loop>FALSE</Loop>
+	<Power>70</Power>
+	<PowerVari>20</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1000</PullPower>
+	<Life>2300.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,400,0</LocalPos>
+	<Gravity>0000,-80,000</Gravity>
+	<SelfRotate>0,0,1</SelfRotate>
+	<SelfRotateVari>0,0,1</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>8,8,8</Scale>
+	<ScaleVari>3,3,3</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>resub_SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>2500</EndTime>
+	<MakeCount>2</MakeCount>
+	<MakeTime>30</MakeTime>
+	<Texture>smog_cloud08.dds</Texture>
+	<StartShape Size="60" Size2="60" Size3="200">cube</StartShape>
+
+
+
+	<Ani Frame="0" Type="Scale">7,7,7</Ani>
+	<Ani Frame="600" Type="Scale">20,20,20</Ani>	
+	<Ani Frame="2000" Type="Scale">35,35,35</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0, 255,255, 0</Ani>
+	<Ani Frame="300" Type="Diffuse">0, 255,255, 0</Ani>
+	<Ani Frame="600" Type="Diffuse">150,250,100,80</Ani>
+	<Ani Frame="2000" Type="Diffuse">0, 255, 0, 10</Ani>
+	
+</InfoData>
+<InfoData Name="warfare buff">
+	<PosLink>TRUE</PosLink>
+	<Loop>FALSE</Loop>
+	<Power>60</Power>
+	<PowerVari>20</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1000</PullPower>
+	<Life>2500.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,400,0</LocalPos>
+	<Gravity>0000,-80,000</Gravity>
+	<SelfRotate>0,0,1</SelfRotate>
+	<SelfRotateVari>0,0,1</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>5,5,5</Scale>
+	<ScaleVari>4,4,4</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>RESUB_SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>2500</EndTime>
+	<MakeCount>2</MakeCount>
+	<MakeTime>10</MakeTime>
+	<Texture>smog_cloud09.dds</Texture>
+	<StartShape Size="60" Size2="60" Size3="190">cube</StartShape>
+
+
+
+	<Ani Frame="0" Type="Scale">7,7,7</Ani>
+	<Ani Frame="600" Type="Scale">20,20,20</Ani>	
+	<Ani Frame="2000" Type="Scale">28,28,28</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0, 0,255, 0</Ani>
+	<Ani Frame="300" Type="Diffuse">0, 255,255, 0</Ani>
+	<Ani Frame="600" Type="Diffuse">180,255,255,255</Ani>
+	<Ani Frame="2000" Type="Diffuse">0, 0, 0, 255</Ani>
+	
+</InfoData>
+
+
+</ParticleScript>

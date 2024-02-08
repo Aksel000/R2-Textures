@@ -1,0 +1,25 @@
+<EffectScript>
+<Information>
+	<Name>skill_hard_hit</Name>
+	<Dynamic>false</Dynamic>
+
+		
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		<Once>True</Once>
+	</Attach>
+
+</Information>
+<EffectFile>1122.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="5" Min="1400" Max="2000">hardhit.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name>Emoticon</Name>
+	<Dynamic>false</Dynamic>
+
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+   		<Scale>FALSE</Scale>
+                <Rot>true</Rot>
+   		
+	
+   	</Attach>
+   	
+
+
+</Information>
+<EffectFile>1949.reb</EffectFile>
+
+
+
+</EffectScript>

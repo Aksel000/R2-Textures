@@ -1,0 +1,40 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>skill_Grabshot_cast_custom</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		
+	</Method>
+	<FileName>4598.txt</FileName>
+</EffectScene>
+
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>4599.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> cast </Scene>
+
+	</Group>
+	<Group Sequential="TRUE">
+
+	</Group>
+	<Group Sequential="TRUE">
+		<Scene From="TARGET_CHEST" To="TARGET_CHEST"> exp </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

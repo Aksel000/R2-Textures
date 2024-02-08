@@ -1,0 +1,15 @@
+<EffectScript>
+<Information>
+	<Name> mana </Name>
+	<Dynamic>false</Dynamic>
+
+
+</Information>
+<EffectFile>1606.reb</EffectFile>
+
+</EffectScript>
+
+
+
+
+

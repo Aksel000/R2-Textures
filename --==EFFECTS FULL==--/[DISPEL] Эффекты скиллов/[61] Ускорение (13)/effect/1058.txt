@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>icebolt</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1058.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">cast_heigh.wav</FrameEvent>
+</Event>
+</EffectScript>

@@ -1,0 +1,25 @@
+<EffectScript>
+<Information>
+	<Name> mana </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+
+
+	<Attach>
+    		<BodyPart>CHEST</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+
+	
+	</Attach>
+
+</Information>
+<EffectFile>1477.reb</EffectFile>
+
+
+</EffectScript>
+
+
+
+
+

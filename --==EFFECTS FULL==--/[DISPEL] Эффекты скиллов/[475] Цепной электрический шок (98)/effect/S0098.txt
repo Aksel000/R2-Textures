@@ -1,0 +1,58 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>FIRE_BOLT</Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_CHASE_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,130,-70</Pos>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>1543.txt</FileName>
+</EffectScene>
+<EffectScene>
+	<Name> missile</Name>
+	<Method>
+		<Type>MT_CHASE_SPIRAL</Type>
+		<Speed>1500</Speed>
+		<Delay>0.0</Delay>
+		<RotateSpeed>1440</RotateSpeed>
+		<SpiralRadius>0</SpiralRadius>
+		<Loop>TRUE</Loop>
+		<HeightPerWidth>0.1</HeightPerWidth>
+		<Trail>FALSE</Trail>
+		<TrailRadius>50</TrailRadius>
+		<TrailTexture>trail_linear.dds</TrailTexture>
+
+	</Method>
+	<FileName>1514.txt</FileName>
+</EffectScene>
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		
+	</Method>
+	<FileName>1502.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> cast </Scene>
+	</Group>
+	<Group Sequential="TRUE">
+		<Scene From="SOURCE_L_HAND" To="TARGET_HEAD"> missile </Scene>
+	</Group>
+	<Group Sequential="TRUE">
+		<Scene From="TARGET_CHEST" To="TARGET_CHEST"> exp </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>
