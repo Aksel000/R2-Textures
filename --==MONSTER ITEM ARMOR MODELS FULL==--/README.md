@@ -17,26 +17,26 @@
 	<li><a href="#как-использовать">Как использовать</a></li>
 </ol>
 
-<h2><a href="https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%BE%D0%B2">🧌Монстры и NPC</a></h2>
+<h2><a href="https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%BE%D0%B2">🧌Монстры и NPC</a></h2>
 
 <p>В этом разделе вы найдете <strong>3423 </strong>модели монстров, а также модели NPC. Каждая модель включает в себя необходимые текстуры, звуки и эффекты.</p>
 
 <p>Так-же были добавлены <strong>3440 </strong>моделей NPC и монстров от корейского оффициального сервера.</p>
 
-<p><a href="https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20монстров/Список%20монстров%20с%20картинками"><u>🖼️Просмотр монстров вместе с картинками</u></a></p>
+<p><a href="https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20монстров/Список%20монстров%20с%20картинками"><u>🖼️Просмотр монстров вместе с картинками</u></a></p>
 
-<p><a href="https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Ездовые%20драконы%20(t)"><u>🖼️Просмотр ездовых драконом вместе с картинками</u></a></p>
+<p><a href="https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Ездовые%20драконы%20(t)"><u>🖼️Просмотр ездовых драконом вместе с картинками</u></a></p>
 
-<h2><a href="https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BDISPEL%5D%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BC%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B8%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8">⚔️Предметы и броня</a></h2>
+<h2><a href="https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BDISPEL%5D%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BC%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B8%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8">⚔️Предметы и броня</a></h2>
 
 <p>Здесь находятся модели предметов и брони. Всего представлено <strong>3554 </strong>различных модели. Каждая модель включает в себя соответствующие текстуры, звуки и эффекты.</p>
 
 <p>Так-же были добавлены <strong>3352 </strong>модели предметов и брони от корейского оффициального сервера, с Info.dat от <u><strong>6.6.2023</strong></u> года.</p>
 
-<p><a href="https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20предметов%20и%20брони/Список%20предметов%20с%20картинками"><u>🖼️Просмотр предметов вместе с картинками</u></a></p>
+<p><a href="https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20предметов%20и%20брони/Список%20предметов%20с%20картинками"><u>🖼️Просмотр предметов вместе с картинками</u></a></p>
 
-<h2><a href="https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20DropItem"><u>📦Модели DropItem</u></a></h2>
-<p><a href="https://github.com/Aksel911/R2-Textures/blob/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20DropItem/README.md"><u>🖼️Просмотр DropItem вместе с картинками</u></a></p>
+<h2><a href="https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20DropItem"><u>📦Модели DropItem</u></a></h2>
+<p><a href="https://github.com/Aksel000/R2-Textures/blob/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20DropItem/README.md"><u>🖼️Просмотр DropItem вместе с картинками</u></a></p>
 
 <p>&nbsp;</p>
 
@@ -63,26 +63,26 @@
 	<li><a href="#how-to-use">How to Use</a></li>
 </ol>
 
-<h2><a href="https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%BE%D0%B2">🧌Monsters and NPCs</a></h2>
+<h2><a href="https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%BE%D0%B2">🧌Monsters and NPCs</a></h2>
 
 <p>In this section, you will find <strong>3423 </strong>monster models as well as NPC models. Each model includes the necessary textures, sounds, and effects.</p>
 
 <p>Additionally, <strong>3440 </strong>NPC and monster models from the Korean official server.</p>
 
-<p><a href="https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20монстров/Список%20монстров%20с%20картинками"><u>🖼️View monsters with images</u></a></p>
+<p><a href="https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20монстров/Список%20монстров%20с%20картинками"><u>🖼️View monsters with images</u></a></p>
 
-<p><a href="https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Ездовые%20драконы%20(t)"><u>🖼️View mountable dragons with images</u></a></p>
+<p><a href="https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Ездовые%20драконы%20(t)"><u>🖼️View mountable dragons with images</u></a></p>
 
-<h2><a href="https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BDISPEL%5D%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BC%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B8%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8">⚔️Items and Armor</a></h2>
+<h2><a href="https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BDISPEL%5D%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BC%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B8%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8">⚔️Items and Armor</a></h2>
 
 <p>Here you will find models of items and armor. There are a total of <strong>3554 </strong>different models available. Each model includes corresponding textures, sounds, and effects.</p>
 
 <p>Additionally, <strong>3352 </strong>item and armor models from the Korean official server, with Info.dat from <u><strong>June 6, 2023</strong></u>, have been added.</p>
 
-<p><a href="https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20предметов%20и%20брони/Список%20предметов%20с%20картинками"><u>🖼️View items with images</u></a></p>
+<p><a href="https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20предметов%20и%20брони/Список%20предметов%20с%20картинками"><u>🖼️View items with images</u></a></p>
 
-<h2><a href="https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20DropItem"><u>📦DropItem Models</u></a></h2>
-<p><a href="https://github.com/Aksel911/R2-Textures/blob/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20DropItem/README.md"><u>🖼️View DropItem with images</u></a></p>
+<h2><a href="https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20DropItem"><u>📦DropItem Models</u></a></h2>
+<p><a href="https://github.com/Aksel000/R2-Textures/blob/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20Модели%20DropItem/README.md"><u>🖼️View DropItem with images</u></a></p>
 
 <h2>💡How to Use:</h2>
 
