@@ -1,0 +1,37 @@
+<ModelScript version="1.1.0">
+
+<Information>
+	<Name>p070000</Name>
+	<Type>TYPE1</Type>
+	<Part>BODY</Part>
+	<BodyPart Type="HEAD" Bone="Bip01 Head">0, 0, 0</BodyPart>
+	<BodyPart Type="CHEST" Bone="Bip01 Spine2">0, 0, 0</BodyPart>
+	<BodyPart Type="PELVIS" Bone="Bip01 Pelvis">0, 0, 0</BodyPart>
+	<BodyPart Type="L_HAND" Bone="Bip01 L Hand">0, 0, 0</BodyPart>
+	<BodyPart Type="R_HAND" Bone="Bip01 R Hand">0, 0, 0</BodyPart>
+	<BodyPart Type="L_FOOT" Bone="Bip01 L Foot">0, 0, 0</BodyPart>
+	<BodyPart Type="R_FOOT" Bone="Bip01 R Foot">0, 0, 0</BodyPart>
+</Information>
+
+<Mesh>
+	<FileName>p070033.rmb</FileName>
+</Mesh>
+
+<Mantle>p020001.rcb</Mantle>
+
+<Include>
+<FileName>p070000_Default.txt</FileName>
+<FileName>p070000_Hand.txt</FileName>
+<FileName>p070000_onehandsword.txt</FileName>
+<FileName>p070000_TwoHandSword.txt</FileName>
+<FileName>p070000_DualSword.txt</FileName>
+<FileName>p070000_BlundWeapon.txt</FileName>
+<FileName>p070000_Staff.txt</FileName>
+<FileName>p070000_Gun.txt</FileName>
+<FileName>p070000_Bow.txt</FileName>
+<FileName>p070000_ShortSword.txt</FileName>
+<FileName>p070000_Transport.txt</FileName>
+</Include>
+
+
+</ModelScript>
