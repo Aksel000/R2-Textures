@@ -1,0 +1,24 @@
+<EffectScript>
+<Information>
+	<Name> PunishTotem </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>ture</Scale>
+		<Rot>TRUE</Rot>	
+
+	</Attach>
+
+</Information>
+<EffectFile>5888.reb</EffectFile>
+
+
+</EffectScript>
+
+
+
+
+

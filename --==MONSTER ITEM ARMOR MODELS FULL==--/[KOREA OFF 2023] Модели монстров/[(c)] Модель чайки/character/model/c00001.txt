@@ -1,0 +1,99 @@
+<ModelScript version="1.1.0">
+
+<Information>
+	<Name>c00001</Name>
+	<Type>TYPE2</Type>
+	<Part>BODY</Part>
+</Information>
+
+<Mesh>
+	<FileName>c00001.rmb</FileName>
+</Mesh>
+
+<Animation Group="G_DEFAULT">
+	<Action Name ="A_IDLE" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND1" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND2" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_WALK" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ITEM_PICKUP" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DEAD" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SKILL" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_RUNNOWEAPON" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ATTACK1" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ATTACK2" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DAMAGE_UPNOWEAPON" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DAMAGE_DOWNNOWEAPON" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DAMAGE_LEFTNOWEAPON" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_DAMAGE_RIGHTNOWEAPON" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+  	<Action Name ="A_WALK_BACKNOWEAPON" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_JUMPNOWEAPON" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_FALLNOWEAPON" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_STAND_LANDNOWEAPON" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_REGENORSAY" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_ONTHEWATER_NOWEAPON" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+
+	<Action Name ="A_SWIMMING_NOWEAPON" Loop="TRUE">
+		<FileName>c00001_00.rab</FileName>
+	</Action>
+</Animation>
+
+</ModelScript>
