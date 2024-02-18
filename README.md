@@ -127,6 +127,9 @@
 	<li><a href="https://vk.com/@-218801759-nastroika-bk-bg" target="_new">Настройка БК - БГ</a></li>
 	<li><a href="https://vk.com/@-218801759-neobhodimye-procedury-dlya-raboty-shop-na-ru-regione" target="_new">Необходимые процедуры для работы ШОП на Ру регионе</a></li>
 	<li><a href="https://vk.com/@-218801759-izmenenie-kodirovki-i-perevod-bazy-dannyh-r2" target="_new">Изменение кодировки и перевод базы данных R2</a></li>
+	<li><a href="https://vk.com/@-218801759-nastroika-servera-r2-na-belyi-ip-na-osnove-routera" target="_new">Настройка сервера R2 на белый IP (на основе роутера)</a></li>
+	<li><a href="https://vk.com/r2genius?w=wall-218801759_235" target="_new">Гайд по установке сервера от Михаил Пусь</a></li>
+	<li><a href="https://vk.com/r2genius?w=wall-218801759_236" target="_new">Необходимые файлы к гайду по настройке сервера R2 от Михаил Пусь</a></li>
 </ul>
 
 <h4>📀Работа с Базами Данных и SQL</h4>
@@ -159,6 +162,7 @@
 	<li><a href="https://vk.com/@-218801759-zapros-dlya-nachisleniya-podarkov-dve-raznyh-variacii" target="_new">SQL Запрос. Выдать подарок на все аккаунты</a></li>
 	<li><a href="https://vk.com/@-218801759-zapros-na-prosmotr-top-po-bkbg-i-urovnu-igrokov" target="_new">SQL Запросы. Просмотр ТОП по БК/БГ и уровню игроков</a></li>
 	<li><a href="https://vk.com/@-218801759-dobavit-predmet-v-shop" target="_new">SQL Запрос. Добавить предмет в ШОП</a></li>
+	<li><a href="https://vk.com/@-218801759-sql-zaprosy-blokirovka-chata-i-akkaunta" target="_new">SQL Запросы. Блокировка чата и аккаунта</a></li>
 	<li><a href="https://vk.com/r2genius?w=wall-218801759_40" target="_new">Различные SQL запросы от Rei Misterio</a></li>
 	<li><a href="https://vk.com/@-218801759-pachka-novyh-zaprosov-views-i-ispravlenie-staryh-ot-mihail-p" target="_new">Пачка новых запросов (views), и исправление старых от Михаил Пусь</a></li>
 	<li><a href="https://vk.com/@-218801759-poleznye-sql-zaprosy" target="_new">Полезные SQL-запросы</a></li>
@@ -181,6 +185,7 @@
 	<li><a href="https://vk.com/@-218801759-kak-dobavit-novyi-predmet-kartinku-i-effekt-k-nemu" target="_new">Как добавить новый предмет, картинку и эффект к нему</a></li>
 	<li><a href="https://vk.com/@-218801759-r2-textures-git" target="_new">R2 Textures Git</a></li>
 	<li><a href="https://vk.com/@-218801759-novye-modeli-iz-obnovleniya-r2loaded-part2" target="_new">Новые модели из обновления R2loaded Part2</a></li>
+	<li><a href="https://vk.com/r2genius?w=wall-218801759_240" target="_new">Карта с кооринатами от Troll Rd</a></li>
 </ul>
 
 <h4>🔨Работа с Клиентом и Сервером</h4>
@@ -222,7 +227,9 @@
 	<li><a href="https://vk.com/r2genius?w=wall-218801759_172" target="_new">Инструмент для перевода базы с лангпака клиента от Troll Rd</a></li>
 	<li><a href="https://vk.com/@-218801759-perevedennye-bazy-1602-na-russkii-yazyk" target="_new">Переведенные базы 1602 на русский язык</a></li>
 	<li><a href="https://vk.com/r2genius?w=wall-218801759_147" target="_new">1502-1602 .EXE Инфодат генератор от Google Chrome</a></li>
+	<li><a href="https://vk.com/@-218801759-nebolshoe-obnovlenie-parsera-infodaty-ot-google-chrome" target="_new">Небольшое обновление парсера инфодаты от Google Chrome</a></li>
 	<li><a href="https://vk.com/@-218801759-avtomaticheskoe-zapolnenie-tablicy-member-dlya-novyh-polzova" target="_new">Автоматическое заполнение таблицы Member для новых пользователей</a></li>
+	<li><a href="https://vk.com/@-218801759-bot-i-chity-na-lubye-servera-r2-online-ot-nikity-medvedeva" target="_new">Бот и читы на любые сервера R2 Online от Никиты Медведева</a></li>
 </ul>
 
 <h4>📝Информационные и Обучающие Материалы</h4>
