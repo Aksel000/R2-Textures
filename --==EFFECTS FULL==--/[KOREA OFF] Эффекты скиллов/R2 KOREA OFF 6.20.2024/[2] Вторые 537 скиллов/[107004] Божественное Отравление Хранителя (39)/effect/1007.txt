@@ -1,0 +1,14 @@
+<EffectScript>
+<Information>
+	<Name>Wand_Poison_missile</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0002.txt</Particle>
+	<Loop>true</Loop>
+</Information>
+<EffectFile>1007.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">pcs.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">pcs.wav</FrameEvent>
+
+</Event>
+</EffectScript>

@@ -1,0 +1,24 @@
+<EffectScript>
+<Information>
+	<Name>Skill_Quake</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>False</Loop>
+	<CullingRadius>10000</CullingRadius>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		<Once>true</Once>
+	</Attach>
+</Information>
+<EffectFile>5539.reb</EffectFile>
+<Event>						
+	<FrameEvent Type="CAMERA" Frame="8" CamEffect="5" Time="2.0f"></FrameEvent>	
+            <FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">Motona_AreaAttack.wav</FrameEvent>				
+</Event>					
+
+</EffectScript>
+
+
+

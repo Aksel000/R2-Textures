@@ -1,0 +1,25 @@
+<EffectScript>
+<Information>
+	<Name> mana </Name>
+	<Dynamic>false</Dynamic>
+
+	
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>TRUE</Rot>	
+		<Once>TRUE</Once>		
+	</Attach>
+
+</Information>
+<EffectFile>1372.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">Motal_Blow.wav</FrameEvent>				
+</Event>
+</EffectScript>
+
+
+
+
+

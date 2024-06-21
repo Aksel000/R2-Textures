@@ -1,0 +1,18 @@
+<EffectScript>
+<Information>
+	<Name>servant_active_exp</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>	
+		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+		<Size>FALSE</Size>
+		<Scale>TRUE</Scale>
+		<Rot>FALSE</Rot>
+		<PickingScale>TRUE</PickingScale>
+	</Attach>
+</Information>
+<EffectFile>4915.reb</EffectFile>
+<Event>
+<FrameEvent Type="SOUND" Frame="1" Min="1400" Max="2000">4912.wav</FrameEvent>
+</Event>
+</EffectScript>

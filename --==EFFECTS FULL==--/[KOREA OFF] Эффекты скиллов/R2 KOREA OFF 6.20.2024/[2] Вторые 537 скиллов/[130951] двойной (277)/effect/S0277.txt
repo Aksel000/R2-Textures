@@ -1,0 +1,43 @@
+
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name> Nite Dual </Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>5867.txt</FileName>
+</EffectScene>
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Pos>0,0,0</Pos>
+		<Rot>true</Rot>
+	</Method>
+	<FileName>5867.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+	<Group Sequential="TRUE">
+
+	</Group>
+	<Group Sequential="TRUE">
+		<Scene From="TARGET" To="TARGET"> cast </Scene>
+		<Scene From="BVBOTTOM" To="BVBOTTOM"> exp </Scene>
+		
+	</Group>
+
+	
+</SceneControl>
+
+</EffectSceneScript>

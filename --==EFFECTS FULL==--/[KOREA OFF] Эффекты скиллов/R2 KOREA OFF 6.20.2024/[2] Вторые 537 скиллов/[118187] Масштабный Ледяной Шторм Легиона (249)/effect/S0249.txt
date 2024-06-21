@@ -1,0 +1,36 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name>Motona_AreaAttack</Name>
+</Information>
+<EffectScene>
+	<Name> missile </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		<Delay>2.0</Delay>
+	</Method>
+</EffectScene>
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>5539.txt</FileName>
+</EffectScene>
+
+<SceneControl>
+           <Group Sequential="True">
+
+           </Group>
+          <Group Sequential="true">
+		<Scene From="TARGET" To="TARGET"> missile </Scene>
+	
+	</Group>
+	<Group Sequential="FALSE">
+		<Scene From="TARGET" To="TARGET"> exp </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

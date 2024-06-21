@@ -1,0 +1,40 @@
+<EffectSceneScript version="1.0.0">
+
+<Information>
+	<Name> Elf Judgement </Name>
+</Information>
+
+<EffectScene>
+	<Name> cast </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+		
+	</Method>
+	<FileName>5883.txt</FileName>
+</EffectScene>
+
+<EffectScene>
+	<Name> exp </Name>
+	<Method>
+		<Type>MT_FLASH</Type>
+		<Loop>FALSE</Loop>
+	</Method>
+	<FileName>5884.txt</FileName>
+</EffectScene>
+
+
+<SceneControl>
+	<Group Sequential="FALSE">
+		<Scene From="SOURCE_BVBOTTOM" To="SOURCE_BVBOTTOM"> cast </Scene>
+
+	</Group>
+	<Group Sequential="TRUE">
+
+	</Group>
+	<Group Sequential="TRUE">
+                       <Scene From="TARGET" To="TARGET"> exp </Scene>
+	</Group>
+</SceneControl>
+
+</EffectSceneScript>

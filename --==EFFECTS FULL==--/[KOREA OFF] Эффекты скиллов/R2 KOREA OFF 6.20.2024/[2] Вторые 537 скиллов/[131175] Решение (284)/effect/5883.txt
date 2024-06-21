@@ -1,0 +1,18 @@
+<EffectScript>
+<Information>
+	<Name> Elf Judgement Sisson </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>false</Loop>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>			
+	</Attach>
+</Information>
+
+<EffectFile>5883.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">Elf_JudgementSisson.wav</FrameEvent>
+</Event>	
+</EffectScript>
