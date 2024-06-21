@@ -1,0 +1,5 @@
+# Превью всех ***.dds*** файлов в папке: effect
+## Превью для collage_row_0.png:
+![collage_row_0.png](collage_row_0.png)
+- Использованные файлы:
+- - ``` effect_event.dds ```
