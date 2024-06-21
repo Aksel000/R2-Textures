@@ -1,0 +1,12 @@
+<EffectScript>
+<Information>
+	<Name>Calllightning_Exp</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1008.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="6" Min="1400" Max="2000">Elect_Shot_basic_01.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="10" Min="1400" Max="2000">Elect_Shot_basic_01.wav</FrameEvent>
+
+</Event>
+</EffectScript>

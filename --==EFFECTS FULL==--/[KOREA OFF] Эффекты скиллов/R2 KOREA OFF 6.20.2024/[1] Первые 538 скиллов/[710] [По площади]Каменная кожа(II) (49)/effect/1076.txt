@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>Lev_up</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1076.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">sskh.wav</FrameEvent>
+</Event>
+</EffectScript>>

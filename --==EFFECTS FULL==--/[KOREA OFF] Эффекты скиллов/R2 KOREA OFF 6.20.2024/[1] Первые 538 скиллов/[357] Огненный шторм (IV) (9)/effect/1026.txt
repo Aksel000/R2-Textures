@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>Flame_Exp</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1026.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="7" Min="1400" Max="2000">flamh.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="10" Min="1400" Max="2000">flamh.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="13" Min="1400" Max="2000">flamh.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="16" Min="1400" Max="2000">flamh.wav</FrameEvent>
+</Event>
+</EffectScript>

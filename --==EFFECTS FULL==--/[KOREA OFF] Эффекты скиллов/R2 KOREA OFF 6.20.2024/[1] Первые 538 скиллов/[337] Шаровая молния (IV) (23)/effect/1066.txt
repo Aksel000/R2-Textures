@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>Lightning_bolt</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0023.txt</Particle>
+	<Loop>true</Loop>
+
+</Information>
+<EffectFile>1066.reb</EffectFile>
+</EffectScript>

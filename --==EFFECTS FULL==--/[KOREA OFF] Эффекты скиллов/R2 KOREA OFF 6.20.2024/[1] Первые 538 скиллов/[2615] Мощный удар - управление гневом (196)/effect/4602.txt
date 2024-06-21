@@ -1,0 +1,13 @@
+<EffectScript>
+<Information>
+	<Name>HARD_HIT_MOVE_STOP</Name>
+	<Dynamic>false</Dynamic>
+	
+
+
+</Information>
+<EffectFile>4602.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">EF_1181.wav</FrameEvent>
+</Event>
+</EffectScript>

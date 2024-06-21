@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name>shylph_wind_custom_cast</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		
+		
+	</Attach>
+
+</Information>
+<EffectFile>4603.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="5" Min="1400" Max="2000">sylphwind.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+

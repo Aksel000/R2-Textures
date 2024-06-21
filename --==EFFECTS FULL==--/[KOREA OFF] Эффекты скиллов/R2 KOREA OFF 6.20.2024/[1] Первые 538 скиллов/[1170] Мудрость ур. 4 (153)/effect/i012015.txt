@@ -1,0 +1,18 @@
+<EffectScript>
+<Information>
+	<Name>ThunderStroke</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>TRUE</Loop>
+	<Particle>P0103.txt</Particle>
+
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+
+	</Attach>
+
+</Information>
+<EffectFile>i012015.reb</EffectFile>
+</EffectScript>

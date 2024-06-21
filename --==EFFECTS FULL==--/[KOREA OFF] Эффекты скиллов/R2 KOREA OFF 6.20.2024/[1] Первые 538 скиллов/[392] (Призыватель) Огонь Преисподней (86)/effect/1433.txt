@@ -1,0 +1,28 @@
+<EffectScript>
+<Information>
+	<Name> mana </Name>
+	<Dynamic>false</Dynamic>
+
+
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>	
+		
+	</Attach>
+
+</Information>
+<EffectFile>1433.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="5" Min="1400" Max="2000">hellfire.wav</FrameEvent>
+	
+
+</Event>
+
+</EffectScript>
+
+
+
+
+

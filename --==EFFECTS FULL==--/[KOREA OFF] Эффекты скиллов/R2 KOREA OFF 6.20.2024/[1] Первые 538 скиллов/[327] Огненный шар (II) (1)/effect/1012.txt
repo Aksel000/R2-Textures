@@ -1,0 +1,12 @@
+<EffectScript>
+<Information>
+	<Name>effect_fireboltcast</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>1012.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">firebc.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="4" Min="1400" Max="2000">firebc.wav</FrameEvent>
+		<FrameEvent Type="SOUND" Frame="8" Min="1400" Max="2000">firebc.wav</FrameEvent>
+</Event>
+</EffectScript>

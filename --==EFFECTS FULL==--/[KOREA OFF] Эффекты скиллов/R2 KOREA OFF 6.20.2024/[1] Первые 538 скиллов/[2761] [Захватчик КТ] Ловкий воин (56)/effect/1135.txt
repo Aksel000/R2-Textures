@@ -1,0 +1,25 @@
+<EffectScript>
+<Information>
+	<Name>skill_DV_UP</Name>
+	<Dynamic>false</Dynamic>
+
+	<Particle>P0033.txt</Particle>
+
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		
+	</Attach>
+
+</Information>
+<EffectFile>1135.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="5" Min="1400" Max="2000">sonic.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+

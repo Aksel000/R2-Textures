@@ -1,0 +1,27 @@
+<EffectScript>
+<Information>
+	<Name>Malmizal</Name>
+	<Dynamic>false</Dynamic>
+
+
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+
+	
+	
+	</Attach>
+
+
+
+	
+</Information>
+<EffectFile>1580.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND"Frame="0"Min="1400"Max="2000">Seal_Teleporting_cast.wav</FrameEvent>
+
+
+</Event>
+
+</EffectScript>
