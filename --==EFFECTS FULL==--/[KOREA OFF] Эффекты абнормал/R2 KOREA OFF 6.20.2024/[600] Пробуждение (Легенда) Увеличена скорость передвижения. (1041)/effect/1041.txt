@@ -1,0 +1,19 @@
+<EffectScript>
+<Information>
+	<Name>move_speed_DRUG</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0010.txt</Particle>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+		<Size>TRUE</Size>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+
+	</Attach>
+</Information>
+<EffectFile>1041.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">exp_heigh.wav</FrameEvent>
+</Event>
+</EffectScript>

@@ -1,0 +1,22 @@
+<EffectScript>
+<Information>
+	<Name> Ranger_TotalBreak_Condision </Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>	
+		
+	</Attach>
+
+</Information>
+<EffectFile>5744.reb</EffectFile>
+</EffectScript>
+
+
+
+
+

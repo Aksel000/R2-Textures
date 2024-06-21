@@ -1,0 +1,23 @@
+<EffectScript>
+<Information>
+	<Name>ReflectionAura_Custom</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	
+	<Attach>
+    		<BodyPart>CHEST</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>FALSE</Rot>	
+
+	</Attach>
+
+</Information>
+<EffectFile>4614.reb</EffectFile>
+
+</EffectScript>
+
+
+
+
+

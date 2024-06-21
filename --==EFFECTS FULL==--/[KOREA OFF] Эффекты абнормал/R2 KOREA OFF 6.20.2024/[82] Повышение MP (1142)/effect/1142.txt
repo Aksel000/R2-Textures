@@ -1,0 +1,16 @@
+<EffectScript>
+<Information>
+	<Name>blue_bottle</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0043.txt</Particle>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+
+		
+	</Attach>
+
+</Information>
+<EffectFile>1142.reb</EffectFile>
+</EffectScript>

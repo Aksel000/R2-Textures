@@ -1,0 +1,8 @@
+<EffectScript>
+<Information>
+	<Name>effect_fireboltcast</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0018.txt</Particle>
+</Information>
+<EffectFile>1060.reb</EffectFile>
+</EffectScript>

@@ -1,0 +1,119 @@
+<ParticleScript>
+
+<InfoData Name="smoke">
+	<PosLink>true</PosLink>
+	<Loop>true</Loop>
+	<Power>50</Power>
+	<PowerVari>30</PowerVari>
+	<PullDist>80 </PullDist>
+	<PullPower>-15</PullPower>
+	<Life>2000.0</Life>
+	<Cone>1</Cone>
+	<LocalPos>0,0,0</LocalPos>
+	<Gravity>0,100,0</Gravity>
+	<SelfRotate>0,0,0.8</SelfRotate>
+	<SelfRotateVari>0,0,0.5</SelfRotateVari>
+	<Rotate>0,0,0</Rotate>
+	<Scale>7,7,7</Scale>
+	<ScaleVari>2,2,2</ScaleVari>
+	<Direction>0,180,00</Direction>
+	<Diffuse>200,200,200,200</Diffuse>
+	<BlendType>resub_SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>2000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>100</MakeTime>
+	<Texture>smog_cloud10.dds</Texture>
+	<StartShape Size="30">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">16,16,16</Ani>
+	<Ani Frame="1000" Type="Scale">36,36,36</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0,0,0,,</Ani>
+	<Ani Frame="100" Type="Diffuse">150,200,200,200</Ani>
+	<Ani Frame="1000" Type="Diffuse">0, 0, 0,0</Ani>
+	
+</InfoData>
+
+
+<InfoData Name="dark_e">
+	<PosLink>true</PosLink>
+	<Loop>true</Loop>
+	<Power>20</Power>
+	<PowerVari>10.0</PowerVari>
+	<PullDist>80 </PullDist>
+	<PullPower>-15</PullPower>
+	<Life>2000.0</Life>
+	<Cone>1</Cone>
+	<LocalPos>0,0,0</LocalPos>
+	<Gravity>0,140,0</Gravity>
+	<SelfRotate>0,0,0.5</SelfRotate>
+	<SelfRotateVari>0,0,0.2</SelfRotateVari>
+	<Rotate>0,0,0</Rotate>
+	<Scale>7,7,7</Scale>
+	<ScaleVari>2,2,2</ScaleVari>
+	<Direction>0,90,00</Direction>
+	<Diffuse>200,200,200,200</Diffuse>
+	<BlendType>resub_SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>2000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>210</MakeTime>
+	<Texture>aura_0316_5.dds</Texture>
+	<StartShape Size="10">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">24,24,24</Ani>
+	<Ani Frame="1000" Type="Scale">42,42,42</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0,0,0,,</Ani>
+	<Ani Frame="200" Type="Diffuse">210,210,210,210</Ani>
+	<Ani Frame="1000" Type="Diffuse">0, 0, 0,0</Ani>
+	
+</InfoData>
+
+<InfoData Name="dark_e">
+	<PosLink>false</PosLink>
+	<Loop>true</Loop>
+	<Power>20</Power>
+	<PowerVari>10.0</PowerVari>
+	<PullDist>80 </PullDist>
+	<PullPower>-15</PullPower>
+	<Life>2000.0</Life>
+	<Cone>1</Cone>
+	<LocalPos>0,0,0</LocalPos>
+	<Gravity>0,140,0</Gravity>
+	<SelfRotate>0,0,0.5</SelfRotate>
+	<SelfRotateVari>0,0,0.2</SelfRotateVari>
+	<Rotate>0,0,0</Rotate>
+	<Scale>7,7,7</Scale>
+	<ScaleVari>2,2,2</ScaleVari>
+	<Direction>0,90,00</Direction>
+	<Diffuse>200,200,200,200</Diffuse>
+	<BlendType>resub_SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>2000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>210</MakeTime>
+	<Texture>aura_0316_5.dds</Texture>
+	<StartShape Size="10">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">24,24,24</Ani>
+	<Ani Frame="1000" Type="Scale">42,42,42</Ani>
+	
+
+	<Ani Frame="0" Type="Diffuse">0,0,0,,</Ani>
+	<Ani Frame="200" Type="Diffuse">210,210,210,210</Ani>
+	<Ani Frame="1000" Type="Diffuse">0, 0, 0,0</Ani>
+	
+</InfoData>
+
+
+</ParticleScript>

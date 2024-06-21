@@ -1,0 +1,89 @@
+<ParticleScript>
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>FALSE</Loop>
+	<Power>60</Power>
+	<PowerVari>10.0</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1000</PullPower>
+	<Life>2000.0</Life>
+	<Cone>.5</Cone>
+	<LocalPos>0,100,0</LocalPos>
+	<Gravity>0000,000,000</Gravity>
+	<SelfRotate>0,0,0.0</SelfRotate>
+	<SelfRotateVari>0,0,0.0</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>1,1,1</Scale>
+	<ScaleVari> 60,60,60</ScaleVari>
+	<Direction>0,00,90</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>NONE</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>1300</EndTime>r
+	<MakeCount>1</MakeCount>
+	<MakeTime>7</MakeTime>
+	<Texture>ray12.DDS</Texture>
+	<StartShape Size="70">SPHERE</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>
+	<Ani Frame="100" Type="Scale">.1,.1,.1</Ani>
+	<Ani Frame="200" Type="Scale">1,1,1</Ani>
+	<Ani Frame="300" Type="Scale">.1,.1,.1</Ani>
+	<Ani Frame="5000" Type="Scale">2,2,2</Ani>
+	<Ani Frame="600" Type="Scale">.1,.1,.1</Ani>	
+ 	<Ani Frame="700" Type="Scale">1,1,1</Ani>
+	<Ani Frame="800" Type="Scale">0,0,0</Ani>
+	
+	
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="150" Type="Diffuse">255, 255,255,255</Ani>
+	<Ani Frame="800" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>FALSE</Loop>
+	<Power>40</Power>
+	<PowerVari>10.0</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1000</PullPower>
+	<Life>2000.0</Life>
+	<Cone>.7</Cone>
+	<LocalPos>0,100,0</LocalPos>
+	<Gravity>0000,000,000</Gravity>
+	<SelfRotate>0,0,0.0</SelfRotate>
+	<SelfRotateVari>0,0,0.0</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>1,1,1</Scale>
+	<ScaleVari> 60,60,60</ScaleVari>
+	<Direction>0,00,90</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>NONE</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>1200</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>20</MakeTime>
+	<Texture>Glow_point_W.dds</Texture>
+	<StartShape Size="90">SPHERE</StartShape>
+
+	<Ani Frame="0" Type="Scale">2,2,2</Ani>
+	<Ani Frame="200" Type="Scale">.2,.2,.2</Ani>
+	<Ani Frame="400" Type="Scale">1.3,1.3,1.3</Ani>	
+	<Ani Frame="800" Type="Scale">0,0,0</Ani>
+	
+	
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+
+	<Ani Frame="150" Type="Diffuse">255, 255,255,255</Ani>
+	<Ani Frame="800" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+
+
+</ParticleScript>

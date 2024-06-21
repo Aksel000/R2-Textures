@@ -1,0 +1,27 @@
+<EffectScript>
+<Information>
+	<Name>skill_TripleHit_hit</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0144.txt</Particle>
+
+		
+	<Attach>
+    		<BodyPart>CHEST</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+	
+
+	</Attach>
+
+</Information>
+<EffectFile>1894.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">Stroke_BloodyExp.wav</FrameEvent>
+</Event>
+
+</EffectScript>
+
+
+
+
+

@@ -1,0 +1,168 @@
+<ParticleScript>
+
+
+
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>0</Power>
+	<PowerVari>15</PowerVari>
+	<PullDist>200</PullDist>
+	<PullPower>20</PullPower>
+	<Life>3000</Life>
+	<Cone>0.1</Cone>
+	<LocalPos>00,0,0</LocalPos>
+	<Gravity>0000,25,000</Gravity>
+	<SelfRotate>0,0,0.5</SelfRotate>
+	<SelfRotateVari>0,0,0.5</SelfRotateVari>
+	<Rotate>0,0,0</Rotate>
+	<Scale>50,50,50</Scale>
+	<ScaleVari>25,25,25</ScaleVari>
+	<Direction>0,0,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>resub_srcalpha_one</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>2000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>10</MakeTime>
+	<Texture>smog_cloud10.dds</Texture>
+
+	<StartShape Size="10">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>
+		
+	<Ani Frame="1200" Type="Scale">2,2,2</Ani>
+		
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="250" Type="Diffuse">180,180,180,180</Ani>
+	<Ani Frame="800" Type="Diffuse">150,150,150,150</Ani>
+	<Ani Frame="1200" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+
+
+
+<InfoData Name="Flash">
+	<PosLink>false</PosLink>
+	<Loop>true</Loop>
+	<Power>0</Power>
+	<PowerVari>15</PowerVari>
+	<PullDist>200</PullDist>
+	<PullPower>20</PullPower>
+	<Life>3000</Life>
+	<Cone>0.1</Cone>
+	<LocalPos>00,0,0</LocalPos>
+	<Gravity>0000,25,000</Gravity>
+	<SelfRotate>0,0,0.5</SelfRotate>
+	<SelfRotateVari>0,0,0.5</SelfRotateVari>
+	<Rotate>0,0,0</Rotate>
+	<Scale>50,50,50</Scale>
+	<ScaleVari>22,22,22</ScaleVari>
+	<Direction>0,0,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>resub_srcalpha_one</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>2000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>50</MakeTime>
+	<Texture>smog_cloud10.dds</Texture>
+
+	<StartShape Size="10">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>
+		
+	<Ani Frame="1200" Type="Scale">2,2,2</Ani>
+		
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="250" Type="Diffuse">180,180,180,180</Ani>
+	<Ani Frame="800" Type="Diffuse">150,150,150,150</Ani>
+	<Ani Frame="1200" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+<InfoData Name="Flash">
+	<PosLink>false</PosLink>
+	<Loop>true</Loop>
+	<Power>0</Power>
+	<PowerVari>15</PowerVari>
+	<PullDist>200</PullDist>
+	<PullPower>20</PullPower>
+	<Life>3000</Life>
+	<Cone>0.1</Cone>
+	<LocalPos>00,0,0</LocalPos>
+	<Gravity>0000,25,000</Gravity>
+	<SelfRotate>0,0,0.5</SelfRotate>
+	<SelfRotateVari>0,0,0.5</SelfRotateVari>
+	<Rotate>0,0,0</Rotate>
+	<Scale>30,30,30</Scale>
+	<ScaleVari>18,18,18</ScaleVari>
+	<Direction>0,0,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>srcalpha_one</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>2000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>90</MakeTime>
+	<Texture>fire_0217.dds</Texture>
+
+	<StartShape Size="35">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>
+		
+	<Ani Frame="1200" Type="Scale">2,2,2</Ani>
+		
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="250" Type="Diffuse">180,180,180,180</Ani>
+	<Ani Frame="800" Type="Diffuse">150,150,150,150</Ani>
+	<Ani Frame="1200" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+
+
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>0</Power>
+	<PowerVari>15</PowerVari>
+	<PullDist>200</PullDist>
+	<PullPower>20</PullPower>
+	<Life>3000</Life>
+	<Cone>0.1</Cone>
+	<LocalPos>00,0,0</LocalPos>
+	<Gravity>0000,25,000</Gravity>
+	<SelfRotate>0,0,0.5</SelfRotate>
+	<SelfRotateVari>0,0,0.5</SelfRotateVari>
+	<Rotate>0,0,0</Rotate>
+	<Scale>40,40,40</Scale>
+	<ScaleVari>22,22,22</ScaleVari>
+	<Direction>0,0,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>srcalpha_one</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>2000</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>15</MakeTime>
+	<Texture>fire_0217.dds</Texture>
+
+	<StartShape Size="10">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>
+		
+	<Ani Frame="600" Type="Scale">2,2,2</Ani>
+		
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="150" Type="Diffuse">180,180,180,180</Ani>
+	<Ani Frame="400" Type="Diffuse">150,150,150,150</Ani>
+	<Ani Frame="600" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+</ParticleScript>

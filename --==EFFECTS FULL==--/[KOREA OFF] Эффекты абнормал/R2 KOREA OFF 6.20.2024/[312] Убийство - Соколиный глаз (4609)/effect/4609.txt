@@ -1,0 +1,30 @@
+<EffectScript>
+<Information>
+	<Name>ASSasination_Custom_Cont</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	
+	<Attach>
+    		<BodyPart>R_HAND</BodyPart>
+		<Pos>21,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		
+	
+	</Attach>
+	<Attach>
+    		<BodyPart>L_HAND</BodyPart>
+		<Pos>21,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>
+		
+	
+	</Attach>
+
+</Information>
+<EffectFile>4609.reb</EffectFile>
+
+<Event>
+		<FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">EF_1182.wav</FrameEvent>
+</Event>
+</EffectScript>

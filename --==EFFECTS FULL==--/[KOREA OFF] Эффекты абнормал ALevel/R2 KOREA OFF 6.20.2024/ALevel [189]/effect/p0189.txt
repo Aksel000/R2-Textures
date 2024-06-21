@@ -1,0 +1,79 @@
+<ParticleScript>
+
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>false</Loop>
+	<Power>40</Power>
+	<PowerVari>10</PowerVari>
+	<PullDist>1</PullDist>
+	<PullPower>1</PullPower>
+	<Life>2000.0</Life>
+	<Cone>1</Cone>
+	<LocalPos>0,00,0</LocalPos>
+	<Gravity>10,-30,10</Gravity>
+	<SelfRotate>10,10,10</SelfRotate>
+	<SelfRotateVari>5,5,5</SelfRotateVari>
+	<Rotate>30,90,0</Rotate>
+	<Scale>12,12,12</Scale>
+	<ScaleVari>2,2,2</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>180,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>none</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>380</StartTime>
+	<EndTime>800</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>100</MakeTime>
+	<Texture>flower01.dds</Texture>
+	<StartShape Size="40">sphere</StartShape>			
+
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>	
+	
+	
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>	
+	<Ani Frame="150" Type="Diffuse">255,255,255,255</Ani>
+	<Ani Frame="1000" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>false</Loop>
+	<Power>40</Power>
+	<PowerVari>8</PowerVari>
+	<PullDist>1</PullDist>
+	<PullPower>1</PullPower>
+	<Life>2000.0</Life>
+	<Cone>1</Cone>
+	<LocalPos>0,00,0</LocalPos>
+	<Gravity>10,-30,10</Gravity>
+	<SelfRotate>10,10,10</SelfRotate>
+	<SelfRotateVari>5,5,5</SelfRotateVari>
+	<Rotate>30,90,0</Rotate>
+	<Scale>12,12,12</Scale>
+	<ScaleVari>2,2,2</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>180,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>none</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>380</StartTime>
+	<EndTime>800</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>90</MakeTime>
+	<Texture>flower02.dds</Texture>
+	<StartShape Size="40">sphere</StartShape>			
+
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>	
+	
+	
+	<Ani Frame="0" Type="Diffuse">0, 0, 0, 0</Ani>	
+	<Ani Frame="150" Type="Diffuse">255,255,255,255</Ani>
+	<Ani Frame="1000" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+</ParticleScript>

@@ -1,0 +1,20 @@
+<EffectScript>
+<Information>
+	<Name>Immunity Condision</Name>
+	<Dynamic>false</Dynamic>
+            <Loop>TRUE</Loop>
+	<Attach>
+    		<BodyPart>Chest</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+	</Attach>
+
+</Information>
+<EffectFile>5994.reb</EffectFile>
+
+</EffectScript>
+
+
+
+
+

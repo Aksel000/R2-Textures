@@ -1,0 +1,122 @@
+<ParticleScript>
+
+
+<InfoData Name="warfare buff">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>3</Power>
+	<PowerVari>10</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1000</PullPower>
+	<Life>1500.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,30,0</LocalPos>
+	<Gravity>0000,-60,000</Gravity>
+	<SelfRotate>0,0,0.2</SelfRotate>
+	<SelfRotateVari>0,0,2</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>10,10,10</Scale>
+	<ScaleVari>3,3,3</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>1</StartTime>
+	<EndTime>2200</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>120</MakeTime>
+	<Texture>smog_cloud08.dds</Texture>
+	<StartShape Size="40">sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">12,12,12</Ani>
+	<Ani Frame="600" Type="Scale">15,15,15</Ani>	
+	<Ani Frame="1900" Type="Scale">30,30,30</Ani>
+
+	<Ani Frame="0" Type="Diffuse">0,255,255,255</Ani>
+	<Ani Frame="600" Type="Diffuse">40,100,150,255</Ani>
+	<Ani Frame="1900" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+<InfoData Name="warfare buff">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>10</Power>
+	<PowerVari>10</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1000</PullPower>
+	<Life>1000.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,0,0</LocalPos>
+	<Gravity>0000,-100,000</Gravity>
+	<SelfRotate>0,0,1</SelfRotate>
+	<SelfRotateVari>0,0,3</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>1,1,1</Scale>
+	<ScaleVari>6,6,6</ScaleVari>
+	<Direction>0,00,00</Direction>
+	<Diffuse>255,255,255,255</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>all_axis</BillboardType>
+	<PlayType>gravity</PlayType>	
+	<StartTime>1</StartTime>
+	<EndTime>2200</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>50</MakeTime>
+	<Texture>water_bubble.dds</Texture>
+	<StartShape Size="60" >sphere</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>
+	<Ani Frame="200" Type="Scale">2,2,2</Ani>	
+	<Ani Frame="900" Type="Scale">0,0,0</Ani>
+
+	<Ani Frame="0" Type="Diffuse">0,255,255,255</Ani>
+	<Ani Frame="100" Type="Diffuse">250,255,255,255</Ani>
+	<Ani Frame="300" Type="Diffuse">0, 0, 0, 0</Ani>
+</InfoData>
+
+<InfoData Name="Flash">
+	<PosLink>TRUE</PosLink>
+	<Loop>true</Loop>
+	<Power>2</Power>
+	<PowerVari>10</PowerVari>
+	<PullDist>1 </PullDist>
+	<PullPower>1</PullPower>
+	<Life>2000.0</Life>
+	<Cone>2</Cone>
+	<LocalPos>0,00,0</LocalPos>
+	<Gravity>0000,-30,000</Gravity>
+	<SelfRotate>0,0,0.2</SelfRotate>
+	<SelfRotateVari>0,0,0.2</SelfRotateVari>
+	<Rotate>0,90,0</Rotate>
+	<Scale>0.3,0.3,0.3</Scale>
+	<ScaleVari>20,20,20</ScaleVari>
+	<Direction>0,00,90</Direction>
+	<Diffuse>120,120,120</Diffuse>
+	<BlendType>SRCALPHA_ONE</BlendType>
+	<BillboardType>ALL_AXIS</BillboardType>
+	<PlayType>none</PlayType>	
+	<StartTime>0</StartTime>
+	<EndTime>2500</EndTime>
+	<MakeCount>1</MakeCount>
+	<MakeTime>210</MakeTime>
+	<Texture>ray12.DDS</Texture>
+	<StartShape Size="60">SPHERE</StartShape>
+
+	<Ani Frame="0" Type="Scale">1,1,1</Ani>
+	<Ani Frame="100" Type="Scale">0,0,0</Ani>
+	<Ani Frame="300" Type="Scale">0,0,0</Ani>	
+	<Ani Frame="400" Type="Scale">1,1,1</Ani>
+	<Ani Frame="600" Type="Scale">0,0,0</Ani>	
+
+	
+	
+	<Ani Frame="0" Type="Diffuse">255,150,150,255</Ani>
+	<Ani Frame="100" Type="Diffuse">0, 0, 0, 0</Ani>
+	<Ani Frame="300" Type="Diffuse">255, 200,200,255</Ani>
+	<Ani Frame="400" Type="Diffuse">255, 200,200,255</Ani>
+	<Ani Frame="600" Type="Diffuse">0, 0, 0, 0</Ani>
+	
+</InfoData>
+
+</ParticleScript>

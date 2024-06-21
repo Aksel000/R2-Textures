@@ -1,0 +1,21 @@
+<EffectScript>
+<Information>
+	<Name>Battle Buff</Name>
+	<Dynamic>false</Dynamic>
+	<Attach>
+    		<BodyPart>BVBOTTOM</BodyPart>
+		<Pos>0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+	</Attach>
+
+</Information>
+<EffectFile>5703.reb</EffectFile>
+<Event>
+                   <FrameEvent Type="SOUND" Frame="0" Min="1400" Max="2000">5703.wav</FrameEvent>
+</Event>
+</EffectScript>
+
+
+
+
+

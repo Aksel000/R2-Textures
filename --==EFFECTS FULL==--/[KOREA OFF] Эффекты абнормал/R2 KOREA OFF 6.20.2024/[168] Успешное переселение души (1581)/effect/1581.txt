@@ -1,0 +1,19 @@
+<EffectScript>
+<Information>
+	<Name>pk_mode</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	<Particle>P0122.txt</Particle>
+
+	<Attach>
+    	<BodyPart>BVBOTTOM</BodyPart>
+  		<Pos>0,0,0</Pos>
+   		<Scale>true</Scale>
+		
+	
+   	</Attach>
+
+	
+</Information>
+<EffectFile>1581.reb</EffectFile>
+</EffectScript>

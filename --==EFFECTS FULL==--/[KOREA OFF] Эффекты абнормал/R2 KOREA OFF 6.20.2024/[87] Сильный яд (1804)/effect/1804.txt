@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>Poison</Name>
+	<Dynamic>false</Dynamic>
+	<Particle>P0011.txt</Particle>
+	<Loop>false</Loop>
+
+</Information>
+<EffectFile>1804.reb</EffectFile>
+</EffectScript>

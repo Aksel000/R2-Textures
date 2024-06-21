@@ -1,0 +1,16 @@
+<EffectScript>
+<Information>
+	<Name> LightDiffence Condition </Name>
+	<Dynamic>false</Dynamic>
+            <Loop>true</Loop>
+	
+            <Attach>
+    	            <BodyPart>HEAD</BodyPart>
+  	            <Pos>0,0,0</Pos>
+   	            <Scale>FALSE</Scale>
+	            <Rot>FALSE</Rot>
+   	</Attach>
+
+</Information>
+<EffectFile>5967.reb</EffectFile>
+</EffectScript>

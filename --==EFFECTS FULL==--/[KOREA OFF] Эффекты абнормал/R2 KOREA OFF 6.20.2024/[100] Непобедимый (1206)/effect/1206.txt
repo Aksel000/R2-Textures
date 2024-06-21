@@ -1,0 +1,24 @@
+<EffectScript>
+<Information>
+	<Name>elfking_ice</Name>
+	<Dynamic>false</Dynamic>
+	<Loop>true</Loop>
+	
+	
+	<Attach>
+    		<BodyPart>chest</BodyPart>
+		<Pos> 0,0,0</Pos>
+    		<Scale>TRUE</Scale>
+		<Rot>true</Rot>	
+		
+	</Attach>
+
+	
+	
+
+
+
+
+</Information>
+<EffectFile>1206.reb</EffectFile>
+</EffectScript>
