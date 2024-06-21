@@ -1,0 +1,10 @@
+<EffectScript>
+<Information>
+	<Name>FireHale_Exp2</Name>
+	<Dynamic>false</Dynamic>
+</Information>
+<EffectFile>5350.reb</EffectFile>
+<Event>
+		<FrameEvent Type="SOUND" Frame="7" Min="1400" Max="2000">FireHale_Alea2.wav</FrameEvent>
+</Event>
+</EffectScript>
