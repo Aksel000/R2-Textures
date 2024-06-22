@@ -46,184 +46,184 @@ These dragons are taken from the Korean official server of the game R2 Online da
 
 # Предпросмотр драконов:
 
-## Дракон: [[ALevel 1]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%201]/)
+## Дракон: [[ALevel 1]]([ALevel%201]/)
 - Название файла: t00000.png
 - Просмотр файла:
-# ![t00000.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%201]/t00000.png)
-# ![t00001.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%201]/t00001.png)
+# ![t00000.png]([ALevel%201]/t00000.png)
+# ![t00001.png]([ALevel%201]/t00001.png)
 
-## Дракон: [[ALevel 2]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%202]/)
+## Дракон: [[ALevel 2]]([ALevel%202]/)
 - Название файла: t00000.png
 - Просмотр файла:
-# ![t00000.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%202]/t00000.png)
+# ![t00000.png]([ALevel%202]/t00000.png)
 
-## Дракон: [[ALevel 2]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%202]/)
+## Дракон: [[ALevel 2]]([ALevel%202]/)
 - Название файла: t00001.png
 - Просмотр файла:
-# ![t00001.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%202]/t00001.png)
+# ![t00001.png]([ALevel%202]/t00001.png)
 
-## Дракон: [[ALevel 3]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%203]/)
+## Дракон: [[ALevel 3]]([ALevel%203]/)
 - Название файла: t00002.png
 - Просмотр файла:
-# ![t00002.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%203]/t00002.png)
+# ![t00002.png]([ALevel%203]/t00002.png)
 
-## Дракон: [[ALevel 4]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%204]/)
+## Дракон: [[ALevel 4]]([ALevel%204]/)
 - Название файла: t00003.png
 - Просмотр файла:
-# ![t00003.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%204]/t00003.png)
+# ![t00003.png]([ALevel%204]/t00003.png)
 
-## Дракон: [[ALevel 8]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%208]/)
+## Дракон: [[ALevel 8]]([ALevel%208]/)
 - Название файла: t00007.png
 - Просмотр файла:
-# ![t00007.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%208]/t00007.png)
+# ![t00007.png]([ALevel%208]/t00007.png)
 
-## Дракон: [[ALevel 9]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%209]/)
+## Дракон: [[ALevel 9]]([ALevel%209]/)
 - Название файла: t00008.png
 - Просмотр файла:
-# ![t00008.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%209]/t00008.png)
+# ![t00008.png]([ALevel%209]/t00008.png)
 
-## Дракон: [[ALevel 10]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2010]/)
+## Дракон: [[ALevel 10]]([ALevel%2010]/)
 - Название файла: t00010.png
 - Просмотр файла:
-# ![t00010.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2010]/t00010.png)
+# ![t00010.png]([ALevel%2010]/t00010.png)
 
-## Дракон: [[ALevel 11]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2011]/)
+## Дракон: [[ALevel 11]]([ALevel%2011]/)
 - Название файла: t00011.png
 - Просмотр файла:
-# ![t00011.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2011]/t00011.png)
+# ![t00011.png]([ALevel%2011]/t00011.png)
 
-## Дракон: [[ALevel 12]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2012]/)
+## Дракон: [[ALevel 12]]([ALevel%2012]/)
 - Название файла: t00012.png
 - Просмотр файла:
-# ![t00012.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2012]/t00012.png)
+# ![t00012.png]([ALevel%2012]/t00012.png)
 
-## Дракон: [[ALevel 13]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2013]/)
+## Дракон: [[ALevel 13]]([ALevel%2013]/)
 - Название файла: t00013.png
 - Просмотр файла:
-# ![t00013.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2013]/t00013.png)
+# ![t00013.png]([ALevel%2013]/t00013.png)
 
-## Дракон: [[ALevel 14]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2014]/)
+## Дракон: [[ALevel 14]]([ALevel%2014]/)
 - Название файла: t00014.png
 - Просмотр файла:
-# ![t00014.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2014]/t00014.png)
+# ![t00014.png]([ALevel%2014]/t00014.png)
 
-## Дракон: [[ALevel 15]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2015]/)
+## Дракон: [[ALevel 15]]([ALevel%2015]/)
 - Название файла: t00015.png
 - Просмотр файла:
-# ![t00015.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2015]/t00015.png)
+# ![t00015.png]([ALevel%2015]/t00015.png)
 
-## Дракон: [[ALevel 16]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2016]/)
+## Дракон: [[ALevel 16]]([ALevel%2016]/)
 - Название файла: t00016.png
 - Просмотр файла:
-# ![t00016.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2016]/t00016.png)
+# ![t00016.png]([ALevel%2016]/t00016.png)
 
-## Дракон: [[ALevel 17]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2017]/)
+## Дракон: [[ALevel 17]]([ALevel%2017]/)
 - Название файла: t00017.png
 - Просмотр файла:
-# ![t00017.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2017]/t00017.png)
+# ![t00017.png]([ALevel%2017]/t00017.png)
 
-## Дракон: [[ALevel 18]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2018]/)
+## Дракон: [[ALevel 18]]([ALevel%2018]/)
 - Название файла: t00030.png
 - Просмотр файла:
-# ![t00030.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2018]/t00030.png)
+# ![t00030.png]([ALevel%2018]/t00030.png)
 
-## Дракон: [[ALevel 19]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2019]/)
+## Дракон: [[ALevel 19]]([ALevel%2019]/)
 - Название файла: t00019.png
 - Просмотр файла:
-# ![t00019.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2019]/t00019.png)
+# ![t00019.png]([ALevel%2019]/t00019.png)
 
-## Дракон: [[ALevel 20]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2020]/)
+## Дракон: [[ALevel 20]]([ALevel%2020]/)
 - Название файла: t00020.png
 - Просмотр файла:
-# ![t00020.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2020]/t00020.png)
+# ![t00020.png]([ALevel%2020]/t00020.png)
 
-## Дракон: [[ALevel 21]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2021]/)
+## Дракон: [[ALevel 21]]([ALevel%2021]/)
 - Название файла: t00021.png
 - Просмотр файла:
-# ![t00021.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2021]/t00021.png)
+# ![t00021.png]([ALevel%2021]/t00021.png)
 
-## Дракон: [[ALevel 22]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2022]/)
+## Дракон: [[ALevel 22]]([ALevel%2022]/)
 - Название файла: t00022.png
 - Просмотр файла:
-# ![t00022.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2022]/t00022.png)
+# ![t00022.png]([ALevel%2022]/t00022.png)
 
-## Дракон: [[ALevel 23]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2023]/)
+## Дракон: [[ALevel 23]]([ALevel%2023]/)
 - Название файла: t00023.png
 - Просмотр файла:
-# ![t00023.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2023]/t00023.png)
+# ![t00023.png]([ALevel%2023]/t00023.png)
 
-## Дракон: [[ALevel 24]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2024]/)
+## Дракон: [[ALevel 24]]([ALevel%2024]/)
 - Название файла: t00024.png
 - Просмотр файла:
-# ![t00024.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2024]/t00024.png)
+# ![t00024.png]([ALevel%2024]/t00024.png)
 
-## Дракон: [[ALevel 25]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2025]/)
+## Дракон: [[ALevel 25]]([ALevel%2025]/)
 - Название файла: t00007.png
 - Просмотр файла:
-# ![t00007.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2025]/t00007.png)
+# ![t00007.png]([ALevel%2025]/t00007.png)
 
-## Дракон: [[ALevel 26]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2026]/)
+## Дракон: [[ALevel 26]]([ALevel%2026]/)
 - Название файла: t00026.png
 - Просмотр файла:
-# ![t00026.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2026]/t00026.png)
+# ![t00026.png]([ALevel%2026]/t00026.png)
 
-## Дракон: [[ALevel 27]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2027]/)
+## Дракон: [[ALevel 27]]([ALevel%2027]/)
 - Название файла: t00027.png
 - Просмотр файла:
-# ![t00027.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2027]/t00027.png)
+# ![t00027.png]([ALevel%2027]/t00027.png)
 
-## Дракон: [[ALevel 28]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2028]/)
+## Дракон: [[ALevel 28]]([ALevel%2028]/)
 - Название файла: t00028.png
 - Просмотр файла:
-# ![t00028.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2028]/t00028.png)
+# ![t00028.png]([ALevel%2028]/t00028.png)
 
-## Дракон: [[ALevel 29]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2029]/)
+## Дракон: [[ALevel 29]]([ALevel%2029]/)
 - Название файла: t00017.png
 - Просмотр файла:
-# ![t00017.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2029]/t00017.png)
+# ![t00017.png]([ALevel%2029]/t00017.png)
 
-## Дракон: [[ALevel 30]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2030]/)
+## Дракон: [[ALevel 30]]([ALevel%2030]/)
 - Название файла: t00030.png
 - Просмотр файла:
-# ![t00030.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2030]/t00030.png)
+# ![t00030.png]([ALevel%2030]/t00030.png)
 
-## Дракон: [[ALevel 31]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2031]/)
+## Дракон: [[ALevel 31]]([ALevel%2031]/)
 - Название файла: t00031.png
 - Просмотр файла:
-# ![t00031.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2031]/t00031.png)
+# ![t00031.png]([ALevel%2031]/t00031.png)
 
-## Дракон: [[ALevel 32]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2032]/)
+## Дракон: [[ALevel 32]]([ALevel%2032]/)
 - Название файла: t00032.png
 - Просмотр файла:
-# ![t00032.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2032]/t00032.png)
+# ![t00032.png]([ALevel%2032]/t00032.png)
 
-## Дракон: [[ALevel 33]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2033]/)
+## Дракон: [[ALevel 33]]([ALevel%2033]/)
 - Название файла: t00033.png
 - Просмотр файла:
-# ![t00033.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2033]/t00033.png)
+# ![t00033.png]([ALevel%2033]/t00033.png)
 
-## Дракон: [[ALevel 34]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2034]/)
+## Дракон: [[ALevel 34]]([ALevel%2034]/)
 - Название файла: t00034.png
 - Просмотр файла:
-# ![t00034.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2034]/t00034.png)
+# ![t00034.png]([ALevel%2034]/t00034.png)
 
-## Дракон: [[ALevel 35]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2035]/)
+## Дракон: [[ALevel 35]]([ALevel%2035]/)
 - Название файла: t00035.png
 - Просмотр файла:
-# ![t00035.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2035]/t00035.png)
+# ![t00035.png]([ALevel%2035]/t00035.png)
 
-## Дракон: [[ALevel 36]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2036]/)
+## Дракон: [[ALevel 36]]([ALevel%2036]/)
 - Название файла: t00036.png
 - Просмотр файла:
-# ![t00036.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2036]/t00036.png)
+# ![t00036.png]([ALevel%2036]/t00036.png)
 
-## Дракон: [[ALevel 37]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2037]/)
+## Дракон: [[ALevel 37]]([ALevel%2037]/)
 - Название файла: t00037.png
 - Просмотр файла:
-# ![t00037.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2037]/t00037.png)
+# ![t00037.png]([ALevel%2037]/t00037.png)
 
-## Дракон: [[ALevel 38]](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2038]/)
+## Дракон: [[ALevel 38]]([ALevel%2038]/)
 - Название файла: t00000.png
 - Просмотр файла:
-# ![t00000.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2038]/t00000.png)
-# ![t00038.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20%D0%95%D0%B7%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D1%8B%20(t)/[ALevel%2038]/t00038.png)
+# ![t00000.png]([ALevel%2038]/t00000.png)
+# ![t00038.png]([ALevel%2038]/t00038.png)
