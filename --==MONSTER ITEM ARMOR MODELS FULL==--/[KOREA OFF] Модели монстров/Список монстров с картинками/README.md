@@ -9,15 +9,20 @@
 
 # Пример:
 
-## Монстр: [[33]Гарпия](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%BE%D0%B2/[6.6.2023]%20Модели%20монстров%20I/[33]Гарпия/)
+## Монстр: [[33]Гарпия](https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20Модели%20монстров/%5BALL%5D%20Модели%20монстров%20I/[33]Гарпия/)
 - Название файла: m00042.png
 - Просмотр файла:
-# ![m00042.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%BE%D0%B2/[6.6.2023]%20Модели%20монстров%20I/[33]Гарпия/m00042.png)
+# ![m00042.png](https://raw.githubusercontent.com/Aksel000/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20Модели%20монстров/%5BALL%5D%20Модели%20монстров%20I/[33]Гарпия/m00042.png)
 
-## Монстр: [[34]Могучий орк](https://github.com/Aksel911/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%BE%D0%B2/[6.6.2023]%20Модели%20монстров%20I/[34]Могучий%20орк/)
+## Монстр: [[34]Могучий орк](https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20Модели%20монстров/%5BALL%5D%20Модели%20монстров%20I/[34]Могучий%20орк/)
 - Название файла: m00186.png
 - Просмотр файла:
-# ![m00186.png](https://raw.githubusercontent.com/Aksel911/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%202023%5D%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%BE%D0%B2/[6.6.2023]%20Модели%20монстров%20I/[34]Могучий%20орк/m00186.png)
+# ![m00186.png](https://raw.githubusercontent.com/Aksel000/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20Модели%20монстров/%5BALL%5D%20Модели%20монстров%20I/[34]Могучий%20орк/m00186.png)
+
+## Монстр: [[35]Сирена](https://github.com/Aksel000/R2-Textures/tree/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20Модели%20монстров/%5BALL%5D%20Модели%20монстров%20I/[35]Сирена/)
+- Название файла: m00192.png
+- Просмотр файла:
+# ![m00192.png](https://raw.githubusercontent.com/Aksel000/R2-Textures/main/--%3D%3DMONSTER%20ITEM%20ARMOR%20MODELS%20FULL%3D%3D--/%5BKOREA%20OFF%5D%20Модели%20монстров/%5BALL%5D%20Модели%20монстров%20I/[35]Сирена/m00192.png)
 
 # Предпросмотр новых моделей R2 INFINITE:
 
