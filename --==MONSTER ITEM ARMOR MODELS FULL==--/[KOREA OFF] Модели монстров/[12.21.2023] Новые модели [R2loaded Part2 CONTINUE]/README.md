@@ -1,9 +1,9 @@
-# Предпросмотр новых моделей R2loaded Part2:
+# Новые модели обновления: R2loaded Part2 CONTINUE
 
 ![servant1.png](servant1.png)
 ![servant2.png](servant2.png)
 
-
+Подробнее: https://r2.webzen.co.kr/events/continue20240118/improvement#contents
 
 # - 🐲Питомцы:
 

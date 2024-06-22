@@ -1,4 +1,6 @@
-# Предпросмотр новых моделей R2loaded Part1:
+# Новые модели обновления: R2loaded Part1 NEW DAWN
+
+Подробнее: https://r2.webzen.co.kr/events/newdawn/contents
 
 # - 🐙Морфы:
 
